@@ -1,0 +1,71 @@
+# Aprendendo C
+O objetivo deste repositório é ser um epicentro de todas as informações adiquiridas durante meus estudos da linguagem C, enquanto participo da olimpiada do conhecimento, minhas pesquisas são feitas com base em um mapa de estudos proposto por meus professores. Lista de objetivos a aprender segue a seguir.
+
+### Conteudos concluidos
+- [ ] Tipos de dados
+    - [ ] INT
+    - [ ] CHAR
+    - [ ] FLOAT
+    - [ ] DOUBLE
+    - [ ] UNSIGNED
+    - [ ] CASTING
+- [ ] Operadores
+    - [ ] Operadores Aritiméticos 
+    - [ ] Operadores comparativos
+    - [ ] Operadores de atribuição
+    - [ ] Operadores Bit a Bit
+    - [ ] Operador condicional
+- [ ] Laços
+    - [ ] WHILE
+    - [ ] FOR
+    - [ ] DO WHILE
+    - [ ] BREAK / CONTINUE
+- [ ] Funções
+    - [ ] TIPO
+    - [ ] PARAMÊTRO
+    - [ ] PROTIPAÇÃO / DECLARAÇÃO 
+- [ ] Vetores
+    - [ ] DECLARAÇÃO
+    - [ ] VETOR UNIDIMENCIONAL
+    - [ ] VETOR MULTIDIMENCIONAL
+    - [ ] PARAMÊTRO P/ FUNÇÕES
+    - [ ] CONST
+    - [ ] DEFINE
+    - [ ] TIPOS 
+- [ ] Ponteiors
+    - [ ] TIPOS
+    - [ ] PONTEIORS E VETORES
+    - [ ] PONTEIORS E FUNÇÕES
+    - [ ] INCREMENTO
+    - [ ] DECREMENTO
+    - [ ] DIFERENÇA
+    - [ ] COMPARAÇÃO 
+- [ ] String
+    - [ ] FUNÇÕES E BIBIOTECA
+    - [ ] CARACTER
+    - [ ] LEITURA
+    - [ ] ESCRITA 
+- [ ] Macros e pré-processamento
+    - [ ] TYPEDEF
+    - [ ] ## - #
+    - [ ] ()
+    - [ ] PRAGMA
+    - [ ] ERROR
+    - [ ] LINE
+    - [ ] GOTO
+    - [ ] ENUM
+    - [ ] REGISTER
+    - [ ] UNION
+    - [ ] STRUCT
+    - [ ] MACROS VS FUNÇÕES
+    - [ ] #DEFINE
+    - [ ] #INCLUDE
+    - [ ] #IF - #ENDIF
+    - [ ] #IFDEF - IFNDEF
+    - [ ] #UNDEF 
+- [ ] Desafios OBI
+    - [ ] DESAFIO 01
+    - [ ] DESAFIO 02
+    - [ ] DESAFIO 03
+    - [ ] DESAFIO 04
+    - [ ] DESAFIO 05 
