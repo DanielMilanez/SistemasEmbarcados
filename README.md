@@ -2,19 +2,22 @@
 O objetivo deste repositório é ser um epicentro de todas as informações adiquiridas durante meus estudos da linguagem C, enquanto participo da olimpiada do conhecimento, minhas pesquisas são feitas com base em um mapa de estudos proposto por meus professores. Lista de objetivos a aprender segue a seguir.
 
 ### Conteudos concluidos
-- [ ] Tipos de dados
-    - [ ] INT
-    - [ ] CHAR
-    - [ ] FLOAT
-    - [ ] DOUBLE
-    - [ ] UNSIGNED
-    - [ ] CASTING
-- [ ] Operadores
-    - [ ] Operadores Aritiméticos 
-    - [ ] Operadores comparativos
-    - [ ] Operadores de atribuição
+- [X] Tipos de dados
+    - [X] INT
+    - [X] CHAR
+    - [X] FLOAT
+    - [X] DOUBLE
+    - [X] UNSIGNED
+    - [X] CASTING
+  
+- [X] Operadores
+    - [X] Operadores Aritiméticos 
+    - [X] Operadores comparativos
+    - [X] Operadores de atribuição
+    - [X] Operador condicional
     - [ ] Operadores Bit a Bit
-    - [ ] Operador condicional
+  
+  
 - [ ] Laços
     - [ ] WHILE
     - [ ] FOR
