@@ -3,10 +3,10 @@
 #include <stdio.h>
 
 int main(void){
-    int contagem = 100;
+    int contagem = 0;
 
-    while (contagem > 0){
-        contagem--;
+    while (contagem < 10){
+        contagem += 1;
         printf("Contagem: %d\n", contagem);
     }
     
