@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+// Criando um prótotipo
+void linha(); // Demonstra para o compilador o tipo de retorno da função
+
+int main(void){
+    linha(3);
+    linha(5);
+    linha(7);
+    linha(5);
+    linha(3);
+}
+
+void linha(int num){
+    for (int i = 0; i <= num; i++){
+        putchar('*');
+    }
+    putchar('\n');
+}
