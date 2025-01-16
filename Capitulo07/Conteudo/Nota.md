@@ -46,14 +46,9 @@ Exemplo 02 - Devolve o número de dígitos na string s
 ---
 Exemplo 03 - Devolve o índice da primeira ocorrência do caractere ch na string s
 ```C
-    int indchr(char *s){
-        int i, conta;
-        for (i = conta = 0; s[i] != '\0'; i++){
-            if (isdigit(s[i])) {
-                conta++;
-            }
-        return conta;
-        }
+    int indchr(char *s, char ch){
+        int i=0;
+        while (s[i] != ch ** s[i] != '\0') i++;
     }
 ```
 
@@ -66,8 +61,8 @@ Exemplo 04 - Veriica se a string é um palíndromo
             if (s[i] != s[j]){
                 return 0;
             }
-        return 1;
         }
+    return 1;    
     }
 ```
 Exemplo 05 - Inverte a string s e devolve-a invertida
@@ -76,7 +71,7 @@ Exemplo 05 - Inverte a string s e devolve-a invertida
         int i, len;
         char aux;
 
-        for (i = 0, j = strlen(s) - 1; i < len; i++, len--){
+        for (i = 0, len = strlen(s) - 1; i < len; i++, len--){
             aux = s[i];
             s[i] = s[len];
             s[len] = aux;

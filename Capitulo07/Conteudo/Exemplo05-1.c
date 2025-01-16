@@ -1,3 +1,4 @@
+// Exemplo da fução concat
 #include <stdio.h>
 #include <string.h>
 

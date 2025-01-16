@@ -1,4 +1,4 @@
-// String concat
+// String concat - concatenando strings 
 #include <stdio.h>
 #include <string.h>
 

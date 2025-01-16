@@ -1,4 +1,4 @@
-// String Copy
+// String Copy - fazendo uma string ser atribuida a outra variável
 #include <stdio.h>
 #include <string.h>
 
