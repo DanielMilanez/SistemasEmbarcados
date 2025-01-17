@@ -6,7 +6,7 @@ int main(void){
     printf("Informe a quantidade de ramos que vc deseja: ");
     scanf("%d", &ramos);
 
-    for (int i = 0; i <= ramos; i++){
+    for (int i = 1; i <= ramos; i++){
         for (int j = 0; j <= count; j++){
             printf("*");
         }
