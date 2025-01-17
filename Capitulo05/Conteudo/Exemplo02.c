@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 // Criando um prótotipo
-void linha(); // Demonstra para o compilador o tipo de retorno da função
+void linha(int num); // Demonstra para o compilador o tipo de retorno da função
 
 int main(void){
     linha(3);
