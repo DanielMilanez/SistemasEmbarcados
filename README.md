@@ -18,23 +18,23 @@ O objetivo deste repositório é ser um epicentro de todas as informações adiq
     - [ ] Operadores Bit a Bit
   
   
-- [ ] Laços
-    - [ ] WHILE
-    - [ ] FOR
-    - [ ] DO WHILE
-    - [ ] BREAK / CONTINUE
-- [ ] Funções
-    - [ ] TIPO
-    - [ ] PARAMÊTRO
-    - [ ] PROTIPAÇÃO / DECLARAÇÃO 
-- [ ] Vetores
-    - [ ] DECLARAÇÃO
-    - [ ] VETOR UNIDIMENCIONAL
-    - [ ] VETOR MULTIDIMENCIONAL
-    - [ ] PARAMÊTRO P/ FUNÇÕES
-    - [ ] CONST
-    - [ ] DEFINE
-    - [ ] TIPOS 
+- [X] Laços
+    - [X] WHILE
+    - [X] FOR
+    - [X] DO WHILE
+    - [X] BREAK / CONTINUE
+- [X] Funções
+    - [X] TIPO
+    - [X] PARAMÊTRO
+    - [X] PROTIPAÇÃO / DECLARAÇÃO 
+- [X] Vetores
+    - [X] DECLARAÇÃO
+    - [X] VETOR UNIDIMENCIONAL
+    - [X] VETOR MULTIDIMENCIONAL
+    - [X] PARAMÊTRO P/ FUNÇÕES
+    - [X] CONST
+    - [X] DEFINE
+    - [X] TIPOS 
 - [ ] Ponteiors
     - [ ] TIPOS
     - [ ] PONTEIORS E VETORES
