@@ -1,48 +1,14 @@
-// Programa Boubble sort - Ordenação simples de vetores
 #include <stdio.h>
-#define DIM 35
 
 int main(void){
-    int meuVetor[DIM];
-    int meuValor = 0;
-    int repeat = 0;
+    int firstValue, 
+        secondValue;
 
-    int i = 1;
+    printf("Informe o valor do range: ");
+    scanf("%d %d", &firstValue, &secondValue);
 
-    for (i = 0; i < DIM; i++){
-        printf("Insira o %d valor: ", i + 1);
-        scanf("%d", &meuValor);
-
-        meuVetor[i] = meuValor;
-    }
-    
-    while (1){ 
-        int trocou = 0; // Verifica se há trocas na operação
-
-        for (i = 0; i < DIM; i++){
-            if (meuVetor[i] > meuVetor[i + 1]) {
-                int temporaria = meuVetor[i];
-
-                meuVetor[i] = meuVetor[i + 1];
-                meuVetor[i + 1] = temporaria;
-
-                trocou = 1; // Houve troca
-                repeat++;
-            } 
-        }
-
-        if (!trocou) break; // Caso não haja ele se mata.
-    }
-
-    printf("Vetor atualizado! Houve %d repeticoes\n", repeat);
-    
-    for (i = 0; i < DIM; i++){
-        printf("%d ", meuVetor[i]);
-    }
+    while (firstValue <= secondValue){
+        printf("%dHz\n\n", firstValue);
+        firstValue ++; 
+    } 
 }
-
-/*  
-    Posso melhorar ainda mais este código adicionando a funcionalidade de alocação dinamica de memória
-    neste caso, eu consigo definir o tamanho do vetor que eu vou analizar. Futuramente devo estudar 
-    mais a respeito para melhorar este algoritmo.
-*/
