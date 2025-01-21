@@ -2,5 +2,5 @@
 
 int main(void){
     printf("Hello, World!\n"); // Utilizando o printf normal
-    puts("Hello, Wolrd!\n"); // Utilizando o puts
+    puts("Hello, Wolrd!"); // Utilizando o puts ele não precisa do \n
 }
