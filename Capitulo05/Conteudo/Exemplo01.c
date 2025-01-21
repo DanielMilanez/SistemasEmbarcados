@@ -8,7 +8,6 @@ void lineMaker(void){
 }
 
 int main(void){
-    escreva();
     putchar('\n');
     lineMaker();
     puts("Numeros de 1 a 5");
