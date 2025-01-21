@@ -1,0 +1,65 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="26.0.6">
+  <diagram name="VerificarIdade" id="Lw__3kb3P3M3CWYozN1q">
+    <mxGraphModel dx="1434" dy="820" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="_IgoS73DkbOu6my2ZTtK-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="ZLKejDqpvpxxWeUrk6DK-1" target="_IgoS73DkbOu6my2ZTtK-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZLKejDqpvpxxWeUrk6DK-1" value="Inicio" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="354" y="90" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="_IgoS73DkbOu6my2ZTtK-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="_IgoS73DkbOu6my2ZTtK-1" target="_IgoS73DkbOu6my2ZTtK-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_IgoS73DkbOu6my2ZTtK-1" value="Iniciar variáveis&lt;div&gt;idade, possuiCarro,&amp;nbsp;&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="331" y="180" width="166" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="_IgoS73DkbOu6my2ZTtK-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="_IgoS73DkbOu6my2ZTtK-3" target="_IgoS73DkbOu6my2ZTtK-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_IgoS73DkbOu6my2ZTtK-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="_IgoS73DkbOu6my2ZTtK-3" target="_IgoS73DkbOu6my2ZTtK-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_IgoS73DkbOu6my2ZTtK-3" value="possuiCarro == true" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="341" y="250" width="146" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="_IgoS73DkbOu6my2ZTtK-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="_IgoS73DkbOu6my2ZTtK-6" target="_IgoS73DkbOu6my2ZTtK-9">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="164" y="400" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_IgoS73DkbOu6my2ZTtK-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="_IgoS73DkbOu6my2ZTtK-6" target="_IgoS73DkbOu6my2ZTtK-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_IgoS73DkbOu6my2ZTtK-6" value="idade &amp;gt;= 18 &amp;amp;&amp;amp; idade &amp;lt;= 50" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="204" y="350" width="110" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="_IgoS73DkbOu6my2ZTtK-9" value="Recebe 200 reais" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="104" y="490" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="_IgoS73DkbOu6my2ZTtK-11" value="Não" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="154" y="370" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_IgoS73DkbOu6my2ZTtK-12" value="Recebe 5&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;00 reais&lt;/span&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="294" y="490" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="_IgoS73DkbOu6my2ZTtK-14" value="Sim" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="304" y="370" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_IgoS73DkbOu6my2ZTtK-16" value="Recebe 200 reais" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="497" y="350" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="_IgoS73DkbOu6my2ZTtK-18" value="&amp;nbsp;Não" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="281" y="260" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_IgoS73DkbOu6my2ZTtK-19" value="Sim" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="480" y="260" width="60" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
