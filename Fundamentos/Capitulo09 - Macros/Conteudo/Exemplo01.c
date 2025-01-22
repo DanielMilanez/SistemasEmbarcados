@@ -18,3 +18,5 @@ int main(void){
     printf("%d\n", resultado);
     printf("%d\n", resultado2);
 }
+
+/* Macros pesam bastante na memória pois expandem o código então tome cuidado ao utilizar-se multiplas macros*/
