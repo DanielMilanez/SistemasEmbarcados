@@ -1,4 +1,5 @@
 # Demais informações sobre strings
+Strings são um conjunto de caracteres marcados em seu final por um delimitador conhecido como `\0`. Sendo assim, a forma correta de se declarar uma string é utilizando um vetor unidimencional, com o caractere delimitador em seu final. Strings são representadas entre aspas duplas ou `" "`, em C não conseguimos manipular uma string por padrão, como concatenar informações ou então atribuir elas a uma variável, por isso há a necessidade de usar funções especificas para realizar esses procedimentos.
 
 |Codigo|Função|Retorno|Exemplo|
 |-|-|-|-|

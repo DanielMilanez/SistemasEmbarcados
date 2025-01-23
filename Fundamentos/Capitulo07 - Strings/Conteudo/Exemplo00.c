@@ -57,7 +57,7 @@ int main(void){
 //     for (int j = 0; j < t2; j++){
 //         string3[t1 + j] = string2[j]; 
 //     }
-//}
+// }
 
 // Contar caracteres de uma string.
 // int tamanhoString(char string[]){
