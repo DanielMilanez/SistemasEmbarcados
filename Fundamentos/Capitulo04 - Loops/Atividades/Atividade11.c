@@ -1,26 +1,24 @@
-// Sequencia de fibonacci
+// Desenhando degraus
 #include <stdio.h>
-#include <stdbool.h>
-#include <stdbool.h>
+#include <locale.h>
 
 int main(void) {
-    int numAtual = 1,
-        proxNum = 1,
-        troca,
-        limite;
+    setlocale(LC_ALL, "Portuguese_Brazil");
+    unsigned short int degraus, 
+                        count;
 
-    printf("Informe o limite da sequencia de fibonacci >> ");
-    scanf("%d", &limite);
+    printf("Informe o número de degraus que você deseja: ");
+    scanf("%hu", &degraus);
 
-    printf("Sequencia de fibonacci.\n");
+    printf("==============================================");
 
-    while (true){
-        printf("%d ", numAtual);
-        if (numAtual > limite) break;
-
-        troca = proxNum;
-        proxNum = numAtual + proxNum;
-        numAtual = troca;
+    for (int i = 0; i < degraus; ++i){
+        for (int j = 0; j < count; ++j){
+            printf("#");
+        }
+        count++;
+        printf("\n");
     }
     
+    printf("==============================================");
 }

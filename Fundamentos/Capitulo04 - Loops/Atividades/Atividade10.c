@@ -1,49 +1,26 @@
-// Programa Boubble sort - Ordenação simples de vetores
+// Sequencia de fibonacci
 #include <stdio.h>
 #include <stdbool.h>
-#define DIM 4
+#include <stdbool.h>
 
-int main(void){
-    int meuVetor[DIM];
-    int meuValor = 0;
-    int repeat = 0;
+int main(void) {
+    int numAtual = 1,
+        proxNum = 1,
+        troca,
+        limite;
 
-    int i = 1;
+    printf("Informe o limite da sequencia de fibonacci >> ");
+    scanf("%d", &limite);
 
-    for (i = 0; i < DIM; i++){
-        printf("Insira o %d valor: ", i + 1);
-        scanf("%d", &meuValor);
+    printf("Sequencia de fibonacci.\n");
 
-        meuVetor[i] = meuValor;
+    while (true){
+        printf("%d ", numAtual);
+        if (numAtual > limite) break;
+
+        troca = proxNum;
+        proxNum = numAtual + proxNum;
+        numAtual = troca;
     }
     
-    while (true){ 
-        int trocou = 0; // Verifica se há trocas na operação
-
-        for (i = 0; i < DIM; i++){
-            if (meuVetor[i] > meuVetor[i + 1]) {
-                int temporaria = meuVetor[i];
-
-                meuVetor[i] = meuVetor[i + 1];
-                meuVetor[i + 1] = temporaria;
-
-                trocou = true; 
-                repeat++;
-            } 
-        }
-
-        if (!trocou) break; // Caso não haja ele se mata.
-    }
-
-    printf("Vetor atualizado! Houve %d repeticoes\n", repeat);
-    
-    for (i = 0; i < DIM; i++){
-        printf("%d ", meuVetor[i]);
-    }
 }
-
-/*  
-    Posso melhorar ainda mais este código adicionando a funcionalidade de alocação dinamica de memória
-    neste caso, eu consigo definir o tamanho do vetor que eu vou analizar. Futuramente devo estudar 
-    mais a respeito para melhorar este algoritmo.
-*/
