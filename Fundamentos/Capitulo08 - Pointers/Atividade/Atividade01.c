@@ -79,7 +79,7 @@ void show_info(){
 void show_stack(){
     printf("\t\t\t\t|         |\n");
     for (int i = count_layer; i != 0; --i){
-        printf("\t\t\t\t   %4hd     -- %p   \n", stack[i], &stack[i]);
+        printf("\t\t\t\t%X --  %4hd     -- %p   \n", i, stack[i], &stack[i]);
     }
     printf("\t\t\t\t|---------|\n");
     puts("\t\t\t---------------------------");
@@ -91,15 +91,16 @@ void data_add(short int value_to_add){
 
     if (ptr_stack == (ptr_anchor + LAYERS)){
         puts("\t\t\t\t MEMORIA CHEIA!");
+        show_stack();
         exit(0); // Finalizando o programa.
+    } else {
+        puts("\t\t\t Dado inserido com sucesso!");
+        ++ ptr_stack;
+        *ptr_stack = (unsigned char) value_to_add;
+        ++ count_layer;
+
+        show_stack();
     }
-
-    puts("\t\t\t Dado inserido com sucesso!");
-    ++ ptr_stack;
-    *ptr_stack = (unsigned char) value_to_add;
-    ++ count_layer;
-
-    show_stack();
 }
 
 int data_pop(){
