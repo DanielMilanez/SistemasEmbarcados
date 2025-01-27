@@ -23,10 +23,12 @@ O objetivo deste repositório é ser um epicentro de todas as informações adiq
     - [X] FOR
     - [X] DO WHILE
     - [X] BREAK / CONTINUE
+          
 - [X] Funções
     - [X] TIPO
     - [X] PARAMÊTRO
-    - [X] PROTIPAÇÃO / DECLARAÇÃO 
+    - [X] PROTIPAÇÃO / DECLARAÇÃO
+          
 - [X] Vetores
     - [X] DECLARAÇÃO
     - [X] VETOR UNIDIMENCIONAL
@@ -34,20 +36,23 @@ O objetivo deste repositório é ser um epicentro de todas as informações adiq
     - [X] PARAMÊTRO P/ FUNÇÕES
     - [X] CONST
     - [X] DEFINE
-    - [X] TIPOS 
-- [ ] Ponteiors
-    - [ ] TIPOS
-    - [ ] PONTEIORS E VETORES
-    - [ ] PONTEIORS E FUNÇÕES
-    - [ ] INCREMENTO
-    - [ ] DECREMENTO
-    - [ ] DIFERENÇA
-    - [ ] COMPARAÇÃO 
-- [ ] String
-    - [ ] FUNÇÕES E BIBIOTECA
-    - [ ] CARACTER
-    - [ ] LEITURA
-    - [ ] ESCRITA 
+    - [X] TIPOS
+          
+- [X] Ponteiors
+    - [X] TIPOS
+    - [X] PONTEIORS E VETORES
+    - [X] PONTEIORS E FUNÇÕES
+    - [X] INCREMENTO
+    - [X] DECREMENTO
+    - [X] DIFERENÇA
+    - [X] COMPARAÇÃO
+          
+- [X] String
+    - [X] FUNÇÕES E BIBIOTECA
+    - [X] CARACTER
+    - [X] LEITURA
+    - [X] ESCRITA
+          
 - [ ] Macros e pré-processamento
     - [ ] TYPEDEF
     - [ ] ## - #
@@ -61,11 +66,12 @@ O objetivo deste repositório é ser um epicentro de todas as informações adiq
     - [ ] UNION
     - [ ] STRUCT
     - [ ] MACROS VS FUNÇÕES
-    - [ ] #DEFINE
-    - [ ] #INCLUDE
+    - [X] #DEFINE
+    - [X] #INCLUDE
     - [ ] #IF - #ENDIF
     - [ ] #IFDEF - IFNDEF
-    - [ ] #UNDEF 
+    - [ ] #UNDEF
+          
 - [ ] Desafios OBI
     - [ ] DESAFIO 01
     - [ ] DESAFIO 02
