@@ -1,4 +1,4 @@
-// Pilha de memória. Um vetor que acumula dados 
+ // Pilha de memória. Um vetor que acumula dados 
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
@@ -17,6 +17,7 @@ int *ptr1, // Primeiro ponteiro
 int main(void) {
     int data_piled, choose;
     char out = 'n';
+    
     ptr1 = piled;
     ptr2 = piled;
 
