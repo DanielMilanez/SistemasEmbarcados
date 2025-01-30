@@ -46,21 +46,8 @@ int main(void) {
         }
     }
 
-    // int i = 1;
-
-    // for (i = 1; newTemp[i] != '\n'; ++i){
-    //     if (isdigit(newTemp[i])){
-    //         newTemp[i] = auxString[i];
-    //     }
-    // }
-    // auxString[i] = '\n';
-
-    // puts(auxString);
-    // temp = atoi(auxString);
-    // printf("Valor em decimal de temp: %d\n", temp);
-
-    // protocolLoad(&out, erro, sing, uni);
-    // showTable(out, (char)temp);
+    protocolLoad(&out, erro, sing, uni);
+    showTable(out, (char)temp);
 }
 
 void showTable(unsigned char out, unsigned char temperature){
@@ -102,3 +89,20 @@ void protocolLoad(unsigned char *out, unsigned char erro, unsigned char sing, un
         *out ^= 0x1;
     }
 }
+
+
+/*
+    Exercício proposto: Um sensor digital de temperatura pode ler valores na faixa de -255 a +255
+    (Celsius ou Fahrenheit) e envia dados seriais a partir do protocolo ilustrado na Figura 1, no
+    formato de 2 bytes. Os primeiros 4 bits do byte mais significativo consistem na informação do
+    protocolo em si, padrão definido em Ah. Os 2 bits seguintes consistem nos indicadores de erro
+    (sensor fora do range, falha de comunicação, etc) e estarão em 0 quando estiver tudo ok. O
+    próximo bit é o de sinal, que será 0 para positivo e 1 para negativo. Após, vem o bit de unidade,
+    que será 0 para Celsius e 1 para Fahrenheit. O byte menos significativo é reservado para o valor
+    da temperatura em si.
+
+    Figura 1 - Protocolo ilustrando sensor de temperatura ok, igual a +18°C.
+    Projete um software para ler os dois bytes no formato hexadecimal, onde você entra
+    com o formato A012h e no console será impresso 18 graus Celsius, ou a temperatura que for
+    verificada, de acordo com os bytes recebidos do sensor hipotético.
+*/
