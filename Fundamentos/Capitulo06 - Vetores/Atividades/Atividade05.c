@@ -20,7 +20,7 @@ int main(void){
     while (true){ 
         int trocou = 0; // Verifica se há trocas na operação
 
-        for (i = 0; i < DIM; i++){
+        for (i = 0; i < DIM - 1; i++){
             if (meuVetor[i] > meuVetor[i + 1]) {
                 int temporaria = meuVetor[i];
 
