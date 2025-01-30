@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void fatorial(int num, int 1);
+void fatorial(int num, int i);
 
 int main(void) {
 
