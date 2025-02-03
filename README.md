@@ -15,7 +15,7 @@ O objetivo deste repositório é ser um epicentro de todas as informações adiq
     - [X] Operadores comparativos
     - [X] Operadores de atribuição
     - [X] Operador condicional
-    - [ ] Operadores Bit a Bit
+    - [X] Operadores Bit a Bit
   
   
 - [X] Laços
@@ -54,18 +54,18 @@ O objetivo deste repositório é ser um epicentro de todas as informações adiq
     - [X] ESCRITA
           
 - [ ] Macros e pré-processamento
-    - [ ] TYPEDEF
-    - [ ] ## - #
+    - [X] TYPEDEF
+    - [X] ## - #
     - [ ] ()
     - [ ] PRAGMA
     - [ ] ERROR
     - [ ] LINE
     - [ ] GOTO
-    - [ ] ENUM
+    - [X] ENUM
     - [ ] REGISTER
-    - [ ] UNION
-    - [ ] STRUCT
-    - [ ] MACROS VS FUNÇÕES
+    - [X] UNION
+    - [X] STRUCT
+    - [X] MACROS VS FUNÇÕES
     - [X] #DEFINE
     - [X] #INCLUDE
     - [ ] #IF - #ENDIF

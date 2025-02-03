@@ -1,0 +1,10 @@
+20:21:30 **** Incremental Build of configuration Debug for project PrimeiroPrograma ****
+make -j12 all 
+arm-none-eabi-size   PrimeiroPrograma.elf 
+   text	   data	    bss	    dec	    hex	filename
+   6472	     24	   1568	   8064	   1f80	PrimeiroPrograma.elf
+Finished building: default.size.stdout
+ 
+
+20:21:30 Build Finished. 0 errors, 0 warnings. (took 301ms)
+
