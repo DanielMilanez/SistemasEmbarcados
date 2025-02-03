@@ -53,24 +53,24 @@ O objetivo deste repositório é ser um epicentro de todas as informações adiq
     - [X] LEITURA
     - [X] ESCRITA
           
-- [ ] Macros e pré-processamento
-    - [X] TYPEDEF
+- [X] Macros e pré-processamento
+    - [ ] TYPEDEF
     - [X] ## - #
-    - [ ] ()
+    - [X] defined()
     - [ ] PRAGMA
-    - [ ] ERROR
-    - [ ] LINE
+    - [X] ERROR
+    - [X] LINE
     - [ ] GOTO
-    - [X] ENUM
+    - [ ] ENUM
     - [ ] REGISTER
-    - [X] UNION
-    - [X] STRUCT
+    - [ ] UNION
+    - [ ] STRUCT
     - [X] MACROS VS FUNÇÕES
     - [X] #DEFINE
     - [X] #INCLUDE
-    - [ ] #IF - #ENDIF
-    - [ ] #IFDEF - IFNDEF
-    - [ ] #UNDEF
+    - [X] #IF - #ENDIF
+    - [X] #IFDEF - IFNDEF
+    - [X] #UNDEF
           
 - [ ] Desafios OBI
     - [ ] DESAFIO 01
