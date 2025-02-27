@@ -1,0 +1,476 @@
+19:17:42 **** Incremental Build of configuration Debug for project Projeto Multplex Teclado ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Projeto Multplex Teclado.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Microcontroladores\Projeto Multplex Teclado\Projeto Multplex Teclado\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Multplex Teclado.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Projeto Multplex Teclado.elf
+ 
+arm-none-eabi-size  Projeto\ Multplex\ Teclado.elf 
+arm-none-eabi-objdump -h -S Projeto\ Multplex\ Teclado.elf  > "Projeto Multplex Teclado.list"
+   text	   data	    bss	    dec	    hex	filename
+   8392	     28	   1644	  10064	   2750	Projeto Multplex Teclado.elf
+Finished building: default.size.stdout
+ 
+Finished building: Projeto Multplex Teclado.list
+ 
+19:17:45 **** Incremental Build of configuration Debug for project Projeto Multplex Teclado ****
+make -j12 all 
+arm-none-eabi-size  Projeto\ Multplex\ Teclado.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8392	     28	   1644	  10064	   2750	Projeto Multplex Teclado.elf
+Finished building: default.size.stdout
+ 
+19:18:24 **** Incremental Build of configuration Debug for project Projeto Multplex Teclado ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Projeto Multplex Teclado.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Microcontroladores\Projeto Multplex Teclado\Projeto Multplex Teclado\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Multplex Teclado.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Projeto Multplex Teclado.elf
+ 
+arm-none-eabi-size  Projeto\ Multplex\ Teclado.elf 
+arm-none-eabi-objdump -h -S Projeto\ Multplex\ Teclado.elf  > "Projeto Multplex Teclado.list"
+   text	   data	    bss	    dec	    hex	filename
+   8392	     28	   1644	  10064	   2750	Projeto Multplex Teclado.elf
+Finished building: default.size.stdout
+ 
+Finished building: Projeto Multplex Teclado.list
+ 
+19:20:09 **** Incremental Build of configuration Debug for project Projeto Multplex Teclado ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Projeto Multplex Teclado.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Microcontroladores\Projeto Multplex Teclado\Projeto Multplex Teclado\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Multplex Teclado.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Projeto Multplex Teclado.elf
+ 
+arm-none-eabi-size  Projeto\ Multplex\ Teclado.elf 
+arm-none-eabi-objdump -h -S Projeto\ Multplex\ Teclado.elf  > "Projeto Multplex Teclado.list"
+   text	   data	    bss	    dec	    hex	filename
+   8408	     28	   1644	  10080	   2760	Projeto Multplex Teclado.elf
+Finished building: default.size.stdout
+ 
+Finished building: Projeto Multplex Teclado.list
+ 
+19:46:46 **** Incremental Build of configuration Debug for project Projeto Multplex Teclado ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Projeto Multplex Teclado.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Microcontroladores\Projeto Multplex Teclado\Projeto Multplex Teclado\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Multplex Teclado.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Projeto Multplex Teclado.elf
+ 
+arm-none-eabi-size  Projeto\ Multplex\ Teclado.elf 
+arm-none-eabi-objdump -h -S Projeto\ Multplex\ Teclado.elf  > "Projeto Multplex Teclado.list"
+   text	   data	    bss	    dec	    hex	filename
+   8376	     24	   1640	  10040	   2738	Projeto Multplex Teclado.elf
+Finished building: default.size.stdout
+ 
+Finished building: Projeto Multplex Teclado.list
+ 
+19:46:58 **** Incremental Build of configuration Debug for project Projeto Multplex Teclado ****
+make -j12 all 
+arm-none-eabi-size  Projeto\ Multplex\ Teclado.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8376	     24	   1640	  10040	   2738	Projeto Multplex Teclado.elf
+Finished building: default.size.stdout
+ 
+19:49:33 **** Incremental Build of configuration Debug for project Projeto Multplex Teclado ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Projeto Multplex Teclado.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Microcontroladores\Projeto Multplex Teclado\Projeto Multplex Teclado\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Multplex Teclado.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Projeto Multplex Teclado.elf
+ 
+arm-none-eabi-size  Projeto\ Multplex\ Teclado.elf 
+arm-none-eabi-objdump -h -S Projeto\ Multplex\ Teclado.elf  > "Projeto Multplex Teclado.list"
+   text	   data	    bss	    dec	    hex	filename
+   8340	     12	   1636	   9988	   2704	Projeto Multplex Teclado.elf
+Finished building: default.size.stdout
+ 
+Finished building: Projeto Multplex Teclado.list
+ 
+20:00:16 **** Incremental Build of configuration Debug for project Projeto Multplex Teclado ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32l0xx_hal_msp.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32l0xx_hal_msp.d" -MT"Core/Src/stm32l0xx_hal_msp.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32l0xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32l0xx_it.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32l0xx_it.d" -MT"Core/Src/stm32l0xx_it.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32l0xx_it.o"
+arm-none-eabi-gcc -o "Projeto Multplex Teclado.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Microcontroladores\Projeto Multplex Teclado\Projeto Multplex Teclado\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Multplex Teclado.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Projeto Multplex Teclado.elf
+ 
+arm-none-eabi-size  Projeto\ Multplex\ Teclado.elf 
+arm-none-eabi-objdump -h -S Projeto\ Multplex\ Teclado.elf  > "Projeto Multplex Teclado.list"
+   text	   data	    bss	    dec	    hex	filename
+   8412	     12	   1636	  10060	   274c	Projeto Multplex Teclado.elf
+Finished building: default.size.stdout
+ 
+Finished building: Projeto Multplex Teclado.list
+ 
+20:01:38 **** Incremental Build of configuration Debug for project Projeto Multplex Teclado ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Projeto Multplex Teclado.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Microcontroladores\Projeto Multplex Teclado\Projeto Multplex Teclado\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Multplex Teclado.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Projeto Multplex Teclado.elf
+ 
+arm-none-eabi-size  Projeto\ Multplex\ Teclado.elf 
+arm-none-eabi-objdump -h -S Projeto\ Multplex\ Teclado.elf  > "Projeto Multplex Teclado.list"
+   text	   data	    bss	    dec	    hex	filename
+   8416	     12	   1636	  10064	   2750	Projeto Multplex Teclado.elf
+Finished building: default.size.stdout
+ 
+Finished building: Projeto Multplex Teclado.list
+ 
+20:02:59 **** Incremental Build of configuration Debug for project Projeto Multplex Teclado ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Projeto Multplex Teclado.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Microcontroladores\Projeto Multplex Teclado\Projeto Multplex Teclado\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Multplex Teclado.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Projeto Multplex Teclado.elf
+ 
+arm-none-eabi-size  Projeto\ Multplex\ Teclado.elf 
+arm-none-eabi-objdump -h -S Projeto\ Multplex\ Teclado.elf  > "Projeto Multplex Teclado.list"
+   text	   data	    bss	    dec	    hex	filename
+   8440	     12	   1636	  10088	   2768	Projeto Multplex Teclado.elf
+Finished building: default.size.stdout
+ 
+Finished building: Projeto Multplex Teclado.list
+ 
+20:04:41 **** Incremental Build of configuration Debug for project Projeto Multplex Teclado ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Projeto Multplex Teclado.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Microcontroladores\Projeto Multplex Teclado\Projeto Multplex Teclado\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Multplex Teclado.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Projeto Multplex Teclado.elf
+ 
+arm-none-eabi-size  Projeto\ Multplex\ Teclado.elf 
+arm-none-eabi-objdump -h -S Projeto\ Multplex\ Teclado.elf  > "Projeto Multplex Teclado.list"
+   text	   data	    bss	    dec	    hex	filename
+   8480	     24	   1640	  10144	   27a0	Projeto Multplex Teclado.elf
+Finished building: default.size.stdout
+ 
+Finished building: Projeto Multplex Teclado.list
+ 
+20:05:42 **** Incremental Build of configuration Debug for project Projeto Multplex Teclado ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Projeto Multplex Teclado.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Microcontroladores\Projeto Multplex Teclado\Projeto Multplex Teclado\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Multplex Teclado.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Projeto Multplex Teclado.elf
+ 
+arm-none-eabi-size  Projeto\ Multplex\ Teclado.elf 
+arm-none-eabi-objdump -h -S Projeto\ Multplex\ Teclado.elf  > "Projeto Multplex Teclado.list"
+   text	   data	    bss	    dec	    hex	filename
+   8476	     24	   1640	  10140	   279c	Projeto Multplex Teclado.elf
+Finished building: default.size.stdout
+ 
+Finished building: Projeto Multplex Teclado.list
+ 
+20:05:53 **** Incremental Build of configuration Debug for project Projeto Multplex Teclado ****
+make -j12 all 
+arm-none-eabi-size  Projeto\ Multplex\ Teclado.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8476	     24	   1640	  10140	   279c	Projeto Multplex Teclado.elf
+Finished building: default.size.stdout
+ 
+20:07:02 **** Incremental Build of configuration Debug for project Projeto Multplex Teclado ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Projeto Multplex Teclado.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Microcontroladores\Projeto Multplex Teclado\Projeto Multplex Teclado\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Multplex Teclado.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Projeto Multplex Teclado.elf
+ 
+arm-none-eabi-size  Projeto\ Multplex\ Teclado.elf 
+arm-none-eabi-objdump -h -S Projeto\ Multplex\ Teclado.elf  > "Projeto Multplex Teclado.list"
+   text	   data	    bss	    dec	    hex	filename
+   8788	     24	   1640	  10452	   28d4	Projeto Multplex Teclado.elf
+Finished building: default.size.stdout
+ 
+Finished building: Projeto Multplex Teclado.list
+ 
+20:10:13 **** Incremental Build of configuration Debug for project Projeto Multplex Teclado ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Projeto Multplex Teclado.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Microcontroladores\Projeto Multplex Teclado\Projeto Multplex Teclado\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Multplex Teclado.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Projeto Multplex Teclado.elf
+ 
+arm-none-eabi-size  Projeto\ Multplex\ Teclado.elf 
+arm-none-eabi-objdump -h -S Projeto\ Multplex\ Teclado.elf  > "Projeto Multplex Teclado.list"
+   text	   data	    bss	    dec	    hex	filename
+   8740	     24	   1640	  10404	   28a4	Projeto Multplex Teclado.elf
+Finished building: default.size.stdout
+ 
+Finished building: Projeto Multplex Teclado.list
+ 
+20:12:48 **** Incremental Build of configuration Debug for project Projeto Multplex Teclado ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Projeto Multplex Teclado.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Microcontroladores\Projeto Multplex Teclado\Projeto Multplex Teclado\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Multplex Teclado.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Projeto Multplex Teclado.elf
+ 
+arm-none-eabi-size  Projeto\ Multplex\ Teclado.elf 
+arm-none-eabi-objdump -h -S Projeto\ Multplex\ Teclado.elf  > "Projeto Multplex Teclado.list"
+   text	   data	    bss	    dec	    hex	filename
+   8364	     24	   1640	  10028	   272c	Projeto Multplex Teclado.elf
+Finished building: default.size.stdout
+ 
+Finished building: Projeto Multplex Teclado.list
+ 
+20:18:50 **** Incremental Build of configuration Debug for project Projeto Multplex Teclado ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Projeto Multplex Teclado.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Microcontroladores\Projeto Multplex Teclado\Projeto Multplex Teclado\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Multplex Teclado.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Projeto Multplex Teclado.elf
+ 
+arm-none-eabi-size  Projeto\ Multplex\ Teclado.elf 
+arm-none-eabi-objdump -h -S Projeto\ Multplex\ Teclado.elf  > "Projeto Multplex Teclado.list"
+   text	   data	    bss	    dec	    hex	filename
+   8376	     24	   1640	  10040	   2738	Projeto Multplex Teclado.elf
+Finished building: default.size.stdout
+ 
+Finished building: Projeto Multplex Teclado.list
+ 
+20:20:25 **** Incremental Build of configuration Debug for project Projeto Multplex Teclado ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Projeto Multplex Teclado.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Microcontroladores\Projeto Multplex Teclado\Projeto Multplex Teclado\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Multplex Teclado.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Projeto Multplex Teclado.elf
+ 
+arm-none-eabi-size  Projeto\ Multplex\ Teclado.elf 
+arm-none-eabi-objdump -h -S Projeto\ Multplex\ Teclado.elf  > "Projeto Multplex Teclado.list"
+   text	   data	    bss	    dec	    hex	filename
+   8380	     24	   1640	  10044	   273c	Projeto Multplex Teclado.elf
+Finished building: default.size.stdout
+ 
+Finished building: Projeto Multplex Teclado.list
+ 
+20:21:53 **** Incremental Build of configuration Debug for project Projeto Multplex Teclado ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Projeto Multplex Teclado.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Microcontroladores\Projeto Multplex Teclado\Projeto Multplex Teclado\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Multplex Teclado.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Projeto Multplex Teclado.elf
+ 
+arm-none-eabi-size  Projeto\ Multplex\ Teclado.elf 
+arm-none-eabi-objdump -h -S Projeto\ Multplex\ Teclado.elf  > "Projeto Multplex Teclado.list"
+   text	   data	    bss	    dec	    hex	filename
+   8380	     24	   1640	  10044	   273c	Projeto Multplex Teclado.elf
+Finished building: default.size.stdout
+ 
+Finished building: Projeto Multplex Teclado.list
+ 
+20:23:11 **** Incremental Build of configuration Debug for project Projeto Multplex Teclado ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Projeto Multplex Teclado.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Microcontroladores\Projeto Multplex Teclado\Projeto Multplex Teclado\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Multplex Teclado.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Projeto Multplex Teclado.elf
+ 
+arm-none-eabi-size  Projeto\ Multplex\ Teclado.elf 
+arm-none-eabi-objdump -h -S Projeto\ Multplex\ Teclado.elf  > "Projeto Multplex Teclado.list"
+   text	   data	    bss	    dec	    hex	filename
+   8432	     24	   1640	  10096	   2770	Projeto Multplex Teclado.elf
+Finished building: default.size.stdout
+ 
+Finished building: Projeto Multplex Teclado.list
+ 
+20:24:48 **** Incremental Build of configuration Debug for project Projeto Multplex Teclado ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Projeto Multplex Teclado.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Microcontroladores\Projeto Multplex Teclado\Projeto Multplex Teclado\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Multplex Teclado.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Projeto Multplex Teclado.elf
+ 
+arm-none-eabi-size  Projeto\ Multplex\ Teclado.elf 
+arm-none-eabi-objdump -h -S Projeto\ Multplex\ Teclado.elf  > "Projeto Multplex Teclado.list"
+   text	   data	    bss	    dec	    hex	filename
+   8376	     24	   1640	  10040	   2738	Projeto Multplex Teclado.elf
+Finished building: default.size.stdout
+ 
+Finished building: Projeto Multplex Teclado.list
+ 
+20:26:07 **** Incremental Build of configuration Debug for project Projeto Multplex Teclado ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Projeto Multplex Teclado.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Microcontroladores\Projeto Multplex Teclado\Projeto Multplex Teclado\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Multplex Teclado.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Projeto Multplex Teclado.elf
+ 
+arm-none-eabi-size  Projeto\ Multplex\ Teclado.elf 
+arm-none-eabi-objdump -h -S Projeto\ Multplex\ Teclado.elf  > "Projeto Multplex Teclado.list"
+   text	   data	    bss	    dec	    hex	filename
+   8376	     24	   1640	  10040	   2738	Projeto Multplex Teclado.elf
+Finished building: default.size.stdout
+ 
+Finished building: Projeto Multplex Teclado.list
+ 
+20:27:04 **** Incremental Build of configuration Debug for project Projeto Multplex Teclado ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Projeto Multplex Teclado.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Microcontroladores\Projeto Multplex Teclado\Projeto Multplex Teclado\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Multplex Teclado.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Projeto Multplex Teclado.elf
+ 
+arm-none-eabi-size  Projeto\ Multplex\ Teclado.elf 
+arm-none-eabi-objdump -h -S Projeto\ Multplex\ Teclado.elf  > "Projeto Multplex Teclado.list"
+   text	   data	    bss	    dec	    hex	filename
+   8416	     24	   1640	  10080	   2760	Projeto Multplex Teclado.elf
+Finished building: default.size.stdout
+ 
+Finished building: Projeto Multplex Teclado.list
+ 
+20:29:21 **** Incremental Build of configuration Debug for project Projeto Multplex Teclado ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'VerifyPress':
+../Core/Src/main.c:303:58: error: 'tmap' undeclared (first use in this function); did you mean 'tamp'?
+  303 |         if              (!bline_1) {line = 0; response = tmap[colum][line];}
+      |                                                          ^~~~
+      |                                                          tamp
+../Core/Src/main.c:303:58: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+20:29:44 **** Incremental Build of configuration Debug for project Projeto Multplex Teclado ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Projeto Multplex Teclado.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Microcontroladores\Projeto Multplex Teclado\Projeto Multplex Teclado\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Multplex Teclado.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Projeto Multplex Teclado.elf
+ 
+arm-none-eabi-size  Projeto\ Multplex\ Teclado.elf 
+arm-none-eabi-objdump -h -S Projeto\ Multplex\ Teclado.elf  > "Projeto Multplex Teclado.list"
+   text	   data	    bss	    dec	    hex	filename
+   8432	     24	   1640	  10096	   2770	Projeto Multplex Teclado.elf
+Finished building: default.size.stdout
+ 
+Finished building: Projeto Multplex Teclado.list
+ 
+20:31:44 **** Incremental Build of configuration Debug for project Projeto Multplex Teclado ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'ReadKeyboard':
+../Core/Src/main.c:274:25: error: too many arguments to function 'VerifyPress'
+  274 |                         VerifyPress(colum);
+      |                         ^~~~~~~~~~~
+../Core/Src/main.c:70:6: note: declared here
+   70 | void VerifyPress(void);
+      |      ^~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+20:31:54 **** Incremental Build of configuration Debug for project Projeto Multplex Teclado ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Projeto Multplex Teclado.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Microcontroladores\Projeto Multplex Teclado\Projeto Multplex Teclado\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Multplex Teclado.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Projeto Multplex Teclado.elf
+ 
+arm-none-eabi-size  Projeto\ Multplex\ Teclado.elf 
+arm-none-eabi-objdump -h -S Projeto\ Multplex\ Teclado.elf  > "Projeto Multplex Teclado.list"
+   text	   data	    bss	    dec	    hex	filename
+   8432	     24	   1640	  10096	   2770	Projeto Multplex Teclado.elf
+Finished building: default.size.stdout
+ 
+Finished building: Projeto Multplex Teclado.list
+ 
+20:33:28 **** Incremental Build of configuration Debug for project Projeto Multplex Teclado ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Projeto Multplex Teclado.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Microcontroladores\Projeto Multplex Teclado\Projeto Multplex Teclado\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Multplex Teclado.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Projeto Multplex Teclado.elf
+ 
+arm-none-eabi-size  Projeto\ Multplex\ Teclado.elf 
+arm-none-eabi-objdump -h -S Projeto\ Multplex\ Teclado.elf  > "Projeto Multplex Teclado.list"
+   text	   data	    bss	    dec	    hex	filename
+   8416	     24	   1640	  10080	   2760	Projeto Multplex Teclado.elf
+Finished building: default.size.stdout
+ 
+Finished building: Projeto Multplex Teclado.list
+ 
+20:35:20 **** Incremental Build of configuration Debug for project Projeto Multplex Teclado ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Projeto Multplex Teclado.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Microcontroladores\Projeto Multplex Teclado\Projeto Multplex Teclado\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Multplex Teclado.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Projeto Multplex Teclado.elf
+ 
+arm-none-eabi-size  Projeto\ Multplex\ Teclado.elf 
+arm-none-eabi-objdump -h -S Projeto\ Multplex\ Teclado.elf  > "Projeto Multplex Teclado.list"
+   text	   data	    bss	    dec	    hex	filename
+   8356	     24	   1640	  10020	   2724	Projeto Multplex Teclado.elf
+Finished building: default.size.stdout
+ 
+Finished building: Projeto Multplex Teclado.list
+ 
+20:36:47 **** Incremental Build of configuration Debug for project Projeto Multplex Teclado ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Projeto Multplex Teclado.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Microcontroladores\Projeto Multplex Teclado\Projeto Multplex Teclado\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Multplex Teclado.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Projeto Multplex Teclado.elf
+ 
+arm-none-eabi-size  Projeto\ Multplex\ Teclado.elf 
+arm-none-eabi-objdump -h -S Projeto\ Multplex\ Teclado.elf  > "Projeto Multplex Teclado.list"
+   text	   data	    bss	    dec	    hex	filename
+   8356	     24	   1640	  10020	   2724	Projeto Multplex Teclado.elf
+Finished building: default.size.stdout
+ 
+Finished building: Projeto Multplex Teclado.list
+ 
+20:36:57 **** Incremental Build of configuration Debug for project Projeto Multplex Teclado ****
+make -j12 all 
+arm-none-eabi-size  Projeto\ Multplex\ Teclado.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8356	     24	   1640	  10020	   2724	Projeto Multplex Teclado.elf
+Finished building: default.size.stdout
+ 
+20:37:30 **** Incremental Build of configuration Debug for project Projeto Multplex Teclado ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:51:37: warning: excess elements in array initializer
+   51 | char tmap[4][3] =  {{'1', '4', '7', '*'},
+      |                                     ^~~
+../Core/Src/main.c:51:37: note: (near initialization for 'tmap[0]')
+../Core/Src/main.c:52:57: warning: excess elements in array initializer
+   52 |                                         {'2', '5', '8', '0'},
+      |                                                         ^~~
+../Core/Src/main.c:52:57: note: (near initialization for 'tmap[1]')
+../Core/Src/main.c:53:57: warning: excess elements in array initializer
+   53 |                                         {'3', '6', '9', '#'}};
+      |                                                         ^~~
+../Core/Src/main.c:53:57: note: (near initialization for 'tmap[2]')
+arm-none-eabi-gcc -o "Projeto Multplex Teclado.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Microcontroladores\Projeto Multplex Teclado\Projeto Multplex Teclado\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Multplex Teclado.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Projeto Multplex Teclado.elf
+ 
+arm-none-eabi-size  Projeto\ Multplex\ Teclado.elf 
+arm-none-eabi-objdump -h -S Projeto\ Multplex\ Teclado.elf  > "Projeto Multplex Teclado.list"
+   text	   data	    bss	    dec	    hex	filename
+   8372	     24	   1640	  10036	   2734	Projeto Multplex Teclado.elf
+Finished building: default.size.stdout
+ 
+Finished building: Projeto Multplex Teclado.list
+ 
+20:40:00 **** Incremental Build of configuration Debug for project Projeto Multplex Teclado ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'ReadKeyboard':
+../Core/Src/main.c:273:25: error: too many arguments to function 'VerifyPress'
+  273 |                         VerifyPress(colum);
+      |                         ^~~~~~~~~~~
+../Core/Src/main.c:70:6: note: declared here
+   70 | void VerifyPress(void);
+      |      ^~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+20:40:12 **** Incremental Build of configuration Debug for project Projeto Multplex Teclado ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Projeto Multplex Teclado.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Microcontroladores\Projeto Multplex Teclado\Projeto Multplex Teclado\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Multplex Teclado.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Projeto Multplex Teclado.elf
+ 
+arm-none-eabi-size  Projeto\ Multplex\ Teclado.elf 
+arm-none-eabi-objdump -h -S Projeto\ Multplex\ Teclado.elf  > "Projeto Multplex Teclado.list"
+   text	   data	    bss	    dec	    hex	filename
+   8432	     24	   1640	  10096	   2770	Projeto Multplex Teclado.elf
+Finished building: default.size.stdout
+ 
+Finished building: Projeto Multplex Teclado.list
+ 
+20:41:58 **** Incremental Build of configuration Debug for project Projeto Multplex Teclado ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Projeto Multplex Teclado.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Microcontroladores\Projeto Multplex Teclado\Projeto Multplex Teclado\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Multplex Teclado.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Projeto Multplex Teclado.elf
+ 
+arm-none-eabi-size  Projeto\ Multplex\ Teclado.elf 
+arm-none-eabi-objdump -h -S Projeto\ Multplex\ Teclado.elf  > "Projeto Multplex Teclado.list"
+   text	   data	    bss	    dec	    hex	filename
+   8416	     24	   1640	  10080	   2760	Projeto Multplex Teclado.elf
+Finished building: default.size.stdout
+ 
+Finished building: Projeto Multplex Teclado.list
+ 
+20:43:05 **** Incremental Build of configuration Debug for project Projeto Multplex Teclado ****
+make -j12 all 
+arm-none-eabi-size  Projeto\ Multplex\ Teclado.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8416	     24	   1640	  10080	   2760	Projeto Multplex Teclado.elf
+Finished building: default.size.stdout
+ 

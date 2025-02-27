@@ -1,0 +1,10 @@
+20:43:05 **** Incremental Build of configuration Debug for project Projeto Multplex Teclado ****
+make -j12 all 
+arm-none-eabi-size  Projeto\ Multplex\ Teclado.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8416	     24	   1640	  10080	   2760	Projeto Multplex Teclado.elf
+Finished building: default.size.stdout
+ 
+
+20:43:05 Build Finished. 0 errors, 0 warnings. (took 315ms)
+
