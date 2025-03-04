@@ -1,8 +1,9 @@
-../Core/Src/main.c:90:5:main	3
-../Core/Src/main.c:149:6:SystemClock_Config	3
-../Core/Src/main.c:189:6:HAL_TIM_PeriodElapsedCallback	2
-../Core/Src/main.c:193:6:Keyboard_check	1
-../Core/Src/main.c:197:6:Show_disp	1
-../Core/Src/main.c:207:6:Verify_disp	5
-../Core/Src/main.c:231:6:Twist_disp	8
-../Core/Src/main.c:272:6:Error_Handler	1
+../Core/Src/main.c:103:5:main	4
+../Core/Src/main.c:164:6:SystemClock_Config	3
+../Core/Src/main.c:204:6:HAL_TIM_PeriodElapsedCallback	2
+../Core/Src/main.c:208:6:Keyboard_check	5
+../Core/Src/main.c:249:6:Line_Check	8
+../Core/Src/main.c:280:6:Show_disp	1
+../Core/Src/main.c:290:6:Verify_disp	5
+../Core/Src/main.c:314:6:Twist_disp	12
+../Core/Src/main.c:360:6:Error_Handler	1

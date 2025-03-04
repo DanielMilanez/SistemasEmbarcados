@@ -48,6 +48,7 @@
 uint8_t count 	  		= 0,
 		countDeca 		= 0,
 		countCent 		= 0,
+		miliseconds     = 0,
 		atualDisp 		= 0,
 		setMode   		= 0,
 		newState    	= 1,
@@ -56,6 +57,8 @@ uint8_t count 	  		= 0,
 		boucingTime 	= 0,
 		brefBoucingTime = 0,
 		atualColumn     = 0;
+
+char result = 0;
 
 char numbers[10][7] = { {1, 1, 1, 1, 1, 1, 0},  // count = 0
 						{0, 1, 1, 0, 0, 0, 0},  // count = 1
@@ -67,14 +70,24 @@ char numbers[10][7] = { {1, 1, 1, 1, 1, 1, 0},  // count = 0
 						{1, 1, 1, 0, 0, 0, 0},  // count = 7
 						{1, 1, 1, 1, 1, 1, 1},  // count = 8
 						{1, 1, 1, 1, 0, 1, 1}}; // count = 9
+
+uint8_t tmap[4][3] = {
+					{3, 2, 1},
+					{6, 5, 4},
+					{9, 8, 7},
+					{10, 0, 12}
+				  };
+
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 /* USER CODE BEGIN PFP */
-void Verify_disp(void);
 void Twist_disp(void);
+void Verify_disp(void);
+void Keyboard_check(void);
 void Show_disp(uint8_t atualCount);
+void Line_Check(GPIO_TypeDef *GPIOx, uint16_t GPIO_Pin, uint8_t atualLine, uint8_t atualColumn);
 
 /* USER CODE END PFP */
 
@@ -122,6 +135,8 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+	  if (setMode) Keyboard_check();
+
 	  bset = HAL_GPIO_ReadPin(SET_BTN_GPIO_Port, SET_BTN_Pin);
 
 	  if (!bset){
@@ -187,11 +202,79 @@ void SystemClock_Config(void)
 
 /* USER CODE BEGIN 4 */
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
-	if (!setMode)count++;
+	if (!setMode) miliseconds++;
 }
 
 void Keyboard_check(void){
+	switch(atualColumn){
+		case 0:
+			HAL_GPIO_WritePin(COLUMN_01_GPIO_Port, COLUMN_01_Pin, 0);
+			HAL_GPIO_WritePin(COLUMN_02_GPIO_Port, COLUMN_02_Pin, 1);
+			HAL_GPIO_WritePin(COLUMN_03_GPIO_Port, COLUMN_03_Pin, 1);
 
+			Line_Check(LINE_01_GPIO_Port, LINE_01_Pin, 0, 0);
+			Line_Check(LINE_02_GPIO_Port, LINE_02_Pin, 1, 0);
+			Line_Check(LINE_03_GPIO_Port, LINE_03_Pin, 2, 0);
+			Line_Check(LINE_04_GPIO_Port, LINE_04_Pin, 3, 0);
+
+			atualColumn = 1;
+			break;
+		case 1:
+			HAL_GPIO_WritePin(COLUMN_01_GPIO_Port, COLUMN_01_Pin, 1);
+			HAL_GPIO_WritePin(COLUMN_02_GPIO_Port, COLUMN_02_Pin, 0);
+			HAL_GPIO_WritePin(COLUMN_03_GPIO_Port, COLUMN_03_Pin, 1);
+
+			Line_Check(LINE_01_GPIO_Port, LINE_01_Pin, 0, 1);
+			Line_Check(LINE_02_GPIO_Port, LINE_02_Pin, 1, 1);
+			Line_Check(LINE_03_GPIO_Port, LINE_03_Pin, 2, 1);
+			Line_Check(LINE_04_GPIO_Port, LINE_04_Pin, 3, 1);
+
+			atualColumn = 2;
+			break;
+		case 2:
+			HAL_GPIO_WritePin(COLUMN_01_GPIO_Port, COLUMN_01_Pin, 1);
+			HAL_GPIO_WritePin(COLUMN_02_GPIO_Port, COLUMN_02_Pin, 1);
+			HAL_GPIO_WritePin(COLUMN_03_GPIO_Port, COLUMN_03_Pin, 0);
+
+			Line_Check(LINE_01_GPIO_Port, LINE_01_Pin, 0, 2);
+			Line_Check(LINE_02_GPIO_Port, LINE_02_Pin, 1, 2);
+			Line_Check(LINE_03_GPIO_Port, LINE_03_Pin, 2, 2);
+			Line_Check(LINE_04_GPIO_Port, LINE_04_Pin, 3, 2);
+
+			atualColumn = 0;
+			break;
+	}
+}
+
+void Line_Check(GPIO_TypeDef *GPIOx, uint16_t GPIO_Pin, uint8_t atualLine, uint8_t atualColumn){
+	int bline = HAL_GPIO_ReadPin(GPIOx, GPIO_Pin);
+
+	if (!bline){
+		boucingTime = HAL_GetTick();
+
+		if (boucingTime - brefBoucingTime > DELAY_BOUCING){
+			result = tmap[atualLine][atualColumn];
+
+			switch(result){
+				case 10:
+					atualDisp++;
+					break;
+
+				case 12:
+					atualDisp--;
+					break;
+
+				default:
+					if (atualDisp == 0) countCent = result;
+					if (atualDisp == 1) countDeca = result;
+					if (atualDisp == 2) count     = result;
+			}
+
+
+		}
+
+		brefBoucingTime = boucingTime;
+	}
 }
 
 void Show_disp(uint8_t atualCount){
@@ -206,24 +289,24 @@ void Show_disp(uint8_t atualCount){
 
 void Verify_disp(void){
 	switch(atualDisp){
-	case 0:
-		HAL_GPIO_WritePin(DISP_01_GPIO_Port, DISP_01_Pin, 1);
-		HAL_GPIO_WritePin(DISP_02_GPIO_Port, DISP_02_Pin, 0);
-		HAL_GPIO_WritePin(DISP_03_GPIO_Port, DISP_03_Pin, 0);
-		break;
+		case 0:
+			HAL_GPIO_WritePin(DISP_01_GPIO_Port, DISP_01_Pin, 1);
+			HAL_GPIO_WritePin(DISP_02_GPIO_Port, DISP_02_Pin, 0);
+			HAL_GPIO_WritePin(DISP_03_GPIO_Port, DISP_03_Pin, 0);
+			break;
 
-	case 1:
-		HAL_GPIO_WritePin(DISP_01_GPIO_Port, DISP_01_Pin, 0);
-		HAL_GPIO_WritePin(DISP_02_GPIO_Port, DISP_02_Pin, 1);
-		HAL_GPIO_WritePin(DISP_03_GPIO_Port, DISP_03_Pin, 0);
-		break;
+		case 1:
+			HAL_GPIO_WritePin(DISP_01_GPIO_Port, DISP_01_Pin, 0);
+			HAL_GPIO_WritePin(DISP_02_GPIO_Port, DISP_02_Pin, 1);
+			HAL_GPIO_WritePin(DISP_03_GPIO_Port, DISP_03_Pin, 0);
+			break;
 
-	case 2:
-		HAL_GPIO_WritePin(DISP_01_GPIO_Port, DISP_01_Pin, 0);
-		HAL_GPIO_WritePin(DISP_02_GPIO_Port, DISP_02_Pin, 0);
-		HAL_GPIO_WritePin(DISP_03_GPIO_Port, DISP_03_Pin, 1);
-		break;
-	}
+		case 2:
+			HAL_GPIO_WritePin(DISP_01_GPIO_Port, DISP_01_Pin, 0);
+			HAL_GPIO_WritePin(DISP_02_GPIO_Port, DISP_02_Pin, 0);
+			HAL_GPIO_WritePin(DISP_03_GPIO_Port, DISP_03_Pin, 1);
+			break;
+		}
 	// Time for stable info.
 	HAL_Delay(1);
 }
@@ -233,20 +316,25 @@ void Twist_disp(void){
 		case 0:
 			Show_disp(countCent);
 			Verify_disp();
-			atualDisp = 1;
+			if (!setMode) atualDisp = 1;
 			break;
 
 		case 1:
 			Show_disp(countDeca);
 			Verify_disp();
-			atualDisp = 2;
+			if (!setMode) atualDisp = 2;
 			break;
 
 		case 2:
 			Show_disp(count);
 			Verify_disp();
-			atualDisp = 0;
+			if (!setMode) atualDisp = 0;
 			break;
+	}
+
+	if (miliseconds >= 100){
+		miliseconds = 0;
+		count++;
 	}
 
 	if (count >= 10){
