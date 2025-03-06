@@ -267,6 +267,8 @@ void Twist_state(void){
 	  HAL_GPIO_WritePin(LPIN_07_GPIO_Port, LPIN_07_Pin, 1);
 	  HAL_GPIO_WritePin(LPIN_10_GPIO_Port, LPIN_10_Pin, 1);
 
+	  /////////////////////////////////////////////////////
+
 	  HAL_GPIO_WritePin(RPIN_02_GPIO_Port, RPIN_02_Pin, 0);
 	  HAL_GPIO_WritePin(RPIN_03_GPIO_Port, RPIN_03_Pin, 0);
 	  HAL_GPIO_WritePin(RPIN_05_GPIO_Port, RPIN_05_Pin, 0);

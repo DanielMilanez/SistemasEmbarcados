@@ -1,7 +1,0 @@
-../Core/Src/main.c:93:5:main	8	static
-../Core/Src/main.c:155:6:SystemClock_Config	96	static
-../Core/Src/main.c:199:13:MX_GPIO_Init	48	static
-../Core/Src/main.c:263:6:show_dsplay	16	static
-../Core/Src/main.c:273:5:altern_disp	16	static
-../Core/Src/main.c:295:6:btn_functions	8	static
-../Core/Src/main.c:382:6:Error_Handler	8	static,ignoring_inline_asm
