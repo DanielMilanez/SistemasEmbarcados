@@ -1,0 +1,17 @@
+14:50:47 **** Incremental Build of configuration Debug for project Projeto matriz RGB ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Projeto matriz RGB.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\danie\OneDrive\Desktop\Microcontroladores\Microcontroladores\Projeto matriz RGB\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto matriz RGB.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Projeto matriz RGB.elf
+ 
+arm-none-eabi-size  Projeto\ matriz\ RGB.elf 
+arm-none-eabi-objdump -h -S Projeto\ matriz\ RGB.elf  > "Projeto matriz RGB.list"
+   text	   data	    bss	    dec	    hex	filename
+   8164	     12	   1636	   9812	   2654	Projeto matriz RGB.elf
+Finished building: default.size.stdout
+ 
+Finished building: Projeto matriz RGB.list
+ 
+
+14:50:48 Build Finished. 0 errors, 0 warnings. (took 1s.136ms)
+
