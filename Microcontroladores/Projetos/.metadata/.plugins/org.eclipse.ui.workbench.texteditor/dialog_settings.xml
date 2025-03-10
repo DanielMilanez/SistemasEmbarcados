@@ -6,6 +6,10 @@
 		<item value="HAL_GPIO_WritePin"/>
 	</list>
 	<list key="searchhistory">
+		<item value="logon"/>
+		<item value="password"/>
+		<item value="flag = 0;"/>
+		<item value="flag = 0"/>
 		<item value="HAL_GPIO_TogglePin"/>
 	</list>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">

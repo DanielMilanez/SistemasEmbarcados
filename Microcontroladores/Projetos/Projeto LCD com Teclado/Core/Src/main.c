@@ -21,7 +21,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include <string.h>
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -56,9 +56,20 @@ TIM_HandleTypeDef htim6;
 /* USER CODE BEGIN PV */
 filter port;
 
-uint8_t atualColumn = 0, bline_1, bline_2, bline_3, bline_4;
+uint8_t atualColumn = 0,
+		bline_1,
+		bline_2,
+		bline_3,
+		bline_4,
+		word_count = 0,
+		logonAble = 0,
+		atualMenu = 1,
+		flag = 1;
 
-char response = 0;
+char response = 0,
+		login = 0;
+
+char password[5] = "";
 char tmap[4][3] = {
 					{'1', '2', '3'},
 					{'4', '5', '6'},
@@ -80,8 +91,10 @@ void Line_verify(uint8_t atual_column);
 
 // Funções para o LCD
 void Start_LCD(void);
-void Controler_LCD(uint8_t data, uint8_t gate);
+void Menu_system(void);
+void Process_Password(void);
 void Mensage_LCD(char *mensage);
+void Controler_LCD(uint8_t data, uint8_t gate);
 
 // Configurações para o LCD
 
@@ -134,11 +147,7 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1) {
 	  Keyboard_check();
-
-	  Controler_LCD(0x80, 0);
-	  Mensage_LCD("Digite sua senha: ");
-	  Controler_LCD(0xC0, 0);
-	  Mensage_LCD(&response);
+	  Menu_system();
     /* USER CODE END WHILE */
     /* USER CODE BEGIN 3 */
   }
@@ -306,63 +315,11 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
 
 }
 
-// Funções para o teclado
-void Keyboard_check(void){
-	switch(atualColumn){
-		// Configurados em PULL-UP
-		case 0:
-			HAL_GPIO_WritePin(COLUMN_01_GPIO_Port, COLUMN_01_Pin, 0);
-			HAL_GPIO_WritePin(COLUMN_02_GPIO_Port, COLUMN_02_Pin, 1);
-			HAL_GPIO_WritePin(COLUMN_03_GPIO_Port, COLUMN_03_Pin, 1);
-			Line_verify(0);
-
-			atualColumn = 1;
-		case 1:
-			HAL_GPIO_WritePin(COLUMN_01_GPIO_Port, COLUMN_01_Pin, 1);
-			HAL_GPIO_WritePin(COLUMN_02_GPIO_Port, COLUMN_02_Pin, 0);
-			HAL_GPIO_WritePin(COLUMN_03_GPIO_Port, COLUMN_03_Pin, 1);
-			Line_verify(1);
-
-			atualColumn = 2;
-		case 2:
-			HAL_GPIO_WritePin(COLUMN_01_GPIO_Port, COLUMN_01_Pin, 1);
-			HAL_GPIO_WritePin(COLUMN_02_GPIO_Port, COLUMN_02_Pin, 1);
-			HAL_GPIO_WritePin(COLUMN_03_GPIO_Port, COLUMN_03_Pin, 0);
-			Line_verify(2);
-
-			atualColumn = 0;
-	}
-}
-
-void Line_verify(uint8_t atual_column){
-	bline_1 = HAL_GPIO_ReadPin(LINE_01_GPIO_Port, LINE_01_Pin),
-	bline_2 = HAL_GPIO_ReadPin(LINE_02_GPIO_Port, LINE_02_Pin),
-	bline_3 = HAL_GPIO_ReadPin(LINE_03_GPIO_Port, LINE_03_Pin),
-	bline_4 = HAL_GPIO_ReadPin(LINE_04_GPIO_Port, LINE_04_Pin);
-
-	if (!bline_1) {
-		response = tmap[atualColumn][0];
-	}
-
-	else if (!bline_2) {
-		response = tmap[atualColumn][1];
-	}
-
-	else if (!bline_3) {
-		response = tmap[atualColumn][2];
-	}
-
-	else if (!bline_4) {
-		response = tmap[atualColumn][3];
-	}
-}
-
 // Funções para o LCD
 void Start_LCD(void){
-	Controler_LCD(0x30, 0);
-	Controler_LCD(0x30, 0);
-	Controler_LCD(0x30, 0);
-	Controler_LCD(0x38, 0);
+	Controler_LCD(0x33, 0);
+	Controler_LCD(0x32, 0);
+	Controler_LCD(0x28, 0);
 
 //	Controler_LCD(0x0F, 0); // 0x0D
 	Controler_LCD(0x0C, 0);
@@ -370,12 +327,104 @@ void Start_LCD(void){
 	Controler_LCD(0x01, 0);
 }
 
-void Mensage_LCD(char *mensage){
-	for (int i = 0; mensage[i] != '\0'; ++i){
-		Controler_LCD(mensage[i], 1);
+// Funções para o teclado
+void Keyboard_check(void){
+	switch(atualColumn){
+		case 0:
+			HAL_GPIO_WritePin(COLUMN_01_GPIO_Port, COLUMN_01_Pin, 0);
+			HAL_GPIO_WritePin(COLUMN_02_GPIO_Port, COLUMN_02_Pin, 1);
+			HAL_GPIO_WritePin(COLUMN_03_GPIO_Port, COLUMN_03_Pin, 1);
+			Line_verify(0);
+			atualColumn = 1;
+			break;
+
+		case 1:
+			HAL_GPIO_WritePin(COLUMN_01_GPIO_Port, COLUMN_01_Pin, 1);
+			HAL_GPIO_WritePin(COLUMN_02_GPIO_Port, COLUMN_02_Pin, 0);
+			HAL_GPIO_WritePin(COLUMN_03_GPIO_Port, COLUMN_03_Pin, 1);
+			Line_verify(1);
+			atualColumn = 2;
+			break;
+
+		case 2:
+			HAL_GPIO_WritePin(COLUMN_01_GPIO_Port, COLUMN_01_Pin, 1);
+			HAL_GPIO_WritePin(COLUMN_02_GPIO_Port, COLUMN_02_Pin, 1);
+			HAL_GPIO_WritePin(COLUMN_03_GPIO_Port, COLUMN_03_Pin, 0);
+			Line_verify(2);
+			atualColumn = 0;
+			break;
 	}
 }
 
+// Verificando botão precionado
+void Line_verify(uint8_t atual_column) {
+	bline_1 = HAL_GPIO_ReadPin(LINE_01_GPIO_Port, LINE_01_Pin);
+	bline_2 = HAL_GPIO_ReadPin(LINE_02_GPIO_Port, LINE_02_Pin);
+	bline_3 = HAL_GPIO_ReadPin(LINE_03_GPIO_Port, LINE_03_Pin);
+	bline_4 = HAL_GPIO_ReadPin(LINE_04_GPIO_Port, LINE_04_Pin);
+
+    if (!bline_1){
+    	response = tmap[0][atual_column];
+    	logonAble = 1;
+    }
+    else if (!bline_2) {
+    	response = tmap[1][atual_column];
+       	logonAble = 1;
+    }
+    else if (!bline_3){
+    	response = tmap[2][atual_column];
+       	logonAble = 1;
+    }
+    else if (!bline_4) {
+    	response = tmap[3][atual_column];
+       	logonAble = 1;
+    }
+
+    else logonAble = 0;
+    if (logonAble) Process_Password();
+}
+
+// Função para processar a entrada da senha
+void Process_Password(void) {
+	if (!flag){
+		if (logonAble && word_count < 4) {  // Limite de 4 caracteres
+			password[word_count] = response;
+			word_count++;
+			password[word_count] = '\0';  // Adiciona o terminador de string
+
+			for (uint8_t i = 0; i < word_count; i++) {
+				Mensage_LCD("*");  // Exibe um asterisco para cada caractere digitado
+				HAL_Delay(50);
+			}
+		}
+
+
+		if (word_count == 4) {  // Após 4 caracteres, verifica a senha
+			if (login == '1') {
+				if (strcmp(password, "8922") == 0) atualMenu = 3;
+				else atualMenu = 4;
+			}
+
+			if (login == '2') {
+				if (strcmp(password, "1698") == 0) atualMenu = 3;
+				else atualMenu = 4;
+			}
+
+			// Resetando variáveis
+			flag = 1;
+			word_count = 0;
+			logonAble = 0;
+			response = ' ';
+			login = '0';
+			memset(password, 0, sizeof(password));
+			Controler_LCD(0x01, 0);  // Limpa a tela
+		}
+	} else {
+		flag = 0;
+	}
+}
+
+// Controle para exibição de informações unarias no LCD
 void Controler_LCD(uint8_t data, uint8_t gate){
 	port.P0 = (data >> 0) & 1;
 	port.P1 = (data >> 1) & 1;
@@ -392,15 +441,21 @@ void Controler_LCD(uint8_t data, uint8_t gate){
 		HAL_GPIO_WritePin(RS_GPIO_Port, RS_Pin, GPIO_PIN_RESET);
 	}
 
-	HAL_GPIO_WritePin(DB0_GPIO_Port, DB0_Pin, port.P0);
-	HAL_GPIO_WritePin(DB1_GPIO_Port, DB1_Pin, port.P1);
-	HAL_GPIO_WritePin(DB2_GPIO_Port, DB2_Pin, port.P2);
-	HAL_GPIO_WritePin(DB3_GPIO_Port, DB3_Pin, port.P3);
+
 	HAL_GPIO_WritePin(DB4_GPIO_Port, DB4_Pin, port.P4);
 	HAL_GPIO_WritePin(DB5_GPIO_Port, DB5_Pin, port.P5);
 	HAL_GPIO_WritePin(DB6_GPIO_Port, DB6_Pin, port.P6);
 	HAL_GPIO_WritePin(DB7_GPIO_Port, DB7_Pin, port.P7);
 
+	HAL_Delay(1);
+	HAL_GPIO_WritePin(EN_GPIO_Port, EN_Pin, GPIO_PIN_SET);
+	HAL_Delay(1);
+	HAL_GPIO_WritePin(EN_GPIO_Port, EN_Pin, GPIO_PIN_RESET);
+
+	HAL_GPIO_WritePin(DB4_GPIO_Port, DB4_Pin, port.P0);
+	HAL_GPIO_WritePin(DB5_GPIO_Port, DB5_Pin, port.P1);
+	HAL_GPIO_WritePin(DB6_GPIO_Port, DB6_Pin, port.P2);
+	HAL_GPIO_WritePin(DB7_GPIO_Port, DB7_Pin, port.P3);
 
 	HAL_Delay(1);
 	HAL_GPIO_WritePin(EN_GPIO_Port, EN_Pin, GPIO_PIN_SET);
@@ -408,6 +463,80 @@ void Controler_LCD(uint8_t data, uint8_t gate){
 	HAL_GPIO_WritePin(EN_GPIO_Port, EN_Pin, GPIO_PIN_RESET);
 
 }
+
+// Exibindo informações compostas no LCD
+void Mensage_LCD(char *mensage){
+	for (int i = 0; mensage[i] != '\0'; ++i){
+		Controler_LCD(mensage[i], 1);
+	}
+}
+
+// Sistema de menu e paginação
+void Menu_system(void){
+	switch(atualMenu){
+		case 1:
+			Keyboard_check();
+			Controler_LCD(0x80, 0);
+			Mensage_LCD("Informe o login");
+
+			Controler_LCD(0xC0, 0);
+			Mensage_LCD(">> ");
+			login = response;
+			char login_str[2] = {login, '\0'};
+			Mensage_LCD(login_str);
+			HAL_Delay(50);
+
+			if (login == '1' || login == '2') {
+				atualMenu = 2;
+				logonAble = 1;
+				Controler_LCD(0x01, 0);
+			}
+
+			break;
+
+		case 2:
+			if (login == '1'){
+				Controler_LCD(0x80, 0);
+				Mensage_LCD("Login: ");
+				Mensage_LCD("Guto");
+			}
+
+			if (login == '2'){
+				Controler_LCD(0x80, 0);
+				Mensage_LCD("Login: ");
+				Mensage_LCD("Jhon");
+			}
+		    Controler_LCD(0xC0, 0);
+		    Mensage_LCD("Senha: ");
+			break;
+
+		case 3:
+			Controler_LCD(0x80, 0);
+			Mensage_LCD("Sucesso!!!");
+
+			Controler_LCD(0xC0, 0);
+			Mensage_LCD("Bem-Vindo");
+
+            HAL_Delay(5000);
+            Controler_LCD(0x01, 0);
+
+            atualMenu = 1;
+			break;
+
+		case 4:
+            Controler_LCD(0x01, 0);
+            Controler_LCD(0x80, 0);
+
+            Mensage_LCD("Senha incorreta");
+            HAL_Delay(2000);
+
+            Controler_LCD(0x01, 0);
+            atualMenu = 1;
+
+			break;
+	}
+}
+
 
 //    ____
 //   /    \  __
