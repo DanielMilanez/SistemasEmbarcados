@@ -1,481 +1,72 @@
-15:59:46 **** Incremental Build of configuration Debug for project Projeto LCD com Teclado ****
-make -j4 all 
-arm-none-eabi-size  Projeto\ LCD\ com\ Teclado.elf 
+17:43:44 **** Incremental Build of configuration Debug for project Projeto inputcapture ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Projeto inputcapture.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto inputcapture\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto inputcapture.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Projeto inputcapture.elf
+ 
+arm-none-eabi-size  Projeto\ inputcapture.elf 
+arm-none-eabi-objdump -h -S Projeto\ inputcapture.elf  > "Projeto inputcapture.list"
    text	   data	    bss	    dec	    hex	filename
-  10320	     28	   1652	  12000	   2ee0	Projeto LCD com Teclado.elf
+  10068	     12	   1652	  11732	   2dd4	Projeto inputcapture.elf
 Finished building: default.size.stdout
  
-16:09:15 **** Incremental Build of configuration Debug for project Projeto LCD com Teclado ****
-make -j4 all 
+Finished building: Projeto inputcapture.list
+ 
+17:44:13 **** Incremental Build of configuration Debug for project Projeto inputcapture ****
+make -j12 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'Process_Password':
-../Core/Src/main.c:368:17: warning: array subscript has type 'char' [-Wchar-subscripts]
-  368 |         password[word_count] = response;
-      |                 ^
-../Core/Src/main.c:370:17: warning: array subscript has type 'char' [-Wchar-subscripts]
-  370 |         password[word_count] = '\0';
-      |                 ^
-arm-none-eabi-gcc -o "Projeto LCD com Teclado.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\danie\OneDrive\Desktop\Microcontroladores\Microcontroladores\Projetos\Projeto LCD com Teclado\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto LCD com Teclado.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Projeto LCD com Teclado.elf
- 
-arm-none-eabi-size  Projeto\ LCD\ com\ Teclado.elf 
-arm-none-eabi-objdump -h -S Projeto\ LCD\ com\ Teclado.elf  > "Projeto LCD com Teclado.list"
-   text	   data	    bss	    dec	    hex	filename
-  10172	     28	   1652	  11852	   2e4c	Projeto LCD com Teclado.elf
-Finished building: default.size.stdout
- 
-Finished building: Projeto LCD com Teclado.list
- 
-16:09:48 **** Incremental Build of configuration Debug for project Projeto LCD com Teclado ****
-make -j4 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Projeto LCD com Teclado.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\danie\OneDrive\Desktop\Microcontroladores\Microcontroladores\Projetos\Projeto LCD com Teclado\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto LCD com Teclado.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Projeto LCD com Teclado.elf
- 
-arm-none-eabi-size  Projeto\ LCD\ com\ Teclado.elf 
-arm-none-eabi-objdump -h -S Projeto\ LCD\ com\ Teclado.elf  > "Projeto LCD com Teclado.list"
-   text	   data	    bss	    dec	    hex	filename
-  10172	     28	   1652	  11852	   2e4c	Projeto LCD com Teclado.elf
-Finished building: default.size.stdout
- 
-Finished building: Projeto LCD com Teclado.list
- 
-16:12:31 **** Incremental Build of configuration Debug for project Projeto LCD com Teclado ****
-make -j4 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'Process_Password':
-../Core/Src/main.c:368:9: warning: implicit declaration of function 'Reset_Password'; did you mean 'Process_Password'? [-Wimplicit-function-declaration]
-  368 |         Reset_Password();
-      |         ^~~~~~~~~~~~~~
-      |         Process_Password
-../Core/Src/main.c: At top level:
-../Core/Src/main.c:515:6: warning: conflicting types for 'Reset_Password'; have 'void(void)'
-  515 | void Reset_Password(void) {
-      |      ^~~~~~~~~~~~~~
-../Core/Src/main.c:368:9: note: previous implicit declaration of 'Reset_Password' with type 'void(void)'
-  368 |         Reset_Password();
-      |         ^~~~~~~~~~~~~~
-arm-none-eabi-gcc -o "Projeto LCD com Teclado.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\danie\OneDrive\Desktop\Microcontroladores\Microcontroladores\Projetos\Projeto LCD com Teclado\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto LCD com Teclado.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Projeto LCD com Teclado.elf
- 
-arm-none-eabi-size  Projeto\ LCD\ com\ Teclado.elf 
-arm-none-eabi-objdump -h -S Projeto\ LCD\ com\ Teclado.elf  > "Projeto LCD com Teclado.list"
-   text	   data	    bss	    dec	    hex	filename
-  10200	     28	   1652	  11880	   2e68	Projeto LCD com Teclado.elf
-Finished building: default.size.stdout
- 
-Finished building: Projeto LCD com Teclado.list
- 
-16:12:46 **** Incremental Build of configuration Debug for project Projeto LCD com Teclado ****
-make -j4 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Projeto LCD com Teclado.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\danie\OneDrive\Desktop\Microcontroladores\Microcontroladores\Projetos\Projeto LCD com Teclado\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto LCD com Teclado.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Projeto LCD com Teclado.elf
- 
-arm-none-eabi-size  Projeto\ LCD\ com\ Teclado.elf 
-arm-none-eabi-objdump -h -S Projeto\ LCD\ com\ Teclado.elf  > "Projeto LCD com Teclado.list"
-   text	   data	    bss	    dec	    hex	filename
-  10200	     28	   1652	  11880	   2e68	Projeto LCD com Teclado.elf
-Finished building: default.size.stdout
- 
-Finished building: Projeto LCD com Teclado.list
- 
-16:14:50 **** Incremental Build of configuration Debug for project Projeto LCD com Teclado ****
-make -j4 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Projeto LCD com Teclado.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\danie\OneDrive\Desktop\Microcontroladores\Microcontroladores\Projetos\Projeto LCD com Teclado\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto LCD com Teclado.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Projeto LCD com Teclado.elf
- 
-arm-none-eabi-size  Projeto\ LCD\ com\ Teclado.elf 
-arm-none-eabi-objdump -h -S Projeto\ LCD\ com\ Teclado.elf  > "Projeto LCD com Teclado.list"
-   text	   data	    bss	    dec	    hex	filename
-  10200	     28	   1652	  11880	   2e68	Projeto LCD com Teclado.elf
-Finished building: default.size.stdout
- 
-Finished building: Projeto LCD com Teclado.list
- 
-16:15:42 **** Incremental Build of configuration Debug for project Projeto LCD com Teclado ****
-make -j4 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Projeto LCD com Teclado.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\danie\OneDrive\Desktop\Microcontroladores\Microcontroladores\Projetos\Projeto LCD com Teclado\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto LCD com Teclado.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Projeto LCD com Teclado.elf
- 
-arm-none-eabi-size  Projeto\ LCD\ com\ Teclado.elf 
-arm-none-eabi-objdump -h -S Projeto\ LCD\ com\ Teclado.elf  > "Projeto LCD com Teclado.list"
-   text	   data	    bss	    dec	    hex	filename
-  10284	     28	   1652	  11964	   2ebc	Projeto LCD com Teclado.elf
-Finished building: default.size.stdout
- 
-Finished building: Projeto LCD com Teclado.list
- 
-16:22:44 **** Incremental Build of configuration Debug for project Projeto LCD com Teclado ****
-make -j4 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Projeto LCD com Teclado.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\danie\OneDrive\Desktop\Microcontroladores\Microcontroladores\Projetos\Projeto LCD com Teclado\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto LCD com Teclado.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Projeto LCD com Teclado.elf
- 
-arm-none-eabi-size  Projeto\ LCD\ com\ Teclado.elf 
-arm-none-eabi-objdump -h -S Projeto\ LCD\ com\ Teclado.elf  > "Projeto LCD com Teclado.list"
-   text	   data	    bss	    dec	    hex	filename
-  10272	     28	   1652	  11952	   2eb0	Projeto LCD com Teclado.elf
-Finished building: default.size.stdout
- 
-Finished building: Projeto LCD com Teclado.list
- 
-16:39:15 **** Incremental Build of configuration Debug for project Projeto LCD com Teclado ****
-make -j4 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'Process_Password':
-../Core/Src/main.c:378:30: warning: assignment to 'char' from 'char *' makes integer from pointer without a cast [-Wint-conversion]
-  378 |         password[word_count] = response;
-      |                              ^
-arm-none-eabi-gcc -o "Projeto LCD com Teclado.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\danie\OneDrive\Desktop\Microcontroladores\Microcontroladores\Projetos\Projeto LCD com Teclado\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto LCD com Teclado.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Projeto LCD com Teclado.elf
- 
-arm-none-eabi-size  Projeto\ LCD\ com\ Teclado.elf 
-arm-none-eabi-objdump -h -S Projeto\ LCD\ com\ Teclado.elf  > "Projeto LCD com Teclado.list"
-   text	   data	    bss	    dec	    hex	filename
-  10092	     28	   1660	  11780	   2e04	Projeto LCD com Teclado.elf
-Finished building: default.size.stdout
- 
-Finished building: Projeto LCD com Teclado.list
- 
-16:39:38 **** Incremental Build of configuration Debug for project Projeto LCD com Teclado ****
-make -j4 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Projeto LCD com Teclado.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\danie\OneDrive\Desktop\Microcontroladores\Microcontroladores\Projetos\Projeto LCD com Teclado\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto LCD com Teclado.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Projeto LCD com Teclado.elf
- 
-arm-none-eabi-size  Projeto\ LCD\ com\ Teclado.elf 
-arm-none-eabi-objdump -h -S Projeto\ LCD\ com\ Teclado.elf  > "Projeto LCD com Teclado.list"
-   text	   data	    bss	    dec	    hex	filename
-  10092	     28	   1660	  11780	   2e04	Projeto LCD com Teclado.elf
-Finished building: default.size.stdout
- 
-Finished building: Projeto LCD com Teclado.list
- 
-16:40:57 **** Incremental Build of configuration Debug for project Projeto LCD com Teclado ****
-make -j4 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'Process_Password':
-../Core/Src/main.c:408:17: error: invalid type argument of unary '*' (have 'int')
-  408 |                 *response = ' ';
-      |                 ^~~~~~~~~
+../Core/Src/main.c:50:31: error: initializer element is not constant
+   50 | uint32_t prescale_frequency = htim2.Instance->PSC;
+      |                               ^~~~~
 make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
-"make -j4 all" terminated with exit code 2. Build might be incomplete.
-16:41:08 **** Incremental Build of configuration Debug for project Projeto LCD com Teclado ****
-make -j4 all 
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+17:44:29 **** Incremental Build of configuration Debug for project Projeto inputcapture ****
+make -j12 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Projeto LCD com Teclado.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\danie\OneDrive\Desktop\Microcontroladores\Microcontroladores\Projetos\Projeto LCD com Teclado\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto LCD com Teclado.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Projeto LCD com Teclado.elf
- 
-arm-none-eabi-size  Projeto\ LCD\ com\ Teclado.elf 
-arm-none-eabi-objdump -h -S Projeto\ LCD\ com\ Teclado.elf  > "Projeto LCD com Teclado.list"
-   text	   data	    bss	    dec	    hex	filename
-  10092	     28	   1660	  11780	   2e04	Projeto LCD com Teclado.elf
-Finished building: default.size.stdout
- 
-Finished building: Projeto LCD com Teclado.list
- 
-16:41:32 **** Incremental Build of configuration Debug for project Projeto LCD com Teclado ****
-make -j4 all 
-arm-none-eabi-size  Projeto\ LCD\ com\ Teclado.elf 
-   text	   data	    bss	    dec	    hex	filename
-  10092	     28	   1660	  11780	   2e04	Projeto LCD com Teclado.elf
-Finished building: default.size.stdout
- 
-16:43:08 **** Incremental Build of configuration Debug for project Projeto LCD com Teclado ****
-make -j4 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Projeto LCD com Teclado.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\danie\OneDrive\Desktop\Microcontroladores\Microcontroladores\Projetos\Projeto LCD com Teclado\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto LCD com Teclado.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Projeto LCD com Teclado.elf
- 
-arm-none-eabi-size  Projeto\ LCD\ com\ Teclado.elf 
-arm-none-eabi-objdump -h -S Projeto\ LCD\ com\ Teclado.elf  > "Projeto LCD com Teclado.list"
-   text	   data	    bss	    dec	    hex	filename
-  10184	     28	   1660	  11872	   2e60	Projeto LCD com Teclado.elf
-Finished building: default.size.stdout
- 
-Finished building: Projeto LCD com Teclado.list
- 
-16:43:20 **** Incremental Build of configuration Debug for project Projeto LCD com Teclado ****
-make -j4 all 
-arm-none-eabi-size  Projeto\ LCD\ com\ Teclado.elf 
-   text	   data	    bss	    dec	    hex	filename
-  10184	     28	   1660	  11872	   2e60	Projeto LCD com Teclado.elf
-Finished building: default.size.stdout
- 
-16:44:36 **** Incremental Build of configuration Debug for project Projeto LCD com Teclado ****
-make -j4 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Projeto LCD com Teclado.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\danie\OneDrive\Desktop\Microcontroladores\Microcontroladores\Projetos\Projeto LCD com Teclado\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto LCD com Teclado.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Projeto LCD com Teclado.elf
- 
-arm-none-eabi-size  Projeto\ LCD\ com\ Teclado.elf 
-arm-none-eabi-objdump -h -S Projeto\ LCD\ com\ Teclado.elf  > "Projeto LCD com Teclado.list"
-   text	   data	    bss	    dec	    hex	filename
-  10056	     28	   1660	  11744	   2de0	Projeto LCD com Teclado.elf
-Finished building: default.size.stdout
- 
-Finished building: Projeto LCD com Teclado.list
- 
-16:51:22 **** Incremental Build of configuration Debug for project Projeto LCD com Teclado ****
-make -j4 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Projeto LCD com Teclado.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\danie\OneDrive\Desktop\Microcontroladores\Microcontroladores\Projetos\Projeto LCD com Teclado\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto LCD com Teclado.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Projeto LCD com Teclado.elf
- 
-arm-none-eabi-size  Projeto\ LCD\ com\ Teclado.elf 
-arm-none-eabi-objdump -h -S Projeto\ LCD\ com\ Teclado.elf  > "Projeto LCD com Teclado.list"
-   text	   data	    bss	    dec	    hex	filename
-  10080	     28	   1660	  11768	   2df8	Projeto LCD com Teclado.elf
-Finished building: default.size.stdout
- 
-Finished building: Projeto LCD com Teclado.list
- 
-16:51:27 **** Incremental Build of configuration Debug for project Projeto LCD com Teclado ****
-make -j4 all 
-arm-none-eabi-size  Projeto\ LCD\ com\ Teclado.elf 
-   text	   data	    bss	    dec	    hex	filename
-  10080	     28	   1660	  11768	   2df8	Projeto LCD com Teclado.elf
-Finished building: default.size.stdout
- 
-16:59:55 **** Incremental Build of configuration Debug for project Projeto LCD com Teclado ****
-make -j4 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'Menu_system':
-../Core/Src/main.c:489:63: error: 'logon' undeclared (first use in this function); did you mean 'login'?
-  489 |                         if ((login == '1' || login == '2') && logon){
-      |                                                               ^~~~~
-      |                                                               login
-../Core/Src/main.c:489:63: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:227:31: error: initializer element is not constant
+  227 | uint32_t prescale_frequency = htim2.Instance->PSC;
+      |                               ^~~~~
 make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
-"make -j4 all" terminated with exit code 2. Build might be incomplete.
-16:59:59 **** Incremental Build of configuration Debug for project Projeto LCD com Teclado ****
-make -j4 all 
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+17:44:47 **** Incremental Build of configuration Debug for project Projeto inputcapture ****
+make -j12 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'Menu_system':
-../Core/Src/main.c:489:63: error: 'logon' undeclared (first use in this function); did you mean 'login'?
-  489 |                         if ((login == '1' || login == '2') && logon){
-      |                                                               ^~~~~
-      |                                                               login
-../Core/Src/main.c:489:63: note: each undeclared identifier is reported only once for each function it appears in
-make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
-"make -j4 all" terminated with exit code 2. Build might be incomplete.
-17:00:21 **** Incremental Build of configuration Debug for project Projeto LCD com Teclado ****
-make -j4 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Projeto LCD com Teclado.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\danie\OneDrive\Desktop\Microcontroladores\Microcontroladores\Projetos\Projeto LCD com Teclado\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto LCD com Teclado.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Projeto LCD com Teclado.elf
+arm-none-eabi-gcc -o "Projeto inputcapture.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto inputcapture\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto inputcapture.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Projeto inputcapture.elf
  
-arm-none-eabi-size  Projeto\ LCD\ com\ Teclado.elf 
-arm-none-eabi-objdump -h -S Projeto\ LCD\ com\ Teclado.elf  > "Projeto LCD com Teclado.list"
+arm-none-eabi-size  Projeto\ inputcapture.elf 
+arm-none-eabi-objdump -h -S Projeto\ inputcapture.elf  > "Projeto inputcapture.list"
    text	   data	    bss	    dec	    hex	filename
-  10120	     28	   1660	  11808	   2e20	Projeto LCD com Teclado.elf
+  10068	     12	   1652	  11732	   2dd4	Projeto inputcapture.elf
 Finished building: default.size.stdout
  
-Finished building: Projeto LCD com Teclado.list
+Finished building: Projeto inputcapture.list
  
-17:02:15 **** Incremental Build of configuration Debug for project Projeto LCD com Teclado ****
-make -j4 all 
+17:51:11 **** Incremental Build of configuration Debug for project Projeto inputcapture ****
+make -j12 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Projeto LCD com Teclado.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\danie\OneDrive\Desktop\Microcontroladores\Microcontroladores\Projetos\Projeto LCD com Teclado\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto LCD com Teclado.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Projeto LCD com Teclado.elf
+arm-none-eabi-gcc -o "Projeto inputcapture.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto inputcapture\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto inputcapture.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Projeto inputcapture.elf
  
-arm-none-eabi-size  Projeto\ LCD\ com\ Teclado.elf 
-arm-none-eabi-objdump -h -S Projeto\ LCD\ com\ Teclado.elf  > "Projeto LCD com Teclado.list"
+arm-none-eabi-size  Projeto\ inputcapture.elf 
+arm-none-eabi-objdump -h -S Projeto\ inputcapture.elf  > "Projeto inputcapture.list"
    text	   data	    bss	    dec	    hex	filename
-  10156	     28	   1660	  11844	   2e44	Projeto LCD com Teclado.elf
+  10160	     12	   1652	  11824	   2e30	Projeto inputcapture.elf
 Finished building: default.size.stdout
  
-Finished building: Projeto LCD com Teclado.list
+Finished building: Projeto inputcapture.list
  
-17:03:16 **** Incremental Build of configuration Debug for project Projeto LCD com Teclado ****
-make -j4 all 
+17:51:52 **** Incremental Build of configuration Debug for project Projeto inputcapture ****
+make -j12 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Projeto LCD com Teclado.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\danie\OneDrive\Desktop\Microcontroladores\Microcontroladores\Projetos\Projeto LCD com Teclado\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto LCD com Teclado.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Projeto LCD com Teclado.elf
+arm-none-eabi-gcc -o "Projeto inputcapture.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto inputcapture\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto inputcapture.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Projeto inputcapture.elf
  
-arm-none-eabi-size  Projeto\ LCD\ com\ Teclado.elf 
-arm-none-eabi-objdump -h -S Projeto\ LCD\ com\ Teclado.elf  > "Projeto LCD com Teclado.list"
+arm-none-eabi-size  Projeto\ inputcapture.elf 
+arm-none-eabi-objdump -h -S Projeto\ inputcapture.elf  > "Projeto inputcapture.list"
    text	   data	    bss	    dec	    hex	filename
-  10096	     28	   1660	  11784	   2e08	Projeto LCD com Teclado.elf
+  10160	     12	   1652	  11824	   2e30	Projeto inputcapture.elf
 Finished building: default.size.stdout
  
-Finished building: Projeto LCD com Teclado.list
- 
-17:06:27 **** Incremental Build of configuration Debug for project Projeto LCD com Teclado ****
-make -j4 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Projeto LCD com Teclado.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\danie\OneDrive\Desktop\Microcontroladores\Microcontroladores\Projetos\Projeto LCD com Teclado\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto LCD com Teclado.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Projeto LCD com Teclado.elf
- 
-arm-none-eabi-size  Projeto\ LCD\ com\ Teclado.elf 
-arm-none-eabi-objdump -h -S Projeto\ LCD\ com\ Teclado.elf  > "Projeto LCD com Teclado.list"
-   text	   data	    bss	    dec	    hex	filename
-  10096	     28	   1660	  11784	   2e08	Projeto LCD com Teclado.elf
-Finished building: default.size.stdout
- 
-Finished building: Projeto LCD com Teclado.list
- 
-17:07:20 **** Incremental Build of configuration Debug for project Projeto LCD com Teclado ****
-make -j4 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Projeto LCD com Teclado.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\danie\OneDrive\Desktop\Microcontroladores\Microcontroladores\Projetos\Projeto LCD com Teclado\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto LCD com Teclado.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Projeto LCD com Teclado.elf
- 
-arm-none-eabi-size  Projeto\ LCD\ com\ Teclado.elf 
-arm-none-eabi-objdump -h -S Projeto\ LCD\ com\ Teclado.elf  > "Projeto LCD com Teclado.list"
-   text	   data	    bss	    dec	    hex	filename
-  10092	     28	   1660	  11780	   2e04	Projeto LCD com Teclado.elf
-Finished building: default.size.stdout
- 
-Finished building: Projeto LCD com Teclado.list
- 
-17:10:23 **** Incremental Build of configuration Debug for project Projeto LCD com Teclado ****
-make -j4 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Projeto LCD com Teclado.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\danie\OneDrive\Desktop\Microcontroladores\Microcontroladores\Projetos\Projeto LCD com Teclado\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto LCD com Teclado.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Projeto LCD com Teclado.elf
- 
-arm-none-eabi-size  Projeto\ LCD\ com\ Teclado.elf 
-arm-none-eabi-objdump -h -S Projeto\ LCD\ com\ Teclado.elf  > "Projeto LCD com Teclado.list"
-   text	   data	    bss	    dec	    hex	filename
-  10100	     28	   1660	  11788	   2e0c	Projeto LCD com Teclado.elf
-Finished building: default.size.stdout
- 
-Finished building: Projeto LCD com Teclado.list
- 
-17:12:22 **** Incremental Build of configuration Debug for project Projeto LCD com Teclado ****
-make -j4 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Projeto LCD com Teclado.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\danie\OneDrive\Desktop\Microcontroladores\Microcontroladores\Projetos\Projeto LCD com Teclado\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto LCD com Teclado.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Projeto LCD com Teclado.elf
- 
-arm-none-eabi-size  Projeto\ LCD\ com\ Teclado.elf 
-arm-none-eabi-objdump -h -S Projeto\ LCD\ com\ Teclado.elf  > "Projeto LCD com Teclado.list"
-   text	   data	    bss	    dec	    hex	filename
-  10104	     28	   1660	  11792	   2e10	Projeto LCD com Teclado.elf
-Finished building: default.size.stdout
- 
-Finished building: Projeto LCD com Teclado.list
- 
-17:14:21 **** Incremental Build of configuration Debug for project Projeto LCD com Teclado ****
-make -j4 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Projeto LCD com Teclado.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\danie\OneDrive\Desktop\Microcontroladores\Microcontroladores\Projetos\Projeto LCD com Teclado\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto LCD com Teclado.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Projeto LCD com Teclado.elf
- 
-arm-none-eabi-size  Projeto\ LCD\ com\ Teclado.elf 
-arm-none-eabi-objdump -h -S Projeto\ LCD\ com\ Teclado.elf  > "Projeto LCD com Teclado.list"
-   text	   data	    bss	    dec	    hex	filename
-  10112	     28	   1660	  11800	   2e18	Projeto LCD com Teclado.elf
-Finished building: default.size.stdout
- 
-Finished building: Projeto LCD com Teclado.list
- 
-17:15:00 **** Incremental Build of configuration Debug for project Projeto LCD com Teclado ****
-make -j4 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Projeto LCD com Teclado.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\danie\OneDrive\Desktop\Microcontroladores\Microcontroladores\Projetos\Projeto LCD com Teclado\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto LCD com Teclado.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Projeto LCD com Teclado.elf
- 
-arm-none-eabi-size  Projeto\ LCD\ com\ Teclado.elf 
-arm-none-eabi-objdump -h -S Projeto\ LCD\ com\ Teclado.elf  > "Projeto LCD com Teclado.list"
-   text	   data	    bss	    dec	    hex	filename
-  10112	     28	   1660	  11800	   2e18	Projeto LCD com Teclado.elf
-Finished building: default.size.stdout
- 
-Finished building: Projeto LCD com Teclado.list
- 
-17:16:53 **** Incremental Build of configuration Debug for project Projeto LCD com Teclado ****
-make -j4 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Projeto LCD com Teclado.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\danie\OneDrive\Desktop\Microcontroladores\Microcontroladores\Projetos\Projeto LCD com Teclado\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto LCD com Teclado.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Projeto LCD com Teclado.elf
- 
-arm-none-eabi-size  Projeto\ LCD\ com\ Teclado.elf 
-arm-none-eabi-objdump -h -S Projeto\ LCD\ com\ Teclado.elf  > "Projeto LCD com Teclado.list"
-   text	   data	    bss	    dec	    hex	filename
-  10116	     28	   1660	  11804	   2e1c	Projeto LCD com Teclado.elf
-Finished building: default.size.stdout
- 
-Finished building: Projeto LCD com Teclado.list
- 
-20:35:03 **** Incremental Build of configuration Debug for project Projeto LCD com Teclado ****
-make -j4 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Projeto LCD com Teclado.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\danie\OneDrive\Desktop\Microcontroladores\Microcontroladores\Projetos\Projeto LCD com Teclado\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto LCD com Teclado.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Projeto LCD com Teclado.elf
- 
-arm-none-eabi-size  Projeto\ LCD\ com\ Teclado.elf 
-arm-none-eabi-objdump -h -S Projeto\ LCD\ com\ Teclado.elf  > "Projeto LCD com Teclado.list"
-   text	   data	    bss	    dec	    hex	filename
-  10148	     28	   1660	  11836	   2e3c	Projeto LCD com Teclado.elf
-Finished building: default.size.stdout
- 
-Finished building: Projeto LCD com Teclado.list
- 
-20:39:06 **** Incremental Build of configuration Debug for project Projeto LCD com Teclado ****
-make -j4 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Projeto LCD com Teclado.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\danie\OneDrive\Desktop\Microcontroladores\Microcontroladores\Projetos\Projeto LCD com Teclado\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto LCD com Teclado.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Projeto LCD com Teclado.elf
- 
-arm-none-eabi-size  Projeto\ LCD\ com\ Teclado.elf 
-arm-none-eabi-objdump -h -S Projeto\ LCD\ com\ Teclado.elf  > "Projeto LCD com Teclado.list"
-   text	   data	    bss	    dec	    hex	filename
-  10148	     28	   1660	  11836	   2e3c	Projeto LCD com Teclado.elf
-Finished building: default.size.stdout
- 
-Finished building: Projeto LCD com Teclado.list
- 
-20:45:21 **** Incremental Build of configuration Debug for project Projeto LCD com Teclado ****
-make -j4 all 
-arm-none-eabi-size  Projeto\ LCD\ com\ Teclado.elf 
-   text	   data	    bss	    dec	    hex	filename
-  10148	     28	   1660	  11836	   2e3c	Projeto LCD com Teclado.elf
-Finished building: default.size.stdout
- 
-20:47:27 **** Incremental Build of configuration Debug for project Projeto LCD com Teclado ****
-make -j4 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Projeto LCD com Teclado.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\danie\OneDrive\Desktop\Microcontroladores\Microcontroladores\Projetos\Projeto LCD com Teclado\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto LCD com Teclado.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Projeto LCD com Teclado.elf
- 
-arm-none-eabi-size  Projeto\ LCD\ com\ Teclado.elf 
-arm-none-eabi-objdump -h -S Projeto\ LCD\ com\ Teclado.elf  > "Projeto LCD com Teclado.list"
-   text	   data	    bss	    dec	    hex	filename
-  10140	     28	   1660	  11828	   2e34	Projeto LCD com Teclado.elf
-Finished building: default.size.stdout
- 
-Finished building: Projeto LCD com Teclado.list
- 
-20:48:30 **** Incremental Build of configuration Debug for project Projeto LCD com Teclado ****
-make -j4 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Projeto LCD com Teclado.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\danie\OneDrive\Desktop\Microcontroladores\Microcontroladores\Projetos\Projeto LCD com Teclado\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto LCD com Teclado.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Projeto LCD com Teclado.elf
- 
-arm-none-eabi-size  Projeto\ LCD\ com\ Teclado.elf 
-arm-none-eabi-objdump -h -S Projeto\ LCD\ com\ Teclado.elf  > "Projeto LCD com Teclado.list"
-   text	   data	    bss	    dec	    hex	filename
-  10144	     28	   1660	  11832	   2e38	Projeto LCD com Teclado.elf
-Finished building: default.size.stdout
- 
-Finished building: Projeto LCD com Teclado.list
- 
-20:48:57 **** Incremental Build of configuration Debug for project Projeto LCD com Teclado ****
-make -j4 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Projeto LCD com Teclado.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\danie\OneDrive\Desktop\Microcontroladores\Microcontroladores\Projetos\Projeto LCD com Teclado\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto LCD com Teclado.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Projeto LCD com Teclado.elf
- 
-arm-none-eabi-size  Projeto\ LCD\ com\ Teclado.elf 
-arm-none-eabi-objdump -h -S Projeto\ LCD\ com\ Teclado.elf  > "Projeto LCD com Teclado.list"
-   text	   data	    bss	    dec	    hex	filename
-  10152	     28	   1660	  11840	   2e40	Projeto LCD com Teclado.elf
-Finished building: default.size.stdout
- 
-Finished building: Projeto LCD com Teclado.list
+Finished building: Projeto inputcapture.list
  

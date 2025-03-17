@@ -1,0 +1,9 @@
+../Core/Src/main.c:86:5:main	4
+../Core/Src/main.c:151:6:SystemClock_Config	3
+../Core/Src/main.c:195:13:MX_TIM6_Init	3
+../Core/Src/main.c:233:13:MX_GPIO_Init	1
+../Core/Src/main.c:296:6:Seletor_Column	1
+../Core/Src/main.c:316:6:Seletor_Line	1
+../Core/Src/main.c:336:6:Draw_disp	3
+../Core/Src/main.c:347:6:Animations	13
+../Core/Src/main.c:595:6:Error_Handler	1
