@@ -13,13 +13,15 @@
 		<item value="HAL_GPIO_TogglePin"/>
 	</list>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="led.duty_Green"/>
+		<item key="selection" value="passTimeGreen"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="brefTimeGreen"/>
+			<item value="brefTimeRed"/>
 			<item value="dcGreen"/>
 			<item value="dcBlue"/>
 			<item value="dcRed"/>
@@ -28,6 +30,8 @@
 			<item value=""/>
 		</list>
 		<list key="replacehistory">
+			<item value="passTimeGreen"/>
+			<item value="passTimeRed"/>
 			<item value="led.duty_Green"/>
 			<item value="led.duty_Blue"/>
 			<item value="led.duty_red"/>

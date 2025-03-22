@@ -1,610 +1,105 @@
-15:39:39 **** Incremental Build of configuration Debug for project Projeto Controle Encoder LED RGB ****
+21:19:45 **** Incremental Build of configuration Debug for project Projeto Leitor de Frequencia ****
 make -j12 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Projeto Controle Encoder LED RGB.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Controle Encoder LED RGB\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Controle Encoder LED RGB.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Projeto Controle Encoder LED RGB.elf
+arm-none-eabi-gcc -o "Projeto Leitor de Frequencia.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Leitor de Frequencia\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Leitor de Frequencia.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Projeto Leitor de Frequencia.elf
  
-arm-none-eabi-size  Projeto\ Controle\ Encoder\ LED\ RGB.elf 
-arm-none-eabi-objdump -h -S Projeto\ Controle\ Encoder\ LED\ RGB.elf  > "Projeto Controle Encoder LED RGB.list"
+arm-none-eabi-size  Projeto\ Leitor\ de\ Frequencia.elf 
+arm-none-eabi-objdump -h -S Projeto\ Leitor\ de\ Frequencia.elf  > "Projeto Leitor de Frequencia.list"
    text	   data	    bss	    dec	    hex	filename
-  11144	     24	   1696	  12864	   3240	Projeto Controle Encoder LED RGB.elf
+  13856	     92	   2012	  15960	   3e58	Projeto Leitor de Frequencia.elf
 Finished building: default.size.stdout
  
-Finished building: Projeto Controle Encoder LED RGB.list
+Finished building: Projeto Leitor de Frequencia.list
  
-15:54:58 **** Incremental Build of configuration Debug for project Projeto Controle Encoder LED RGB ****
+21:19:49 **** Incremental Build of configuration Debug for project Projeto Leitor de Frequencia ****
+make -j12 all 
+arm-none-eabi-size  Projeto\ Leitor\ de\ Frequencia.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13856	     92	   2012	  15960	   3e58	Projeto Leitor de Frequencia.elf
+Finished building: default.size.stdout
+ 
+21:20:41 **** Incremental Build of configuration Debug for project Projeto Leitor de Frequencia ****
 make -j12 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Projeto Controle Encoder LED RGB.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Controle Encoder LED RGB\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Controle Encoder LED RGB.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Projeto Controle Encoder LED RGB.elf
+arm-none-eabi-gcc -o "Projeto Leitor de Frequencia.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Leitor de Frequencia\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Leitor de Frequencia.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Projeto Leitor de Frequencia.elf
  
-arm-none-eabi-size  Projeto\ Controle\ Encoder\ LED\ RGB.elf 
-arm-none-eabi-objdump -h -S Projeto\ Controle\ Encoder\ LED\ RGB.elf  > "Projeto Controle Encoder LED RGB.list"
+arm-none-eabi-size  Projeto\ Leitor\ de\ Frequencia.elf 
+arm-none-eabi-objdump -h -S Projeto\ Leitor\ de\ Frequencia.elf  > "Projeto Leitor de Frequencia.list"
    text	   data	    bss	    dec	    hex	filename
-  11200	     12	   1700	  12912	   3270	Projeto Controle Encoder LED RGB.elf
+  13848	     92	   2012	  15952	   3e50	Projeto Leitor de Frequencia.elf
 Finished building: default.size.stdout
  
-Finished building: Projeto Controle Encoder LED RGB.list
+Finished building: Projeto Leitor de Frequencia.list
  
-15:56:46 **** Incremental Build of configuration Debug for project Projeto Controle Encoder LED RGB ****
+21:21:24 **** Incremental Build of configuration Debug for project Projeto Leitor de Frequencia ****
 make -j12 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Projeto Controle Encoder LED RGB.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Controle Encoder LED RGB\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Controle Encoder LED RGB.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Projeto Controle Encoder LED RGB.elf
+arm-none-eabi-gcc -o "Projeto Leitor de Frequencia.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Leitor de Frequencia\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Leitor de Frequencia.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Projeto Leitor de Frequencia.elf
  
-arm-none-eabi-size  Projeto\ Controle\ Encoder\ LED\ RGB.elf 
-arm-none-eabi-objdump -h -S Projeto\ Controle\ Encoder\ LED\ RGB.elf  > "Projeto Controle Encoder LED RGB.list"
+arm-none-eabi-size  Projeto\ Leitor\ de\ Frequencia.elf 
+arm-none-eabi-objdump -h -S Projeto\ Leitor\ de\ Frequencia.elf  > "Projeto Leitor de Frequencia.list"
    text	   data	    bss	    dec	    hex	filename
-  11176	     12	   1700	  12888	   3258	Projeto Controle Encoder LED RGB.elf
+  13848	     92	   2012	  15952	   3e50	Projeto Leitor de Frequencia.elf
 Finished building: default.size.stdout
  
-Finished building: Projeto Controle Encoder LED RGB.list
+Finished building: Projeto Leitor de Frequencia.list
  
-15:57:27 **** Incremental Build of configuration Debug for project Projeto Controle Encoder LED RGB ****
+21:22:20 **** Incremental Build of configuration Debug for project Projeto Leitor de Frequencia ****
 make -j12 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Projeto Controle Encoder LED RGB.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Controle Encoder LED RGB\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Controle Encoder LED RGB.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Projeto Controle Encoder LED RGB.elf
+arm-none-eabi-gcc -o "Projeto Leitor de Frequencia.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Leitor de Frequencia\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Leitor de Frequencia.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Projeto Leitor de Frequencia.elf
  
-arm-none-eabi-size  Projeto\ Controle\ Encoder\ LED\ RGB.elf 
-arm-none-eabi-objdump -h -S Projeto\ Controle\ Encoder\ LED\ RGB.elf  > "Projeto Controle Encoder LED RGB.list"
+arm-none-eabi-size  Projeto\ Leitor\ de\ Frequencia.elf 
+arm-none-eabi-objdump -h -S Projeto\ Leitor\ de\ Frequencia.elf  > "Projeto Leitor de Frequencia.list"
    text	   data	    bss	    dec	    hex	filename
-  11176	     12	   1700	  12888	   3258	Projeto Controle Encoder LED RGB.elf
+  13848	     92	   2012	  15952	   3e50	Projeto Leitor de Frequencia.elf
 Finished building: default.size.stdout
  
-Finished building: Projeto Controle Encoder LED RGB.list
+Finished building: Projeto Leitor de Frequencia.list
  
-15:58:35 **** Incremental Build of configuration Debug for project Projeto Controle Encoder LED RGB ****
+21:23:18 **** Incremental Build of configuration Debug for project Projeto Leitor de Frequencia ****
 make -j12 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Projeto Controle Encoder LED RGB.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Controle Encoder LED RGB\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Controle Encoder LED RGB.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Projeto Controle Encoder LED RGB.elf
+arm-none-eabi-gcc -o "Projeto Leitor de Frequencia.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Leitor de Frequencia\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Leitor de Frequencia.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Projeto Leitor de Frequencia.elf
  
-arm-none-eabi-size  Projeto\ Controle\ Encoder\ LED\ RGB.elf 
-arm-none-eabi-objdump -h -S Projeto\ Controle\ Encoder\ LED\ RGB.elf  > "Projeto Controle Encoder LED RGB.list"
+arm-none-eabi-size  Projeto\ Leitor\ de\ Frequencia.elf 
+arm-none-eabi-objdump -h -S Projeto\ Leitor\ de\ Frequencia.elf  > "Projeto Leitor de Frequencia.list"
    text	   data	    bss	    dec	    hex	filename
-  11276	     12	   1700	  12988	   32bc	Projeto Controle Encoder LED RGB.elf
+  13852	     92	   2012	  15956	   3e54	Projeto Leitor de Frequencia.elf
 Finished building: default.size.stdout
  
-Finished building: Projeto Controle Encoder LED RGB.list
+Finished building: Projeto Leitor de Frequencia.list
  
-16:01:01 **** Incremental Build of configuration Debug for project Projeto Controle Encoder LED RGB ****
+21:23:59 **** Incremental Build of configuration Debug for project Projeto Leitor de Frequencia ****
 make -j12 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Projeto Controle Encoder LED RGB.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Controle Encoder LED RGB\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Controle Encoder LED RGB.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Projeto Controle Encoder LED RGB.elf
+arm-none-eabi-gcc -o "Projeto Leitor de Frequencia.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Leitor de Frequencia\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Leitor de Frequencia.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Projeto Leitor de Frequencia.elf
  
-arm-none-eabi-size  Projeto\ Controle\ Encoder\ LED\ RGB.elf 
-arm-none-eabi-objdump -h -S Projeto\ Controle\ Encoder\ LED\ RGB.elf  > "Projeto Controle Encoder LED RGB.list"
+arm-none-eabi-size  Projeto\ Leitor\ de\ Frequencia.elf 
+arm-none-eabi-objdump -h -S Projeto\ Leitor\ de\ Frequencia.elf  > "Projeto Leitor de Frequencia.list"
    text	   data	    bss	    dec	    hex	filename
-  11300	     12	   1700	  13012	   32d4	Projeto Controle Encoder LED RGB.elf
+  13852	     92	   2012	  15956	   3e54	Projeto Leitor de Frequencia.elf
 Finished building: default.size.stdout
  
-Finished building: Projeto Controle Encoder LED RGB.list
+Finished building: Projeto Leitor de Frequencia.list
  
-16:01:58 **** Incremental Build of configuration Debug for project Projeto Controle Encoder LED RGB ****
+21:25:45 **** Incremental Build of configuration Debug for project Projeto Leitor de Frequencia ****
 make -j12 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Projeto Controle Encoder LED RGB.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Controle Encoder LED RGB\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Controle Encoder LED RGB.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Projeto Controle Encoder LED RGB.elf
+arm-none-eabi-gcc -o "Projeto Leitor de Frequencia.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Leitor de Frequencia\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Leitor de Frequencia.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Projeto Leitor de Frequencia.elf
  
-arm-none-eabi-size  Projeto\ Controle\ Encoder\ LED\ RGB.elf 
-arm-none-eabi-objdump -h -S Projeto\ Controle\ Encoder\ LED\ RGB.elf  > "Projeto Controle Encoder LED RGB.list"
+arm-none-eabi-size  Projeto\ Leitor\ de\ Frequencia.elf 
+arm-none-eabi-objdump -h -S Projeto\ Leitor\ de\ Frequencia.elf  > "Projeto Leitor de Frequencia.list"
    text	   data	    bss	    dec	    hex	filename
-  11300	     12	   1708	  13020	   32dc	Projeto Controle Encoder LED RGB.elf
+  13864	     92	   2012	  15968	   3e60	Projeto Leitor de Frequencia.elf
 Finished building: default.size.stdout
  
-Finished building: Projeto Controle Encoder LED RGB.list
- 
-16:04:54 **** Incremental Build of configuration Debug for project Projeto Controle Encoder LED RGB ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Projeto Controle Encoder LED RGB.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Controle Encoder LED RGB\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Controle Encoder LED RGB.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Projeto Controle Encoder LED RGB.elf
- 
-arm-none-eabi-size  Projeto\ Controle\ Encoder\ LED\ RGB.elf 
-arm-none-eabi-objdump -h -S Projeto\ Controle\ Encoder\ LED\ RGB.elf  > "Projeto Controle Encoder LED RGB.list"
-   text	   data	    bss	    dec	    hex	filename
-  11332	     12	   1708	  13052	   32fc	Projeto Controle Encoder LED RGB.elf
-Finished building: default.size.stdout
- 
-Finished building: Projeto Controle Encoder LED RGB.list
- 
-16:14:05 **** Incremental Build of configuration Debug for project Projeto Controle Encoder LED RGB ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:130:26: error: void value not ignored as it ought to be
-  130 |           led.duty_Red   = Led_maxReg(led.duty_Red);
-      |                          ^
-../Core/Src/main.c:131:26: error: void value not ignored as it ought to be
-  131 |           led.duty_Green = Led_maxReg(led.duty_Green);
-      |                          ^
-../Core/Src/main.c:132:26: error: void value not ignored as it ought to be
-  132 |           led.duty_Blue  = Led_maxReg(led.duty_Blue);
-      |                          ^
-../Core/Src/main.c: At top level:
-../Core/Src/main.c:349:10: error: conflicting types for 'Led_maxReg'; have 'uint32_t(uint32_t)' {aka 'long unsigned int(long unsigned int)'}
-  349 | uint32_t Led_maxReg(uint32_t color){
-      |          ^~~~~~~~~~
-../Core/Src/main.c:72:6: note: previous declaration of 'Led_maxReg' with type 'void(uint32_t)' {aka 'void(long unsigned int)'}
-   72 | void Led_maxReg(uint32_t color);
-      |      ^~~~~~~~~~
-make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
-"make -j12 all" terminated with exit code 2. Build might be incomplete.
-16:14:23 **** Incremental Build of configuration Debug for project Projeto Controle Encoder LED RGB ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Projeto Controle Encoder LED RGB.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Controle Encoder LED RGB\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Controle Encoder LED RGB.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Projeto Controle Encoder LED RGB.elf
- 
-arm-none-eabi-size  Projeto\ Controle\ Encoder\ LED\ RGB.elf 
-arm-none-eabi-objdump -h -S Projeto\ Controle\ Encoder\ LED\ RGB.elf  > "Projeto Controle Encoder LED RGB.list"
-   text	   data	    bss	    dec	    hex	filename
-  11428	     12	   1708	  13148	   335c	Projeto Controle Encoder LED RGB.elf
-Finished building: default.size.stdout
- 
-Finished building: Projeto Controle Encoder LED RGB.list
- 
-16:16:08 **** Incremental Build of configuration Debug for project Projeto Controle Encoder LED RGB ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Projeto Controle Encoder LED RGB.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Controle Encoder LED RGB\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Controle Encoder LED RGB.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Projeto Controle Encoder LED RGB.elf
- 
-arm-none-eabi-size  Projeto\ Controle\ Encoder\ LED\ RGB.elf 
-arm-none-eabi-objdump -h -S Projeto\ Controle\ Encoder\ LED\ RGB.elf  > "Projeto Controle Encoder LED RGB.list"
-   text	   data	    bss	    dec	    hex	filename
-  11428	     12	   1708	  13148	   335c	Projeto Controle Encoder LED RGB.elf
-Finished building: default.size.stdout
- 
-Finished building: Projeto Controle Encoder LED RGB.list
- 
-16:24:12 **** Incremental Build of configuration Debug for project Projeto Controle Encoder LED RGB ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:132:22: error: incompatible type for argument 1 of 'Led_maxReg'
-  132 |           Led_maxReg(led);
-      |                      ^~~
-      |                      |
-      |                      RGB
-../Core/Src/main.c:72:22: note: expected 'RGB *' but argument is of type 'RGB'
-   72 | void Led_maxReg(RGB *led);
-      |                 ~~~~~^~~
-make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
-"make -j12 all" terminated with exit code 2. Build might be incomplete.
-16:24:44 **** Incremental Build of configuration Debug for project Projeto Controle Encoder LED RGB ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Projeto Controle Encoder LED RGB.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Controle Encoder LED RGB\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Controle Encoder LED RGB.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Projeto Controle Encoder LED RGB.elf
- 
-arm-none-eabi-size  Projeto\ Controle\ Encoder\ LED\ RGB.elf 
-arm-none-eabi-objdump -h -S Projeto\ Controle\ Encoder\ LED\ RGB.elf  > "Projeto Controle Encoder LED RGB.list"
-   text	   data	    bss	    dec	    hex	filename
-  11440	     12	   1708	  13160	   3368	Projeto Controle Encoder LED RGB.elf
-Finished building: default.size.stdout
- 
-Finished building: Projeto Controle Encoder LED RGB.list
- 
-16:27:16 **** Incremental Build of configuration Debug for project Projeto Controle Encoder LED RGB ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Projeto Controle Encoder LED RGB.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Controle Encoder LED RGB\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Controle Encoder LED RGB.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Projeto Controle Encoder LED RGB.elf
- 
-arm-none-eabi-size  Projeto\ Controle\ Encoder\ LED\ RGB.elf 
-arm-none-eabi-objdump -h -S Projeto\ Controle\ Encoder\ LED\ RGB.elf  > "Projeto Controle Encoder LED RGB.list"
-   text	   data	    bss	    dec	    hex	filename
-  11448	     12	   1708	  13168	   3370	Projeto Controle Encoder LED RGB.elf
-Finished building: default.size.stdout
- 
-Finished building: Projeto Controle Encoder LED RGB.list
- 
-16:28:20 **** Incremental Build of configuration Debug for project Projeto Controle Encoder LED RGB ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Projeto Controle Encoder LED RGB.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Controle Encoder LED RGB\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Controle Encoder LED RGB.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Projeto Controle Encoder LED RGB.elf
- 
-arm-none-eabi-size  Projeto\ Controle\ Encoder\ LED\ RGB.elf 
-arm-none-eabi-objdump -h -S Projeto\ Controle\ Encoder\ LED\ RGB.elf  > "Projeto Controle Encoder LED RGB.list"
-   text	   data	    bss	    dec	    hex	filename
-  11452	     12	   1708	  13172	   3374	Projeto Controle Encoder LED RGB.elf
-Finished building: default.size.stdout
- 
-Finished building: Projeto Controle Encoder LED RGB.list
- 
-16:30:04 **** Incremental Build of configuration Debug for project Projeto Controle Encoder LED RGB ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Projeto Controle Encoder LED RGB.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Controle Encoder LED RGB\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Controle Encoder LED RGB.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Projeto Controle Encoder LED RGB.elf
- 
-arm-none-eabi-size  Projeto\ Controle\ Encoder\ LED\ RGB.elf 
-arm-none-eabi-objdump -h -S Projeto\ Controle\ Encoder\ LED\ RGB.elf  > "Projeto Controle Encoder LED RGB.list"
-   text	   data	    bss	    dec	    hex	filename
-  11456	     12	   1708	  13176	   3378	Projeto Controle Encoder LED RGB.elf
-Finished building: default.size.stdout
- 
-Finished building: Projeto Controle Encoder LED RGB.list
- 
-16:32:09 **** Incremental Build of configuration Debug for project Projeto Controle Encoder LED RGB ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Projeto Controle Encoder LED RGB.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Controle Encoder LED RGB\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Controle Encoder LED RGB.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Projeto Controle Encoder LED RGB.elf
- 
-arm-none-eabi-size  Projeto\ Controle\ Encoder\ LED\ RGB.elf 
-arm-none-eabi-objdump -h -S Projeto\ Controle\ Encoder\ LED\ RGB.elf  > "Projeto Controle Encoder LED RGB.list"
-   text	   data	    bss	    dec	    hex	filename
-  11448	     12	   1708	  13168	   3370	Projeto Controle Encoder LED RGB.elf
-Finished building: default.size.stdout
- 
-Finished building: Projeto Controle Encoder LED RGB.list
- 
-16:33:06 **** Incremental Build of configuration Debug for project Projeto Controle Encoder LED RGB ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Projeto Controle Encoder LED RGB.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Controle Encoder LED RGB\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Controle Encoder LED RGB.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Projeto Controle Encoder LED RGB.elf
- 
-arm-none-eabi-size  Projeto\ Controle\ Encoder\ LED\ RGB.elf 
-arm-none-eabi-objdump -h -S Projeto\ Controle\ Encoder\ LED\ RGB.elf  > "Projeto Controle Encoder LED RGB.list"
-   text	   data	    bss	    dec	    hex	filename
-  11428	     12	   1708	  13148	   335c	Projeto Controle Encoder LED RGB.elf
-Finished building: default.size.stdout
- 
-Finished building: Projeto Controle Encoder LED RGB.list
- 
-16:33:57 **** Incremental Build of configuration Debug for project Projeto Controle Encoder LED RGB ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Projeto Controle Encoder LED RGB.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Controle Encoder LED RGB\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Controle Encoder LED RGB.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Projeto Controle Encoder LED RGB.elf
- 
-arm-none-eabi-size  Projeto\ Controle\ Encoder\ LED\ RGB.elf 
-arm-none-eabi-objdump -h -S Projeto\ Controle\ Encoder\ LED\ RGB.elf  > "Projeto Controle Encoder LED RGB.list"
-   text	   data	    bss	    dec	    hex	filename
-  11428	     12	   1708	  13148	   335c	Projeto Controle Encoder LED RGB.elf
-Finished building: default.size.stdout
- 
-Finished building: Projeto Controle Encoder LED RGB.list
- 
-16:34:11 **** Incremental Build of configuration Debug for project Projeto Controle Encoder LED RGB ****
-make -j12 all 
-arm-none-eabi-size  Projeto\ Controle\ Encoder\ LED\ RGB.elf 
-   text	   data	    bss	    dec	    hex	filename
-  11428	     12	   1708	  13148	   335c	Projeto Controle Encoder LED RGB.elf
-Finished building: default.size.stdout
- 
-16:34:26 **** Incremental Build of configuration Debug for project Projeto Controle Encoder LED RGB ****
-make -j12 all 
-arm-none-eabi-size  Projeto\ Controle\ Encoder\ LED\ RGB.elf 
-   text	   data	    bss	    dec	    hex	filename
-  11428	     12	   1708	  13148	   335c	Projeto Controle Encoder LED RGB.elf
-Finished building: default.size.stdout
- 
-16:35:32 **** Incremental Build of configuration Debug for project Projeto Controle Encoder LED RGB ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Projeto Controle Encoder LED RGB.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Controle Encoder LED RGB\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Controle Encoder LED RGB.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Projeto Controle Encoder LED RGB.elf
- 
-arm-none-eabi-size  Projeto\ Controle\ Encoder\ LED\ RGB.elf 
-arm-none-eabi-objdump -h -S Projeto\ Controle\ Encoder\ LED\ RGB.elf  > "Projeto Controle Encoder LED RGB.list"
-   text	   data	    bss	    dec	    hex	filename
-  11428	     12	   1708	  13148	   335c	Projeto Controle Encoder LED RGB.elf
-Finished building: default.size.stdout
- 
-Finished building: Projeto Controle Encoder LED RGB.list
- 
-16:38:15 **** Incremental Build of configuration Debug for project Projeto Controle Encoder LED RGB ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Projeto Controle Encoder LED RGB.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Controle Encoder LED RGB\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Controle Encoder LED RGB.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Projeto Controle Encoder LED RGB.elf
- 
-arm-none-eabi-size  Projeto\ Controle\ Encoder\ LED\ RGB.elf 
-arm-none-eabi-objdump -h -S Projeto\ Controle\ Encoder\ LED\ RGB.elf  > "Projeto Controle Encoder LED RGB.list"
-   text	   data	    bss	    dec	    hex	filename
-  11472	     12	   1708	  13192	   3388	Projeto Controle Encoder LED RGB.elf
-Finished building: default.size.stdout
- 
-Finished building: Projeto Controle Encoder LED RGB.list
- 
-16:39:46 **** Incremental Build of configuration Debug for project Projeto Controle Encoder LED RGB ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:128:19: warning: unused variable 'filtredResult' [-Wunused-variable]
-  128 |           int16_t filtredResult = result * 10;
-      |                   ^~~~~~~~~~~~~
-arm-none-eabi-gcc -o "Projeto Controle Encoder LED RGB.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Controle Encoder LED RGB\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Controle Encoder LED RGB.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Projeto Controle Encoder LED RGB.elf
- 
-arm-none-eabi-size  Projeto\ Controle\ Encoder\ LED\ RGB.elf 
-arm-none-eabi-objdump -h -S Projeto\ Controle\ Encoder\ LED\ RGB.elf  > "Projeto Controle Encoder LED RGB.list"
-   text	   data	    bss	    dec	    hex	filename
-  11484	     12	   1708	  13204	   3394	Projeto Controle Encoder LED RGB.elf
-Finished building: default.size.stdout
- 
-Finished building: Projeto Controle Encoder LED RGB.list
- 
-16:41:12 **** Incremental Build of configuration Debug for project Projeto Controle Encoder LED RGB ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Projeto Controle Encoder LED RGB.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Controle Encoder LED RGB\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Controle Encoder LED RGB.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Projeto Controle Encoder LED RGB.elf
- 
-arm-none-eabi-size  Projeto\ Controle\ Encoder\ LED\ RGB.elf 
-arm-none-eabi-objdump -h -S Projeto\ Controle\ Encoder\ LED\ RGB.elf  > "Projeto Controle Encoder LED RGB.list"
-   text	   data	    bss	    dec	    hex	filename
-  11436	     12	   1708	  13156	   3364	Projeto Controle Encoder LED RGB.elf
-Finished building: default.size.stdout
- 
-Finished building: Projeto Controle Encoder LED RGB.list
- 
-16:41:29 **** Incremental Build of configuration Debug for project Projeto Controle Encoder LED RGB ****
-make -j12 all 
-arm-none-eabi-size  Projeto\ Controle\ Encoder\ LED\ RGB.elf 
-   text	   data	    bss	    dec	    hex	filename
-  11436	     12	   1708	  13156	   3364	Projeto Controle Encoder LED RGB.elf
-Finished building: default.size.stdout
- 
-16:42:00 **** Incremental Build of configuration Debug for project Projeto Controle Encoder LED RGB ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Projeto Controle Encoder LED RGB.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Controle Encoder LED RGB\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Controle Encoder LED RGB.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Projeto Controle Encoder LED RGB.elf
- 
-arm-none-eabi-size  Projeto\ Controle\ Encoder\ LED\ RGB.elf 
-arm-none-eabi-objdump -h -S Projeto\ Controle\ Encoder\ LED\ RGB.elf  > "Projeto Controle Encoder LED RGB.list"
-   text	   data	    bss	    dec	    hex	filename
-  11456	     12	   1708	  13176	   3378	Projeto Controle Encoder LED RGB.elf
-Finished building: default.size.stdout
- 
-Finished building: Projeto Controle Encoder LED RGB.list
- 
-16:42:26 **** Incremental Build of configuration Debug for project Projeto Controle Encoder LED RGB ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Projeto Controle Encoder LED RGB.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Controle Encoder LED RGB\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Controle Encoder LED RGB.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Projeto Controle Encoder LED RGB.elf
- 
-arm-none-eabi-size  Projeto\ Controle\ Encoder\ LED\ RGB.elf 
-arm-none-eabi-objdump -h -S Projeto\ Controle\ Encoder\ LED\ RGB.elf  > "Projeto Controle Encoder LED RGB.list"
-   text	   data	    bss	    dec	    hex	filename
-  11464	     12	   1708	  13184	   3380	Projeto Controle Encoder LED RGB.elf
-Finished building: default.size.stdout
- 
-Finished building: Projeto Controle Encoder LED RGB.list
- 
-16:43:43 **** Incremental Build of configuration Debug for project Projeto Controle Encoder LED RGB ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Projeto Controle Encoder LED RGB.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Controle Encoder LED RGB\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Controle Encoder LED RGB.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Projeto Controle Encoder LED RGB.elf
- 
-arm-none-eabi-size  Projeto\ Controle\ Encoder\ LED\ RGB.elf 
-arm-none-eabi-objdump -h -S Projeto\ Controle\ Encoder\ LED\ RGB.elf  > "Projeto Controle Encoder LED RGB.list"
-   text	   data	    bss	    dec	    hex	filename
-  11480	     12	   1708	  13200	   3390	Projeto Controle Encoder LED RGB.elf
-Finished building: default.size.stdout
- 
-Finished building: Projeto Controle Encoder LED RGB.list
- 
-16:44:34 **** Incremental Build of configuration Debug for project Projeto Controle Encoder LED RGB ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Projeto Controle Encoder LED RGB.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Controle Encoder LED RGB\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Controle Encoder LED RGB.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Projeto Controle Encoder LED RGB.elf
- 
-arm-none-eabi-size  Projeto\ Controle\ Encoder\ LED\ RGB.elf 
-arm-none-eabi-objdump -h -S Projeto\ Controle\ Encoder\ LED\ RGB.elf  > "Projeto Controle Encoder LED RGB.list"
-   text	   data	    bss	    dec	    hex	filename
-  11480	     12	   1708	  13200	   3390	Projeto Controle Encoder LED RGB.elf
-Finished building: default.size.stdout
- 
-Finished building: Projeto Controle Encoder LED RGB.list
- 
-16:46:00 **** Incremental Build of configuration Debug for project Projeto Controle Encoder LED RGB ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Projeto Controle Encoder LED RGB.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Controle Encoder LED RGB\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Controle Encoder LED RGB.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Projeto Controle Encoder LED RGB.elf
- 
-arm-none-eabi-size  Projeto\ Controle\ Encoder\ LED\ RGB.elf 
-arm-none-eabi-objdump -h -S Projeto\ Controle\ Encoder\ LED\ RGB.elf  > "Projeto Controle Encoder LED RGB.list"
-   text	   data	    bss	    dec	    hex	filename
-  11480	     12	   1708	  13200	   3390	Projeto Controle Encoder LED RGB.elf
-Finished building: default.size.stdout
- 
-Finished building: Projeto Controle Encoder LED RGB.list
- 
-16:50:56 **** Incremental Build of configuration Debug for project Projeto Controle Encoder LED RGB ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'Encoder_verMv':
-../Core/Src/main.c:341:9: error: 'atualCounter' undeclared (first use in this function)
-  341 |         atualCounter = __HAL_TIM_GET_COUNTER(&htim22);
-      |         ^~~~~~~~~~~~
-../Core/Src/main.c:341:9: note: each undeclared identifier is reported only once for each function it appears in
-../Core/Src/main.c:343:28: error: 'passCounter' undeclared (first use in this function)
-  343 |         if (atualCounter > passCounter){
-      |                            ^~~~~~~~~~~
-make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
-"make -j12 all" terminated with exit code 2. Build might be incomplete.
-16:51:28 **** Incremental Build of configuration Debug for project Projeto Controle Encoder LED RGB ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Projeto Controle Encoder LED RGB.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Controle Encoder LED RGB\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Controle Encoder LED RGB.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Projeto Controle Encoder LED RGB.elf
- 
-arm-none-eabi-size  Projeto\ Controle\ Encoder\ LED\ RGB.elf 
-arm-none-eabi-objdump -h -S Projeto\ Controle\ Encoder\ LED\ RGB.elf  > "Projeto Controle Encoder LED RGB.list"
-   text	   data	    bss	    dec	    hex	filename
-  11580	     16	   1720	  13316	   3404	Projeto Controle Encoder LED RGB.elf
-Finished building: default.size.stdout
- 
-Finished building: Projeto Controle Encoder LED RGB.list
- 
-16:52:48 **** Incremental Build of configuration Debug for project Projeto Controle Encoder LED RGB ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Projeto Controle Encoder LED RGB.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Controle Encoder LED RGB\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Controle Encoder LED RGB.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Projeto Controle Encoder LED RGB.elf
- 
-arm-none-eabi-size  Projeto\ Controle\ Encoder\ LED\ RGB.elf 
-arm-none-eabi-objdump -h -S Projeto\ Controle\ Encoder\ LED\ RGB.elf  > "Projeto Controle Encoder LED RGB.list"
-   text	   data	    bss	    dec	    hex	filename
-  11596	     16	   1720	  13332	   3414	Projeto Controle Encoder LED RGB.elf
-Finished building: default.size.stdout
- 
-Finished building: Projeto Controle Encoder LED RGB.list
- 
-16:58:34 **** Incremental Build of configuration Debug for project Projeto Controle Encoder LED RGB ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Projeto Controle Encoder LED RGB.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Controle Encoder LED RGB\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Controle Encoder LED RGB.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Projeto Controle Encoder LED RGB.elf
- 
-arm-none-eabi-size  Projeto\ Controle\ Encoder\ LED\ RGB.elf 
-arm-none-eabi-objdump -h -S Projeto\ Controle\ Encoder\ LED\ RGB.elf  > "Projeto Controle Encoder LED RGB.list"
-   text	   data	    bss	    dec	    hex	filename
-  11960	     16	   1728	  13704	   3588	Projeto Controle Encoder LED RGB.elf
-Finished building: default.size.stdout
- 
-Finished building: Projeto Controle Encoder LED RGB.list
- 
-16:59:23 **** Incremental Build of configuration Debug for project Projeto Controle Encoder LED RGB ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Projeto Controle Encoder LED RGB.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Controle Encoder LED RGB\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Controle Encoder LED RGB.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Projeto Controle Encoder LED RGB.elf
- 
-arm-none-eabi-size  Projeto\ Controle\ Encoder\ LED\ RGB.elf 
-arm-none-eabi-objdump -h -S Projeto\ Controle\ Encoder\ LED\ RGB.elf  > "Projeto Controle Encoder LED RGB.list"
-   text	   data	    bss	    dec	    hex	filename
-  11960	     16	   1728	  13704	   3588	Projeto Controle Encoder LED RGB.elf
-Finished building: default.size.stdout
- 
-Finished building: Projeto Controle Encoder LED RGB.list
- 
-17:00:15 **** Incremental Build of configuration Debug for project Projeto Controle Encoder LED RGB ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Projeto Controle Encoder LED RGB.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Controle Encoder LED RGB\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Controle Encoder LED RGB.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Projeto Controle Encoder LED RGB.elf
- 
-arm-none-eabi-size  Projeto\ Controle\ Encoder\ LED\ RGB.elf 
-arm-none-eabi-objdump -h -S Projeto\ Controle\ Encoder\ LED\ RGB.elf  > "Projeto Controle Encoder LED RGB.list"
-   text	   data	    bss	    dec	    hex	filename
-  11976	     16	   1728	  13720	   3598	Projeto Controle Encoder LED RGB.elf
-Finished building: default.size.stdout
- 
-Finished building: Projeto Controle Encoder LED RGB.list
- 
-17:04:25 **** Incremental Build of configuration Debug for project Projeto Controle Encoder LED RGB ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Projeto Controle Encoder LED RGB.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Controle Encoder LED RGB\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Controle Encoder LED RGB.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Projeto Controle Encoder LED RGB.elf
- 
-arm-none-eabi-size  Projeto\ Controle\ Encoder\ LED\ RGB.elf 
-arm-none-eabi-objdump -h -S Projeto\ Controle\ Encoder\ LED\ RGB.elf  > "Projeto Controle Encoder LED RGB.list"
-   text	   data	    bss	    dec	    hex	filename
-  11984	     16	   1728	  13728	   35a0	Projeto Controle Encoder LED RGB.elf
-Finished building: default.size.stdout
- 
-Finished building: Projeto Controle Encoder LED RGB.list
- 
-17:07:05 **** Incremental Build of configuration Debug for project Projeto Controle Encoder LED RGB ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Projeto Controle Encoder LED RGB.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Controle Encoder LED RGB\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Controle Encoder LED RGB.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Projeto Controle Encoder LED RGB.elf
- 
-arm-none-eabi-size  Projeto\ Controle\ Encoder\ LED\ RGB.elf 
-arm-none-eabi-objdump -h -S Projeto\ Controle\ Encoder\ LED\ RGB.elf  > "Projeto Controle Encoder LED RGB.list"
-   text	   data	    bss	    dec	    hex	filename
-  11868	     16	   1728	  13612	   352c	Projeto Controle Encoder LED RGB.elf
-Finished building: default.size.stdout
- 
-Finished building: Projeto Controle Encoder LED RGB.list
- 
-17:12:34 **** Incremental Build of configuration Debug for project Projeto Controle Encoder LED RGB ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc "../Core/Src/stm32l0xx_hal_msp.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32l0xx_hal_msp.d" -MT"Core/Src/stm32l0xx_hal_msp.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32l0xx_hal_msp.o"
-arm-none-eabi-gcc "../Core/Src/stm32l0xx_it.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32l0xx_it.d" -MT"Core/Src/stm32l0xx_it.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32l0xx_it.o"
-arm-none-eabi-gcc -o "Projeto Controle Encoder LED RGB.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Controle Encoder LED RGB\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Controle Encoder LED RGB.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Projeto Controle Encoder LED RGB.elf
- 
-arm-none-eabi-size  Projeto\ Controle\ Encoder\ LED\ RGB.elf 
-arm-none-eabi-objdump -h -S Projeto\ Controle\ Encoder\ LED\ RGB.elf  > "Projeto Controle Encoder LED RGB.list"
-   text	   data	    bss	    dec	    hex	filename
-  11912	     16	   1728	  13656	   3558	Projeto Controle Encoder LED RGB.elf
-Finished building: default.size.stdout
- 
-Finished building: Projeto Controle Encoder LED RGB.list
- 
-17:13:32 **** Incremental Build of configuration Debug for project Projeto Controle Encoder LED RGB ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Projeto Controle Encoder LED RGB.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Controle Encoder LED RGB\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Controle Encoder LED RGB.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Projeto Controle Encoder LED RGB.elf
- 
-arm-none-eabi-size  Projeto\ Controle\ Encoder\ LED\ RGB.elf 
-arm-none-eabi-objdump -h -S Projeto\ Controle\ Encoder\ LED\ RGB.elf  > "Projeto Controle Encoder LED RGB.list"
-   text	   data	    bss	    dec	    hex	filename
-  11920	     16	   1728	  13664	   3560	Projeto Controle Encoder LED RGB.elf
-Finished building: default.size.stdout
- 
-Finished building: Projeto Controle Encoder LED RGB.list
- 
-17:14:19 **** Incremental Build of configuration Debug for project Projeto Controle Encoder LED RGB ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc "../Core/Src/stm32l0xx_hal_msp.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32l0xx_hal_msp.d" -MT"Core/Src/stm32l0xx_hal_msp.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32l0xx_hal_msp.o"
-arm-none-eabi-gcc "../Core/Src/stm32l0xx_it.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32l0xx_it.d" -MT"Core/Src/stm32l0xx_it.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32l0xx_it.o"
-arm-none-eabi-gcc -o "Projeto Controle Encoder LED RGB.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Controle Encoder LED RGB\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Controle Encoder LED RGB.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Projeto Controle Encoder LED RGB.elf
- 
-arm-none-eabi-size  Projeto\ Controle\ Encoder\ LED\ RGB.elf 
-arm-none-eabi-objdump -h -S Projeto\ Controle\ Encoder\ LED\ RGB.elf  > "Projeto Controle Encoder LED RGB.list"
-   text	   data	    bss	    dec	    hex	filename
-  11872	     16	   1728	  13616	   3530	Projeto Controle Encoder LED RGB.elf
-Finished building: default.size.stdout
- 
-Finished building: Projeto Controle Encoder LED RGB.list
- 
-17:14:59 **** Incremental Build of configuration Debug for project Projeto Controle Encoder LED RGB ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Projeto Controle Encoder LED RGB.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Controle Encoder LED RGB\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Controle Encoder LED RGB.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Projeto Controle Encoder LED RGB.elf
- 
-arm-none-eabi-size  Projeto\ Controle\ Encoder\ LED\ RGB.elf 
-arm-none-eabi-objdump -h -S Projeto\ Controle\ Encoder\ LED\ RGB.elf  > "Projeto Controle Encoder LED RGB.list"
-   text	   data	    bss	    dec	    hex	filename
-  11868	     16	   1728	  13612	   352c	Projeto Controle Encoder LED RGB.elf
-Finished building: default.size.stdout
- 
-Finished building: Projeto Controle Encoder LED RGB.list
- 
-17:15:42 **** Incremental Build of configuration Debug for project Projeto Controle Encoder LED RGB ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Projeto Controle Encoder LED RGB.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Controle Encoder LED RGB\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Controle Encoder LED RGB.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Projeto Controle Encoder LED RGB.elf
- 
-arm-none-eabi-size  Projeto\ Controle\ Encoder\ LED\ RGB.elf 
-arm-none-eabi-objdump -h -S Projeto\ Controle\ Encoder\ LED\ RGB.elf  > "Projeto Controle Encoder LED RGB.list"
-   text	   data	    bss	    dec	    hex	filename
-  11868	     16	   1728	  13612	   352c	Projeto Controle Encoder LED RGB.elf
-Finished building: default.size.stdout
- 
-Finished building: Projeto Controle Encoder LED RGB.list
+Finished building: Projeto Leitor de Frequencia.list
  

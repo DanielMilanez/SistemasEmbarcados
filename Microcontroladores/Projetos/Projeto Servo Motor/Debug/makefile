@@ -34,34 +34,34 @@ $(wildcard ../makefile.init) \
 $(wildcard ../makefile.targets) \
 
 
-BUILD_ARTIFACT_NAME := Projeto Servo Motor
+BUILD_ARTIFACT_NAME := Projeto ServoMotor
 BUILD_ARTIFACT_EXTENSION := elf
 BUILD_ARTIFACT_PREFIX :=
 BUILD_ARTIFACT := $(BUILD_ARTIFACT_PREFIX)$(BUILD_ARTIFACT_NAME)$(if $(BUILD_ARTIFACT_EXTENSION),.$(BUILD_ARTIFACT_EXTENSION),)
 
 # Add inputs and outputs from these tool invocations to the build variables 
 EXECUTABLES += \
-Projeto\ Servo\ Motor.elf \
+Projeto\ ServoMotor.elf \
 
 MAP_FILES += \
-Projeto\ Servo\ Motor.map \
+Projeto\ ServoMotor.map \
 
 SIZE_OUTPUT += \
 default.size.stdout \
 
 OBJDUMP_LIST += \
-Projeto\ Servo\ Motor.list \
+Projeto\ ServoMotor.list \
 
 
 # All Target
 all: main-build
 
 # Main-build Target
-main-build: Projeto\ Servo\ Motor.elf secondary-outputs
+main-build: Projeto\ ServoMotor.elf secondary-outputs
 
 # Tool invocations
-Projeto\ Servo\ Motor.elf Projeto\ Servo\ Motor.map: $(OBJS) $(USER_OBJS) C:\Users\ALUNO\ OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto\ Servo\ Motor\STM32L053R8TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "Projeto Servo Motor.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Servo Motor\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Servo Motor.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Projeto\ ServoMotor.elf Projeto\ ServoMotor.map: $(OBJS) $(USER_OBJS) C:\Users\ALUNO\ OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto\ ServoMotor\STM32L053R8TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "Projeto ServoMotor.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto ServoMotor\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto ServoMotor.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
@@ -70,14 +70,14 @@ default.size.stdout: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
 	@echo 'Finished building: $@'
 	@echo ' '
 
-Projeto\ Servo\ Motor.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "Projeto Servo Motor.list"
+Projeto\ ServoMotor.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "Projeto ServoMotor.list"
 	@echo 'Finished building: $@'
 	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) Projeto\ Servo\ Motor.elf Projeto\ Servo\ Motor.list Projeto\ Servo\ Motor.map Projeto\\ Servo\\ Motor.elf default.size.stdout
+	-$(RM) Projeto\ ServoMotor.elf Projeto\ ServoMotor.list Projeto\ ServoMotor.map Projeto\\ ServoMotor.elf default.size.stdout
 	-@echo ' '
 
 secondary-outputs: $(SIZE_OUTPUT) $(OBJDUMP_LIST)
