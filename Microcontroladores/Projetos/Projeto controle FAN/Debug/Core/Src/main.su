@@ -1,0 +1,11 @@
+../Core/Src/main.c:92:5:main	8	static
+../Core/Src/main.c:175:6:SystemClock_Config	96	static
+../Core/Src/main.c:216:13:MX_TIM2_Init	64	static
+../Core/Src/main.c:265:13:MX_TIM21_Init	48	static
+../Core/Src/main.c:324:13:MX_GPIO_Init	48	static
+../Core/Src/main.c:376:6:Info_manager	16	static
+../Core/Src/main.c:413:6:Start	8	static
+../Core/Src/main.c:428:6:Mensage	24	static
+../Core/Src/main.c:434:6:Altern_value	8	static
+../Core/Src/main.c:449:6:Encoder_manager	8	static
+../Core/Src/main.c:473:6:Error_Handler	8	static,ignoring_inline_asm

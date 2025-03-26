@@ -1,105 +1,824 @@
-21:19:45 **** Incremental Build of configuration Debug for project Projeto Leitor de Frequencia ****
+15:05:47 **** Incremental Build of configuration Debug for project Projeto Calendario ****
 make -j12 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Projeto Leitor de Frequencia.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Leitor de Frequencia\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Leitor de Frequencia.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Projeto Leitor de Frequencia.elf
+arm-none-eabi-gcc -o "Projeto Calendario.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Calendario\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Calendario.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Projeto Calendario.elf
  
-arm-none-eabi-size  Projeto\ Leitor\ de\ Frequencia.elf 
-arm-none-eabi-objdump -h -S Projeto\ Leitor\ de\ Frequencia.elf  > "Projeto Leitor de Frequencia.list"
+arm-none-eabi-size  Projeto\ Calendario.elf 
+arm-none-eabi-objdump -h -S Projeto\ Calendario.elf  > "Projeto Calendario.list"
    text	   data	    bss	    dec	    hex	filename
-  13856	     92	   2012	  15960	   3e58	Projeto Leitor de Frequencia.elf
+  12772	     92	   2004	  14868	   3a14	Projeto Calendario.elf
 Finished building: default.size.stdout
  
-Finished building: Projeto Leitor de Frequencia.list
+Finished building: Projeto Calendario.list
  
-21:19:49 **** Incremental Build of configuration Debug for project Projeto Leitor de Frequencia ****
+15:05:51 **** Incremental Build of configuration Debug for project Projeto Calendario ****
 make -j12 all 
-arm-none-eabi-size  Projeto\ Leitor\ de\ Frequencia.elf 
+arm-none-eabi-size  Projeto\ Calendario.elf 
    text	   data	    bss	    dec	    hex	filename
-  13856	     92	   2012	  15960	   3e58	Projeto Leitor de Frequencia.elf
+  12772	     92	   2004	  14868	   3a14	Projeto Calendario.elf
 Finished building: default.size.stdout
  
-21:20:41 **** Incremental Build of configuration Debug for project Projeto Leitor de Frequencia ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Projeto Leitor de Frequencia.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Leitor de Frequencia\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Leitor de Frequencia.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Projeto Leitor de Frequencia.elf
- 
-arm-none-eabi-size  Projeto\ Leitor\ de\ Frequencia.elf 
-arm-none-eabi-objdump -h -S Projeto\ Leitor\ de\ Frequencia.elf  > "Projeto Leitor de Frequencia.list"
-   text	   data	    bss	    dec	    hex	filename
-  13848	     92	   2012	  15952	   3e50	Projeto Leitor de Frequencia.elf
-Finished building: default.size.stdout
- 
-Finished building: Projeto Leitor de Frequencia.list
- 
-21:21:24 **** Incremental Build of configuration Debug for project Projeto Leitor de Frequencia ****
+15:06:49 **** Incremental Build of configuration Debug for project Projeto Calendario ****
 make -j12 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Projeto Leitor de Frequencia.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Leitor de Frequencia\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Leitor de Frequencia.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Projeto Leitor de Frequencia.elf
- 
-arm-none-eabi-size  Projeto\ Leitor\ de\ Frequencia.elf 
-arm-none-eabi-objdump -h -S Projeto\ Leitor\ de\ Frequencia.elf  > "Projeto Leitor de Frequencia.list"
-   text	   data	    bss	    dec	    hex	filename
-  13848	     92	   2012	  15952	   3e50	Projeto Leitor de Frequencia.elf
-Finished building: default.size.stdout
- 
-Finished building: Projeto Leitor de Frequencia.list
- 
-21:22:20 **** Incremental Build of configuration Debug for project Projeto Leitor de Frequencia ****
+../Core/Src/main.c: In function 'Show_date':
+../Core/Src/main.c:391:3: warning: implicit declaration of function 'Mensage'; did you mean 'Message'? [-Wimplicit-function-declaration]
+  391 |   Mensage("Nasce uma star");
+      |   ^~~~~~~
+      |   Message
+arm-none-eabi-gcc -o "Projeto Calendario.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Calendario\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Calendario.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+C:/ST/STM32CubeIDE_1.17.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.1.0.202410251130/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Core/Src/main.o: in function `Show_date':
+C:/Users/ALUNO OC/Desktop/Guto/Estudos/Programação/Microcontroladores/Projetos/Projeto Calendario/Debug/../Core/Src/main.c:391: undefined reference to `Mensage'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:64: Projeto Calendario.elf] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+15:07:15 **** Incremental Build of configuration Debug for project Projeto Calendario ****
 make -j12 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Projeto Leitor de Frequencia.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Leitor de Frequencia\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Leitor de Frequencia.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Projeto Leitor de Frequencia.elf
+arm-none-eabi-gcc -o "Projeto Calendario.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Calendario\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Calendario.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Projeto Calendario.elf
  
-arm-none-eabi-size  Projeto\ Leitor\ de\ Frequencia.elf 
-arm-none-eabi-objdump -h -S Projeto\ Leitor\ de\ Frequencia.elf  > "Projeto Leitor de Frequencia.list"
+arm-none-eabi-size  Projeto\ Calendario.elf 
+arm-none-eabi-objdump -h -S Projeto\ Calendario.elf  > "Projeto Calendario.list"
    text	   data	    bss	    dec	    hex	filename
-  13848	     92	   2012	  15952	   3e50	Projeto Leitor de Frequencia.elf
+  12808	     92	   2004	  14904	   3a38	Projeto Calendario.elf
 Finished building: default.size.stdout
  
-Finished building: Projeto Leitor de Frequencia.list
+Finished building: Projeto Calendario.list
  
-21:23:18 **** Incremental Build of configuration Debug for project Projeto Leitor de Frequencia ****
+15:07:51 **** Incremental Build of configuration Debug for project Projeto Calendario ****
 make -j12 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Projeto Leitor de Frequencia.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Leitor de Frequencia\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Leitor de Frequencia.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Projeto Leitor de Frequencia.elf
+arm-none-eabi-gcc -o "Projeto Calendario.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Calendario\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Calendario.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Projeto Calendario.elf
  
-arm-none-eabi-size  Projeto\ Leitor\ de\ Frequencia.elf 
-arm-none-eabi-objdump -h -S Projeto\ Leitor\ de\ Frequencia.elf  > "Projeto Leitor de Frequencia.list"
+arm-none-eabi-size  Projeto\ Calendario.elf 
+arm-none-eabi-objdump -h -S Projeto\ Calendario.elf  > "Projeto Calendario.list"
    text	   data	    bss	    dec	    hex	filename
-  13852	     92	   2012	  15956	   3e54	Projeto Leitor de Frequencia.elf
+  12808	     92	   2004	  14904	   3a38	Projeto Calendario.elf
 Finished building: default.size.stdout
  
-Finished building: Projeto Leitor de Frequencia.list
+Finished building: Projeto Calendario.list
  
-21:23:59 **** Incremental Build of configuration Debug for project Projeto Leitor de Frequencia ****
+15:14:58 **** Incremental Build of configuration Debug for project Projeto Calendario ****
 make -j12 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Projeto Leitor de Frequencia.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Leitor de Frequencia\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Leitor de Frequencia.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Projeto Leitor de Frequencia.elf
+../Core/Src/main.c: In function 'Show_date':
+../Core/Src/main.c:393:35: warning: conversion lacks type at end of format [-Wformat=]
+  393 |   sprintf(atualHour, "%02d:%02d:%02", hours, minutes, seconds);
+      |                                   ^
+../Core/Src/main.c:393:22: warning: too many arguments for format [-Wformat-extra-args]
+  393 |   sprintf(atualHour, "%02d:%02d:%02", hours, minutes, seconds);
+      |                      ^~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "Projeto Calendario.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Calendario\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Calendario.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Projeto Calendario.elf
  
-arm-none-eabi-size  Projeto\ Leitor\ de\ Frequencia.elf 
-arm-none-eabi-objdump -h -S Projeto\ Leitor\ de\ Frequencia.elf  > "Projeto Leitor de Frequencia.list"
+arm-none-eabi-size  Projeto\ Calendario.elf 
+arm-none-eabi-objdump -h -S Projeto\ Calendario.elf  > "Projeto Calendario.list"
    text	   data	    bss	    dec	    hex	filename
-  13852	     92	   2012	  15956	   3e54	Projeto Leitor de Frequencia.elf
+  12832	     92	   2020	  14944	   3a60	Projeto Calendario.elf
 Finished building: default.size.stdout
  
-Finished building: Projeto Leitor de Frequencia.list
+Finished building: Projeto Calendario.list
  
-21:25:45 **** Incremental Build of configuration Debug for project Projeto Leitor de Frequencia ****
+15:15:36 **** Incremental Build of configuration Debug for project Projeto Calendario ****
 make -j12 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Projeto Leitor de Frequencia.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Leitor de Frequencia\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Leitor de Frequencia.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Projeto Leitor de Frequencia.elf
+arm-none-eabi-gcc -o "Projeto Calendario.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Calendario\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Calendario.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Projeto Calendario.elf
  
-arm-none-eabi-size  Projeto\ Leitor\ de\ Frequencia.elf 
-arm-none-eabi-objdump -h -S Projeto\ Leitor\ de\ Frequencia.elf  > "Projeto Leitor de Frequencia.list"
+arm-none-eabi-size  Projeto\ Calendario.elf 
+arm-none-eabi-objdump -h -S Projeto\ Calendario.elf  > "Projeto Calendario.list"
    text	   data	    bss	    dec	    hex	filename
-  13864	     92	   2012	  15968	   3e60	Projeto Leitor de Frequencia.elf
+  12832	     92	   2020	  14944	   3a60	Projeto Calendario.elf
 Finished building: default.size.stdout
  
-Finished building: Projeto Leitor de Frequencia.list
+Finished building: Projeto Calendario.list
+ 
+15:16:04 **** Incremental Build of configuration Debug for project Projeto Calendario ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Projeto Calendario.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Calendario\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Calendario.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Projeto Calendario.elf
+ 
+arm-none-eabi-size  Projeto\ Calendario.elf 
+arm-none-eabi-objdump -h -S Projeto\ Calendario.elf  > "Projeto Calendario.list"
+   text	   data	    bss	    dec	    hex	filename
+  12840	     92	   2020	  14952	   3a68	Projeto Calendario.elf
+Finished building: default.size.stdout
+ 
+Finished building: Projeto Calendario.list
+ 
+15:17:17 **** Incremental Build of configuration Debug for project Projeto Calendario ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:138:30: warning: passing argument 2 of 'HAL_RTC_SetTime' from incompatible pointer type [-Wincompatible-pointer-types]
+  138 |   if (HAL_RTC_SetTime(&hrtc, &date, RTC_FORMAT_BIN) != HAL_OK) {
+      |                              ^~~~~
+      |                              |
+      |                              RTC_DateTypeDef *
+In file included from ../Core/Inc/stm32l0xx_hal_conf.h:264,
+                 from ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_rtc.h:735:77: note: expected 'RTC_TimeTypeDef *' but argument is of type 'RTC_DateTypeDef *'
+  735 | HAL_StatusTypeDef HAL_RTC_SetTime(RTC_HandleTypeDef *hrtc, RTC_TimeTypeDef *sTime, uint32_t Format);
+      |                                                            ~~~~~~~~~~~~~~~~~^~~~~
+arm-none-eabi-gcc -o "Projeto Calendario.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Calendario\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Calendario.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Projeto Calendario.elf
+ 
+arm-none-eabi-size  Projeto\ Calendario.elf 
+arm-none-eabi-objdump -h -S Projeto\ Calendario.elf  > "Projeto Calendario.list"
+   text	   data	    bss	    dec	    hex	filename
+  12880	     92	   2020	  14992	   3a90	Projeto Calendario.elf
+Finished building: default.size.stdout
+ 
+Finished building: Projeto Calendario.list
+ 
+15:17:25 **** Incremental Build of configuration Debug for project Projeto Calendario ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Projeto Calendario.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Calendario\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Calendario.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Projeto Calendario.elf
+ 
+arm-none-eabi-size  Projeto\ Calendario.elf 
+arm-none-eabi-objdump -h -S Projeto\ Calendario.elf  > "Projeto Calendario.list"
+   text	   data	    bss	    dec	    hex	filename
+  12880	     92	   2020	  14992	   3a90	Projeto Calendario.elf
+Finished building: default.size.stdout
+ 
+Finished building: Projeto Calendario.list
+ 
+15:17:46 **** Incremental Build of configuration Debug for project Projeto Calendario ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Projeto Calendario.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Calendario\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Calendario.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Projeto Calendario.elf
+ 
+arm-none-eabi-size  Projeto\ Calendario.elf 
+arm-none-eabi-objdump -h -S Projeto\ Calendario.elf  > "Projeto Calendario.list"
+   text	   data	    bss	    dec	    hex	filename
+  12880	     92	   2020	  14992	   3a90	Projeto Calendario.elf
+Finished building: default.size.stdout
+ 
+Finished building: Projeto Calendario.list
+ 
+15:18:06 **** Incremental Build of configuration Debug for project Projeto Calendario ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Projeto Calendario.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Calendario\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Calendario.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Projeto Calendario.elf
+ 
+arm-none-eabi-size  Projeto\ Calendario.elf 
+arm-none-eabi-objdump -h -S Projeto\ Calendario.elf  > "Projeto Calendario.list"
+   text	   data	    bss	    dec	    hex	filename
+  12880	     92	   2020	  14992	   3a90	Projeto Calendario.elf
+Finished building: default.size.stdout
+ 
+Finished building: Projeto Calendario.list
+ 
+15:19:01 **** Incremental Build of configuration Debug for project Projeto Calendario ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Projeto Calendario.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Calendario\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Calendario.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Projeto Calendario.elf
+ 
+arm-none-eabi-size  Projeto\ Calendario.elf 
+arm-none-eabi-objdump -h -S Projeto\ Calendario.elf  > "Projeto Calendario.list"
+   text	   data	    bss	    dec	    hex	filename
+  12880	     92	   2020	  14992	   3a90	Projeto Calendario.elf
+Finished building: default.size.stdout
+ 
+Finished building: Projeto Calendario.list
+ 
+15:19:42 **** Incremental Build of configuration Debug for project Projeto Calendario ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Projeto Calendario.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Calendario\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Calendario.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Projeto Calendario.elf
+ 
+arm-none-eabi-size  Projeto\ Calendario.elf 
+arm-none-eabi-objdump -h -S Projeto\ Calendario.elf  > "Projeto Calendario.list"
+   text	   data	    bss	    dec	    hex	filename
+  12880	     92	   2020	  14992	   3a90	Projeto Calendario.elf
+Finished building: default.size.stdout
+ 
+Finished building: Projeto Calendario.list
+ 
+15:20:03 **** Incremental Build of configuration Debug for project Projeto Calendario ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Projeto Calendario.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Calendario\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Calendario.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Projeto Calendario.elf
+ 
+arm-none-eabi-size  Projeto\ Calendario.elf 
+arm-none-eabi-objdump -h -S Projeto\ Calendario.elf  > "Projeto Calendario.list"
+   text	   data	    bss	    dec	    hex	filename
+  12880	     92	   2020	  14992	   3a90	Projeto Calendario.elf
+Finished building: default.size.stdout
+ 
+Finished building: Projeto Calendario.list
+ 
+15:21:55 **** Incremental Build of configuration Debug for project Projeto Calendario ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Projeto Calendario.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Calendario\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Calendario.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Projeto Calendario.elf
+ 
+arm-none-eabi-size  Projeto\ Calendario.elf 
+arm-none-eabi-objdump -h -S Projeto\ Calendario.elf  > "Projeto Calendario.list"
+   text	   data	    bss	    dec	    hex	filename
+  12876	     92	   2020	  14988	   3a8c	Projeto Calendario.elf
+Finished building: default.size.stdout
+ 
+Finished building: Projeto Calendario.list
+ 
+15:23:49 **** Incremental Build of configuration Debug for project Projeto Calendario ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Projeto Calendario.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Calendario\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Calendario.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Projeto Calendario.elf
+ 
+arm-none-eabi-size  Projeto\ Calendario.elf 
+arm-none-eabi-objdump -h -S Projeto\ Calendario.elf  > "Projeto Calendario.list"
+   text	   data	    bss	    dec	    hex	filename
+  12868	     92	   2020	  14980	   3a84	Projeto Calendario.elf
+Finished building: default.size.stdout
+ 
+Finished building: Projeto Calendario.list
+ 
+15:37:26 **** Incremental Build of configuration Debug for project Projeto Calendario ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Projeto Calendario.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Calendario\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Calendario.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Projeto Calendario.elf
+ 
+arm-none-eabi-size  Projeto\ Calendario.elf 
+arm-none-eabi-objdump -h -S Projeto\ Calendario.elf  > "Projeto Calendario.list"
+   text	   data	    bss	    dec	    hex	filename
+  12868	     92	   2020	  14980	   3a84	Projeto Calendario.elf
+Finished building: default.size.stdout
+ 
+Finished building: Projeto Calendario.list
+ 
+15:38:02 **** Incremental Build of configuration Debug for project Projeto Calendario ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Projeto Calendario.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Calendario\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Calendario.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Projeto Calendario.elf
+ 
+arm-none-eabi-size  Projeto\ Calendario.elf 
+arm-none-eabi-objdump -h -S Projeto\ Calendario.elf  > "Projeto Calendario.list"
+   text	   data	    bss	    dec	    hex	filename
+  12868	     92	   2020	  14980	   3a84	Projeto Calendario.elf
+Finished building: default.size.stdout
+ 
+Finished building: Projeto Calendario.list
+ 
+15:38:56 **** Incremental Build of configuration Debug for project Projeto Calendario ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Projeto Calendario.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Calendario\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Calendario.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Projeto Calendario.elf
+ 
+arm-none-eabi-size  Projeto\ Calendario.elf 
+arm-none-eabi-objdump -h -S Projeto\ Calendario.elf  > "Projeto Calendario.list"
+   text	   data	    bss	    dec	    hex	filename
+  12868	     92	   2020	  14980	   3a84	Projeto Calendario.elf
+Finished building: default.size.stdout
+ 
+Finished building: Projeto Calendario.list
+ 
+15:39:49 **** Incremental Build of configuration Debug for project Projeto Calendario ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Projeto Calendario.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Calendario\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Calendario.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Projeto Calendario.elf
+ 
+arm-none-eabi-size  Projeto\ Calendario.elf 
+arm-none-eabi-objdump -h -S Projeto\ Calendario.elf  > "Projeto Calendario.list"
+   text	   data	    bss	    dec	    hex	filename
+  12868	     92	   2020	  14980	   3a84	Projeto Calendario.elf
+Finished building: default.size.stdout
+ 
+Finished building: Projeto Calendario.list
+ 
+15:40:26 **** Incremental Build of configuration Debug for project Projeto Calendario ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Projeto Calendario.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Calendario\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Calendario.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Projeto Calendario.elf
+ 
+arm-none-eabi-size  Projeto\ Calendario.elf 
+arm-none-eabi-objdump -h -S Projeto\ Calendario.elf  > "Projeto Calendario.list"
+   text	   data	    bss	    dec	    hex	filename
+  12868	     92	   2020	  14980	   3a84	Projeto Calendario.elf
+Finished building: default.size.stdout
+ 
+Finished building: Projeto Calendario.list
+ 
+15:40:44 **** Incremental Build of configuration Debug for project Projeto Calendario ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Projeto Calendario.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Calendario\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Calendario.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Projeto Calendario.elf
+ 
+arm-none-eabi-size  Projeto\ Calendario.elf 
+arm-none-eabi-objdump -h -S Projeto\ Calendario.elf  > "Projeto Calendario.list"
+   text	   data	    bss	    dec	    hex	filename
+  12868	     92	   2020	  14980	   3a84	Projeto Calendario.elf
+Finished building: default.size.stdout
+ 
+Finished building: Projeto Calendario.list
+ 
+15:41:05 **** Incremental Build of configuration Debug for project Projeto Calendario ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Projeto Calendario.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Calendario\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Calendario.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Projeto Calendario.elf
+ 
+arm-none-eabi-size  Projeto\ Calendario.elf 
+arm-none-eabi-objdump -h -S Projeto\ Calendario.elf  > "Projeto Calendario.list"
+   text	   data	    bss	    dec	    hex	filename
+  12868	     92	   2020	  14980	   3a84	Projeto Calendario.elf
+Finished building: default.size.stdout
+ 
+Finished building: Projeto Calendario.list
+ 
+15:51:33 **** Incremental Build of configuration Debug for project Projeto Calendario ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'Show_date':
+../Core/Src/main.c:389:3: warning: implicit declaration of function 'Verify_date' [-Wimplicit-function-declaration]
+  389 |   Verify_date();
+      |   ^~~~~~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:401:6: warning: conflicting types for 'Verify_date'; have 'void(void)'
+  401 | void Verify_date(void){
+      |      ^~~~~~~~~~~
+../Core/Src/main.c:389:3: note: previous implicit declaration of 'Verify_date' with type 'void(void)'
+  389 |   Verify_date();
+      |   ^~~~~~~~~~~
+../Core/Src/main.c: In function 'Verify_date':
+../Core/Src/main.c:402:21: error: expected expression before ')' token
+  402 |         if (year >= ) milenium = 0;
+      |                     ^
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+15:53:29 **** Incremental Build of configuration Debug for project Projeto Calendario ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Projeto Calendario.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Calendario\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Calendario.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Projeto Calendario.elf
+ 
+arm-none-eabi-size  Projeto\ Calendario.elf 
+arm-none-eabi-objdump -h -S Projeto\ Calendario.elf  > "Projeto Calendario.list"
+   text	   data	    bss	    dec	    hex	filename
+  12952	     92	   2020	  15064	   3ad8	Projeto Calendario.elf
+Finished building: default.size.stdout
+ 
+Finished building: Projeto Calendario.list
+ 
+15:54:56 **** Incremental Build of configuration Debug for project Projeto Calendario ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Projeto Calendario.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Calendario\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Calendario.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Projeto Calendario.elf
+ 
+arm-none-eabi-size  Projeto\ Calendario.elf 
+arm-none-eabi-objdump -h -S Projeto\ Calendario.elf  > "Projeto Calendario.list"
+   text	   data	    bss	    dec	    hex	filename
+  12956	     92	   2020	  15068	   3adc	Projeto Calendario.elf
+Finished building: default.size.stdout
+ 
+Finished building: Projeto Calendario.list
+ 
+15:57:07 **** Incremental Build of configuration Debug for project Projeto Calendario ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Projeto Calendario.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Calendario\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Calendario.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Projeto Calendario.elf
+ 
+arm-none-eabi-size  Projeto\ Calendario.elf 
+arm-none-eabi-objdump -h -S Projeto\ Calendario.elf  > "Projeto Calendario.list"
+   text	   data	    bss	    dec	    hex	filename
+  12992	     92	   2020	  15104	   3b00	Projeto Calendario.elf
+Finished building: default.size.stdout
+ 
+Finished building: Projeto Calendario.list
+ 
+15:58:01 **** Incremental Build of configuration Debug for project Projeto Calendario ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Projeto Calendario.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Calendario\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Calendario.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Projeto Calendario.elf
+ 
+arm-none-eabi-size  Projeto\ Calendario.elf 
+arm-none-eabi-objdump -h -S Projeto\ Calendario.elf  > "Projeto Calendario.list"
+   text	   data	    bss	    dec	    hex	filename
+  12992	     92	   2020	  15104	   3b00	Projeto Calendario.elf
+Finished building: default.size.stdout
+ 
+Finished building: Projeto Calendario.list
+ 
+15:58:44 **** Incremental Build of configuration Debug for project Projeto Calendario ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Projeto Calendario.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Calendario\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Calendario.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Projeto Calendario.elf
+ 
+arm-none-eabi-size  Projeto\ Calendario.elf 
+arm-none-eabi-objdump -h -S Projeto\ Calendario.elf  > "Projeto Calendario.list"
+   text	   data	    bss	    dec	    hex	filename
+  13040	     92	   2020	  15152	   3b30	Projeto Calendario.elf
+Finished building: default.size.stdout
+ 
+Finished building: Projeto Calendario.list
+ 
+16:03:22 **** Incremental Build of configuration Debug for project Projeto Calendario ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Projeto Calendario.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Calendario\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Calendario.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Projeto Calendario.elf
+ 
+arm-none-eabi-size  Projeto\ Calendario.elf 
+arm-none-eabi-objdump -h -S Projeto\ Calendario.elf  > "Projeto Calendario.list"
+   text	   data	    bss	    dec	    hex	filename
+  12992	     92	   2020	  15104	   3b00	Projeto Calendario.elf
+Finished building: default.size.stdout
+ 
+Finished building: Projeto Calendario.list
+ 
+16:04:18 **** Incremental Build of configuration Debug for project Projeto Calendario ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Projeto Calendario.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Calendario\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Calendario.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Projeto Calendario.elf
+ 
+arm-none-eabi-size  Projeto\ Calendario.elf 
+arm-none-eabi-objdump -h -S Projeto\ Calendario.elf  > "Projeto Calendario.list"
+   text	   data	    bss	    dec	    hex	filename
+  12992	     92	   2020	  15104	   3b00	Projeto Calendario.elf
+Finished building: default.size.stdout
+ 
+Finished building: Projeto Calendario.list
+ 
+16:06:26 **** Incremental Build of configuration Debug for project Projeto Calendario ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Projeto Calendario.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Calendario\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Calendario.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Projeto Calendario.elf
+ 
+arm-none-eabi-size  Projeto\ Calendario.elf 
+arm-none-eabi-objdump -h -S Projeto\ Calendario.elf  > "Projeto Calendario.list"
+   text	   data	    bss	    dec	    hex	filename
+  13036	     92	   2020	  15148	   3b2c	Projeto Calendario.elf
+Finished building: default.size.stdout
+ 
+Finished building: Projeto Calendario.list
+ 
+16:07:20 **** Incremental Build of configuration Debug for project Projeto Calendario ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Projeto Calendario.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Calendario\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Calendario.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Projeto Calendario.elf
+ 
+arm-none-eabi-size  Projeto\ Calendario.elf 
+arm-none-eabi-objdump -h -S Projeto\ Calendario.elf  > "Projeto Calendario.list"
+   text	   data	    bss	    dec	    hex	filename
+  13040	     92	   2020	  15152	   3b30	Projeto Calendario.elf
+Finished building: default.size.stdout
+ 
+Finished building: Projeto Calendario.list
+ 
+16:08:11 **** Incremental Build of configuration Debug for project Projeto Calendario ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Projeto Calendario.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Calendario\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Calendario.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Projeto Calendario.elf
+ 
+arm-none-eabi-size  Projeto\ Calendario.elf 
+arm-none-eabi-objdump -h -S Projeto\ Calendario.elf  > "Projeto Calendario.list"
+   text	   data	    bss	    dec	    hex	filename
+  13056	     92	   2020	  15168	   3b40	Projeto Calendario.elf
+Finished building: default.size.stdout
+ 
+Finished building: Projeto Calendario.list
+ 
+16:08:42 **** Incremental Build of configuration Debug for project Projeto Calendario ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Projeto Calendario.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Calendario\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Calendario.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Projeto Calendario.elf
+ 
+arm-none-eabi-size  Projeto\ Calendario.elf 
+arm-none-eabi-objdump -h -S Projeto\ Calendario.elf  > "Projeto Calendario.list"
+   text	   data	    bss	    dec	    hex	filename
+  13056	     92	   2020	  15168	   3b40	Projeto Calendario.elf
+Finished building: default.size.stdout
+ 
+Finished building: Projeto Calendario.list
+ 
+16:09:37 **** Incremental Build of configuration Debug for project Projeto Calendario ****
+make -j12 all 
+arm-none-eabi-size  Projeto\ Calendario.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13056	     92	   2020	  15168	   3b40	Projeto Calendario.elf
+Finished building: default.size.stdout
+ 
+16:15:32 **** Incremental Build of configuration Debug for project Projeto Calendario ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Projeto Calendario.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Calendario\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Calendario.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Projeto Calendario.elf
+ 
+arm-none-eabi-size  Projeto\ Calendario.elf 
+arm-none-eabi-objdump -h -S Projeto\ Calendario.elf  > "Projeto Calendario.list"
+   text	   data	    bss	    dec	    hex	filename
+  13056	     92	   2020	  15168	   3b40	Projeto Calendario.elf
+Finished building: default.size.stdout
+ 
+Finished building: Projeto Calendario.list
+ 
+16:16:58 **** Incremental Build of configuration Debug for project Projeto Calendario ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Projeto Calendario.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Calendario\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Calendario.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Projeto Calendario.elf
+ 
+arm-none-eabi-size  Projeto\ Calendario.elf 
+arm-none-eabi-objdump -h -S Projeto\ Calendario.elf  > "Projeto Calendario.list"
+   text	   data	    bss	    dec	    hex	filename
+  12868	     92	   2020	  14980	   3a84	Projeto Calendario.elf
+Finished building: default.size.stdout
+ 
+Finished building: Projeto Calendario.list
+ 
+16:18:56 **** Incremental Build of configuration Debug for project Projeto Calendario ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Projeto Calendario.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Calendario\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Calendario.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Projeto Calendario.elf
+ 
+arm-none-eabi-size  Projeto\ Calendario.elf 
+arm-none-eabi-objdump -h -S Projeto\ Calendario.elf  > "Projeto Calendario.list"
+   text	   data	    bss	    dec	    hex	filename
+  12868	     92	   2020	  14980	   3a84	Projeto Calendario.elf
+Finished building: default.size.stdout
+ 
+Finished building: Projeto Calendario.list
+ 
+16:19:38 **** Incremental Build of configuration Debug for project Projeto Calendario ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Projeto Calendario.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Calendario\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Calendario.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Projeto Calendario.elf
+ 
+arm-none-eabi-size  Projeto\ Calendario.elf 
+arm-none-eabi-objdump -h -S Projeto\ Calendario.elf  > "Projeto Calendario.list"
+   text	   data	    bss	    dec	    hex	filename
+  12868	     92	   2020	  14980	   3a84	Projeto Calendario.elf
+Finished building: default.size.stdout
+ 
+Finished building: Projeto Calendario.list
+ 
+16:20:04 **** Incremental Build of configuration Debug for project Projeto Calendario ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Projeto Calendario.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Calendario\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Calendario.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Projeto Calendario.elf
+ 
+arm-none-eabi-size  Projeto\ Calendario.elf 
+arm-none-eabi-objdump -h -S Projeto\ Calendario.elf  > "Projeto Calendario.list"
+   text	   data	    bss	    dec	    hex	filename
+  12868	     92	   2020	  14980	   3a84	Projeto Calendario.elf
+Finished building: default.size.stdout
+ 
+Finished building: Projeto Calendario.list
+ 
+16:22:01 **** Incremental Build of configuration Debug for project Projeto Calendario ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Projeto Calendario.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Calendario\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Calendario.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Projeto Calendario.elf
+ 
+arm-none-eabi-size  Projeto\ Calendario.elf 
+arm-none-eabi-objdump -h -S Projeto\ Calendario.elf  > "Projeto Calendario.list"
+   text	   data	    bss	    dec	    hex	filename
+  12868	     92	   2020	  14980	   3a84	Projeto Calendario.elf
+Finished building: default.size.stdout
+ 
+Finished building: Projeto Calendario.list
+ 
+16:23:51 **** Incremental Build of configuration Debug for project Projeto Calendario ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Projeto Calendario.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Calendario\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Calendario.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Projeto Calendario.elf
+ 
+arm-none-eabi-size  Projeto\ Calendario.elf 
+arm-none-eabi-objdump -h -S Projeto\ Calendario.elf  > "Projeto Calendario.list"
+   text	   data	    bss	    dec	    hex	filename
+  12868	     92	   2020	  14980	   3a84	Projeto Calendario.elf
+Finished building: default.size.stdout
+ 
+Finished building: Projeto Calendario.list
+ 
+16:24:30 **** Incremental Build of configuration Debug for project Projeto Calendario ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Projeto Calendario.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Calendario\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Calendario.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Projeto Calendario.elf
+ 
+arm-none-eabi-size  Projeto\ Calendario.elf 
+arm-none-eabi-objdump -h -S Projeto\ Calendario.elf  > "Projeto Calendario.list"
+   text	   data	    bss	    dec	    hex	filename
+  12868	     92	   2020	  14980	   3a84	Projeto Calendario.elf
+Finished building: default.size.stdout
+ 
+Finished building: Projeto Calendario.list
+ 
+16:30:27 **** Incremental Build of configuration Debug for project Projeto Calendario ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Projeto Calendario.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Calendario\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Calendario.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Projeto Calendario.elf
+ 
+arm-none-eabi-size  Projeto\ Calendario.elf 
+arm-none-eabi-objdump -h -S Projeto\ Calendario.elf  > "Projeto Calendario.list"
+   text	   data	    bss	    dec	    hex	filename
+  12868	     92	   2020	  14980	   3a84	Projeto Calendario.elf
+Finished building: default.size.stdout
+ 
+Finished building: Projeto Calendario.list
+ 
+16:31:49 **** Incremental Build of configuration Debug for project Projeto Calendario ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Projeto Calendario.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Calendario\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Calendario.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Projeto Calendario.elf
+ 
+arm-none-eabi-size  Projeto\ Calendario.elf 
+arm-none-eabi-objdump -h -S Projeto\ Calendario.elf  > "Projeto Calendario.list"
+   text	   data	    bss	    dec	    hex	filename
+  13044	     92	   2020	  15156	   3b34	Projeto Calendario.elf
+Finished building: default.size.stdout
+ 
+Finished building: Projeto Calendario.list
+ 
+16:32:37 **** Incremental Build of configuration Debug for project Projeto Calendario ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Projeto Calendario.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Calendario\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Calendario.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Projeto Calendario.elf
+ 
+arm-none-eabi-size  Projeto\ Calendario.elf 
+arm-none-eabi-objdump -h -S Projeto\ Calendario.elf  > "Projeto Calendario.list"
+   text	   data	    bss	    dec	    hex	filename
+  13044	     92	   2020	  15156	   3b34	Projeto Calendario.elf
+Finished building: default.size.stdout
+ 
+Finished building: Projeto Calendario.list
+ 
+16:34:37 **** Incremental Build of configuration Debug for project Projeto Calendario ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Projeto Calendario.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Calendario\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Calendario.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Projeto Calendario.elf
+ 
+arm-none-eabi-size  Projeto\ Calendario.elf 
+arm-none-eabi-objdump -h -S Projeto\ Calendario.elf  > "Projeto Calendario.list"
+   text	   data	    bss	    dec	    hex	filename
+  13044	     96	   2016	  15156	   3b34	Projeto Calendario.elf
+Finished building: default.size.stdout
+ 
+Finished building: Projeto Calendario.list
+ 
+16:35:10 **** Incremental Build of configuration Debug for project Projeto Calendario ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Projeto Calendario.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Calendario\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Calendario.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Projeto Calendario.elf
+ 
+arm-none-eabi-size  Projeto\ Calendario.elf 
+arm-none-eabi-objdump -h -S Projeto\ Calendario.elf  > "Projeto Calendario.list"
+   text	   data	    bss	    dec	    hex	filename
+  13044	     96	   2016	  15156	   3b34	Projeto Calendario.elf
+Finished building: default.size.stdout
+ 
+Finished building: Projeto Calendario.list
+ 
+16:35:55 **** Incremental Build of configuration Debug for project Projeto Calendario ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Projeto Calendario.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Calendario\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Calendario.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Projeto Calendario.elf
+ 
+arm-none-eabi-size  Projeto\ Calendario.elf 
+arm-none-eabi-objdump -h -S Projeto\ Calendario.elf  > "Projeto Calendario.list"
+   text	   data	    bss	    dec	    hex	filename
+  13044	     96	   2016	  15156	   3b34	Projeto Calendario.elf
+Finished building: default.size.stdout
+ 
+Finished building: Projeto Calendario.list
+ 
+16:36:58 **** Incremental Build of configuration Debug for project Projeto Calendario ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Projeto Calendario.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Calendario\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Calendario.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Projeto Calendario.elf
+ 
+arm-none-eabi-size  Projeto\ Calendario.elf 
+arm-none-eabi-objdump -h -S Projeto\ Calendario.elf  > "Projeto Calendario.list"
+   text	   data	    bss	    dec	    hex	filename
+  13044	     96	   2016	  15156	   3b34	Projeto Calendario.elf
+Finished building: default.size.stdout
+ 
+Finished building: Projeto Calendario.list
+ 
+16:38:26 **** Incremental Build of configuration Debug for project Projeto Calendario ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Projeto Calendario.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Calendario\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Calendario.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Projeto Calendario.elf
+ 
+arm-none-eabi-size  Projeto\ Calendario.elf 
+arm-none-eabi-objdump -h -S Projeto\ Calendario.elf  > "Projeto Calendario.list"
+   text	   data	    bss	    dec	    hex	filename
+  13044	     96	   2016	  15156	   3b34	Projeto Calendario.elf
+Finished building: default.size.stdout
+ 
+Finished building: Projeto Calendario.list
+ 
+16:39:18 **** Incremental Build of configuration Debug for project Projeto Calendario ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Projeto Calendario.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Calendario\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Calendario.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Projeto Calendario.elf
+ 
+arm-none-eabi-size  Projeto\ Calendario.elf 
+arm-none-eabi-objdump -h -S Projeto\ Calendario.elf  > "Projeto Calendario.list"
+   text	   data	    bss	    dec	    hex	filename
+  13012	     92	   2020	  15124	   3b14	Projeto Calendario.elf
+Finished building: default.size.stdout
+ 
+Finished building: Projeto Calendario.list
+ 
+16:40:29 **** Incremental Build of configuration Debug for project Projeto Calendario ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Projeto Calendario.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Calendario\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Calendario.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Projeto Calendario.elf
+ 
+arm-none-eabi-size  Projeto\ Calendario.elf 
+arm-none-eabi-objdump -h -S Projeto\ Calendario.elf  > "Projeto Calendario.list"
+   text	   data	    bss	    dec	    hex	filename
+  13020	     92	   2020	  15132	   3b1c	Projeto Calendario.elf
+Finished building: default.size.stdout
+ 
+Finished building: Projeto Calendario.list
+ 
+16:41:33 **** Incremental Build of configuration Debug for project Projeto Calendario ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Projeto Calendario.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Calendario\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Calendario.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Projeto Calendario.elf
+ 
+arm-none-eabi-size  Projeto\ Calendario.elf 
+arm-none-eabi-objdump -h -S Projeto\ Calendario.elf  > "Projeto Calendario.list"
+   text	   data	    bss	    dec	    hex	filename
+  13020	     92	   2020	  15132	   3b1c	Projeto Calendario.elf
+Finished building: default.size.stdout
+ 
+Finished building: Projeto Calendario.list
+ 
+16:42:15 **** Incremental Build of configuration Debug for project Projeto Calendario ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Projeto Calendario.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Calendario\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Calendario.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Projeto Calendario.elf
+ 
+arm-none-eabi-size  Projeto\ Calendario.elf 
+arm-none-eabi-objdump -h -S Projeto\ Calendario.elf  > "Projeto Calendario.list"
+   text	   data	    bss	    dec	    hex	filename
+  13020	     92	   2020	  15132	   3b1c	Projeto Calendario.elf
+Finished building: default.size.stdout
+ 
+Finished building: Projeto Calendario.list
+ 
+16:43:19 **** Incremental Build of configuration Debug for project Projeto Calendario ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Projeto Calendario.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Calendario\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projeto Calendario.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Projeto Calendario.elf
+ 
+arm-none-eabi-size  Projeto\ Calendario.elf 
+arm-none-eabi-objdump -h -S Projeto\ Calendario.elf  > "Projeto Calendario.list"
+   text	   data	    bss	    dec	    hex	filename
+  13020	     92	   2020	  15132	   3b1c	Projeto Calendario.elf
+Finished building: default.size.stdout
+ 
+Finished building: Projeto Calendario.list
  

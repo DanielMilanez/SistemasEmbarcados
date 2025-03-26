@@ -35,7 +35,7 @@ Internamente o display LCD possui um microcontrolador responsável por manipula-
 Começaremos nosso código criando uma forma de interpretarmos o que iremos enviar para nosso display, para isso criaremos uma mascara de bits, lembrando que a informação que enviaremos serão nos pinos de comunicação.
 
 ```C
-typedef struct datap {
+typedef struct {
 	unsigned P0 : 1;
 	unsigned P1 : 1;
 	unsigned P2 : 1;
@@ -102,8 +102,8 @@ De fato não importa o que você está utilizando, ou a forma como você o utili
 
 ```C
 void Start(void){
+    HAL_Delay(40);
     // Comunicação de 8 pinos no barramento
-    Info_manager(0x30, 0);
     Info_manager(0x30, 0);
     Info_manager(0x30, 0);
 
@@ -199,14 +199,17 @@ void Info_manager(unsigned data, unsigned rs) {
 }
 
 void Start(void){
-    Info_manager(0x24, 0);
-    Info_manager(0x24, 0);
-    Info_manager(0x24, 0);
+    HAL_Delay(40);
+    // Modo 4 bits - Enviar primeiro o comando 0x33 e depois 0x32
+    Info_manager(0x33, 0);  
+    Info_manager(0x32, 0);  
 
     Info_manager(0x28, 0);
 
     Info_manager(0x0C, 0);
     Info_manager(0x06, 0);
     Info_manager(0x01, 0);
+
+    HAL_Delay(2);
 }
 ```
