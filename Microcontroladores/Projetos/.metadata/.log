@@ -3202,3 +3202,1307 @@ java.io.FileNotFoundException: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programaç
 
 !ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-26 16:43:26.371
 !MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Calendario\Core\Startup\startup_stm32l053r8tx.s
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-03-26 16:47:27.088
+!MESSAGE Indexed 'Projeto Contagem Dias' (22 sources, 84 headers) in 2.93 sec: 5,130 declarations; 31,942 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0054%)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.launch 2 0 2025-03-26 17:31:04.626
+!MESSAGE Won't launch debug session since we failed to locate the binary.
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-26 17:31:59.046
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Drivers\STM32L0xx_HAL_Driver\Src\stm32l0xx_hal.c
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-26 17:32:26.663
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Drivers\CMSIS\Include\core_cm0plus.h
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-26 17:34:08.482
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Src\system_stm32l0xx.c
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-26 17:35:34.034
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Calendario\Core\Src\main.c
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-26 17:35:37.775
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 68 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-26 17:35:37.778
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-26 17:35:37.783
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 68 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-26 17:35:37.786
+!MESSAGE Existing sessions are:
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-26 17:37:18.139
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Drivers\STM32L0xx_HAL_Driver\Src\stm32l0xx_hal_cortex.c
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-26 17:37:21.541
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 69 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-26 17:37:21.544
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-26 17:37:21.548
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 69 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-26 17:37:21.551
+!MESSAGE Existing sessions are:
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-26 17:39:02.383
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Calendario\Core\Src\stm32l0xx_hal_msp.c
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-26 17:39:24.723
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Drivers\STM32L0xx_HAL_Driver\Src\stm32l0xx_hal.c
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-26 17:40:23.857
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Src\stm32l0xx_it.c
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-26 17:40:42.034
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Startup\startup_stm32l053r8tx.s
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 10004 2025-03-26 17:40:56.405
+!MESSAGE Failed to execute MI command:
+-stack-list-frames 0 0
+Error message from debugger back end:
+Invalid thread id: 1
+!STACK 0
+java.lang.Exception: Invalid thread id: 1
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1024)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:853)
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-26 17:41:28.280
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Startup\startup_stm32l053r8tx.s
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-26 17:41:55.291
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Startup\startup_stm32l053r8tx.s
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-26 17:41:58.743
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 75 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-26 17:41:58.746
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-26 17:41:58.750
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 75 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-26 17:41:58.754
+!MESSAGE Existing sessions are:
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-26 17:42:26.144
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Startup\startup_stm32l053r8tx.s
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-26 17:42:50.136
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Calendario\Core\Src\main.c
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-26 17:44:08.514
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Calendario\Core\Src\main.c
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-26 17:44:12.238
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 79 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-26 17:44:12.242
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-26 17:44:12.245
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 79 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-26 17:44:12.248
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-26 17:44:54.109
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 80 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-26 17:44:54.112
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-26 17:44:54.116
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 80 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-26 17:44:54.119
+!MESSAGE Existing sessions are:
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-26 17:45:18.815
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Startup\startup_stm32l053r8tx.s
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-26 17:45:22.375
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 81 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-26 17:45:22.378
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-26 17:45:22.381
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 81 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-26 17:45:22.385
+!MESSAGE Existing sessions are:
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-26 17:45:32.604
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Startup\startup_stm32l053r8tx.s
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-26 17:45:48.891
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Src\main.c
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-26 17:46:46.370
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Startup\startup_stm32l053r8tx.s
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-26 17:47:45.634
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Src\main.c
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-26 17:48:33.150
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Startup\startup_stm32l053r8tx.s
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-26 17:58:29.492
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Startup\startup_stm32l053r8tx.s
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-26 18:00:44.718
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Startup\startup_stm32l053r8tx.s
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-26 18:01:07.479
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Startup\startup_stm32l053r8tx.s
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-26 18:03:57.514
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Startup\startup_stm32l053r8tx.s
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-26 18:06:59.706
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Src\main.c
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-26 18:07:11.923
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Startup\startup_stm32l053r8tx.s
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-26 18:10:54.005
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Src\stm32l0xx_it.c
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-26 18:10:58.046
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 94 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-26 18:10:58.049
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-26 18:10:58.053
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 94 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-26 18:10:58.056
+!MESSAGE Existing sessions are:
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2025-03-26 18:10:59.985
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.gdb.internal.ui.actions.DsfTerminateCommand$3$1@91bb6a2): Status OK: unknown code=0 OK' resulted in a rejected execution exception.
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-26 18:11:06.598
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Startup\startup_stm32l053r8tx.s
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-26 18:11:23.975
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Startup\startup_stm32l053r8tx.s
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-26 18:11:27.894
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 96 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-26 18:11:27.897
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-26 18:11:27.900
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 96 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-26 18:11:27.903
+!MESSAGE Existing sessions are:
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-26 18:11:49.141
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Startup\startup_stm32l053r8tx.s
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-26 18:11:53.026
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 97 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-26 18:11:53.030
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-26 18:11:53.033
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 97 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-26 18:11:53.037
+!MESSAGE Existing sessions are:
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-26 18:17:00.729
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Src\sysmem.c
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-26 18:17:21.681
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Startup\startup_stm32l053r8tx.s
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-26 18:18:18.024
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Startup\startup_stm32l053r8tx.s
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-26 18:19:54.557
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Startup\startup_stm32l053r8tx.s
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 104 2025-03-26 18:22:19.185
+!MESSAGE Program file does not exist
+!STACK 0
+java.io.FileNotFoundException: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Contagem Dias\Debug\Projeto Contagem Dias.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:334)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 104 2025-03-26 18:22:19.185
+!MESSAGE C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Contagem Dias\Debug\Projeto Contagem Dias.elf not found
+!STACK 0
+java.io.FileNotFoundException: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Contagem Dias\Debug\Projeto Contagem Dias.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:334)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-26 18:22:35.200
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Src\sysmem.c
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-26 18:25:37.371
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Src\system_stm32l0xx.c
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-26 18:28:19.132
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Startup\startup_stm32l053r8tx.s
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-26 18:30:25.136
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Startup\startup_stm32l053r8tx.s
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-26 18:31:08.698
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Startup\startup_stm32l053r8tx.s
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-26 18:32:02.994
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Startup\startup_stm32l053r8tx.s
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 104 2025-03-26 18:33:11.863
+!MESSAGE Program file does not exist
+!STACK 0
+java.io.FileNotFoundException: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Contagem Dias\Debug\Projeto Contagem Dias.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:334)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 104 2025-03-26 18:33:11.864
+!MESSAGE C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Contagem Dias\Debug\Projeto Contagem Dias.elf not found
+!STACK 0
+java.io.FileNotFoundException: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Contagem Dias\Debug\Projeto Contagem Dias.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:334)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-26 18:33:31.687
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Drivers\STM32L0xx_HAL_Driver\Src\stm32l0xx_hal.c
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-26 18:34:22.841
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Startup\startup_stm32l053r8tx.s
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-26 18:35:54.588
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Startup\startup_stm32l053r8tx.s
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-26 18:36:18.207
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Startup\startup_stm32l053r8tx.s
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-26 18:36:34.359
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Startup\startup_stm32l053r8tx.s
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-26 18:38:11.304
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Src\sysmem.c
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-26 18:39:16.905
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Src\main.c
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-26 18:39:20.738
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 120 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-26 18:39:20.743
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-26 18:39:20.746
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 120 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-26 18:39:20.749
+!MESSAGE Existing sessions are:
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-26 18:40:18.344
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Src\sysmem.c
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-26 18:40:22.220
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 121 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-26 18:40:22.224
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-26 18:40:22.228
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 121 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-26 18:40:22.232
+!MESSAGE Existing sessions are:
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 104 2025-03-26 18:42:15.662
+!MESSAGE Program file does not exist
+!STACK 0
+java.io.FileNotFoundException: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Contagem Dias\Debug\Projeto Contagem Dias.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:334)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 104 2025-03-26 18:42:15.662
+!MESSAGE C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Contagem Dias\Debug\Projeto Contagem Dias.elf not found
+!STACK 0
+java.io.FileNotFoundException: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Contagem Dias\Debug\Projeto Contagem Dias.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:334)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-26 18:42:34.907
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 123 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-26 18:42:34.910
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-26 18:42:34.913
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 123 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-26 18:42:34.916
+!MESSAGE Existing sessions are:
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-26 18:55:34.446
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Src\system_stm32l0xx.c
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-26 18:55:38.274
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 125 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-26 18:55:38.277
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-26 18:55:38.281
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 125 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-26 18:55:38.285
+!MESSAGE Existing sessions are:
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-26 18:57:04.388
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Startup\startup_stm32l053r8tx.s
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-26 18:57:30.507
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Startup\startup_stm32l053r8tx.s
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-26 18:58:22.005
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Startup\startup_stm32l053r8tx.s
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-26 19:00:20.942
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Src\system_stm32l0xx.c
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-26 19:01:01.060
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Drivers\STM32L0xx_HAL_Driver\Src\stm32l0xx_hal.c
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-26 19:01:04.849
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 131 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-26 19:01:04.852
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-26 19:01:04.857
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 131 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-26 19:01:04.860
+!MESSAGE Existing sessions are:
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-26 19:27:20.330
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Src\stm32l0xx_hal_msp.c
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-26 19:27:58.941
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Startup\startup_stm32l053r8tx.s
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 104 2025-03-26 19:52:22.566
+!MESSAGE Program file does not exist
+!STACK 0
+java.io.FileNotFoundException: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Contagem Dias\Debug\Projeto Contagem Dias.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:334)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 104 2025-03-26 19:52:22.566
+!MESSAGE C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Contagem Dias\Debug\Projeto Contagem Dias.elf not found
+!STACK 0
+java.io.FileNotFoundException: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Contagem Dias\Debug\Projeto Contagem Dias.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:334)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-26 19:53:56.366
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Src\main.c
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-26 19:54:00.239
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 135 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-26 19:54:00.242
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-26 19:54:00.246
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 135 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-26 19:54:00.249
+!MESSAGE Existing sessions are:
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-26 19:54:51.778
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Startup\startup_stm32l053r8tx.s
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-26 19:55:22.151
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Src\sysmem.c
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-26 19:59:44.786
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Drivers\CMSIS\Include\core_cm0plus.h
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-26 20:03:11.748
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Startup\startup_stm32l053r8tx.s
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-26 20:18:46.511
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Startup\startup_stm32l053r8tx.s
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-26 20:18:50.256
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 140 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-26 20:18:50.260
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-26 20:18:50.263
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 140 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-26 20:18:50.266
+!MESSAGE Existing sessions are:
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-26 20:31:40.269
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Src\stm32l0xx_hal_msp.c
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-26 20:31:44.168
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 141 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-26 20:31:44.170
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-26 20:31:44.174
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 141 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-26 20:31:44.178
+!MESSAGE Existing sessions are:
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-26 20:33:06.519
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Src\system_stm32l0xx.c
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-26 20:41:26.873
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Startup\startup_stm32l053r8tx.s
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-26 20:43:49.870
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Startup\startup_stm32l053r8tx.s
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-26 20:46:35.191
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Startup\startup_stm32l053r8tx.s
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-26 20:46:39.059
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 146 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-26 20:46:39.062
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-26 20:46:39.066
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 146 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-26 20:46:39.069
+!MESSAGE Existing sessions are:
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-26 20:46:49.660
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Startup\startup_stm32l053r8tx.s
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-26 20:49:57.677
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Drivers\STM32L0xx_HAL_Driver\Src\stm32l0xx_hal.c
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-26 20:50:01.522
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 148 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-26 20:50:01.525
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-26 20:50:01.529
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 148 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-26 20:50:01.532
+!MESSAGE Existing sessions are:
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-26 20:52:54.456
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Src\sysmem.c
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-26 20:54:56.409
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Src\sysmem.c
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-26 20:55:00.338
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 150 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-26 20:55:00.341
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-26 20:55:00.344
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 150 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-26 20:55:00.347
+!MESSAGE Existing sessions are:
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-26 20:56:42.210
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Src\sysmem.c
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-26 20:56:46.151
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 151 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-26 20:56:46.154
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-26 20:56:46.158
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 151 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-26 20:56:46.161
+!MESSAGE Existing sessions are:
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-26 21:03:18.493
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Src\sysmem.c
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-26 21:03:22.515
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 152 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-26 21:03:22.517
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-26 21:03:22.522
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 152 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-26 21:03:22.526
+!MESSAGE Existing sessions are:
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-26 21:05:23.661
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Src\system_stm32l0xx.c
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 104 2025-03-26 21:29:41.424
+!MESSAGE Program file does not exist
+!STACK 0
+java.io.FileNotFoundException: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Contagem Dias\Debug\Projeto Contagem Dias.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:334)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 104 2025-03-26 21:29:41.424
+!MESSAGE C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Contagem Dias\Debug\Projeto Contagem Dias.elf not found
+!STACK 0
+java.io.FileNotFoundException: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Contagem Dias\Debug\Projeto Contagem Dias.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:334)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-26 21:30:09.337
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 156 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-26 21:30:09.339
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-26 21:30:09.344
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 156 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-26 21:30:09.346
+!MESSAGE Existing sessions are:
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2025-03-26 21:30:11.248
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.gdb.internal.ui.actions.DsfTerminateCommand$3$1@5e40285b): Status OK: unknown code=0 OK' resulted in a rejected execution exception.
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-26 21:30:16.937
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Startup\startup_stm32l053r8tx.s
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-26 21:30:27.925
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Startup\startup_stm32l053r8tx.s
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-26 21:34:03.299
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Src\sysmem.c
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-26 21:34:07.212
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 159 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-26 21:34:07.215
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-26 21:34:07.219
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 159 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-26 21:34:07.222
+!MESSAGE Existing sessions are:
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-26 21:36:07.980
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Startup\startup_stm32l053r8tx.s
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-26 21:37:35.774
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Src\sysmem.c
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-26 21:38:20.497
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Drivers\STM32L0xx_HAL_Driver\Src\stm32l0xx_hal.c
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-26 21:38:24.331
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 162 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-26 21:38:24.333
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-26 21:38:24.337
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 162 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-26 21:38:24.340
+!MESSAGE Existing sessions are:
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-26 21:38:58.144
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Src\system_stm32l0xx.c
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-26 21:47:50.422
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Src\sysmem.c
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-26 21:49:17.281
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Startup\startup_stm32l053r8tx.s
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-26 21:50:29.935
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Drivers\STM32L0xx_HAL_Driver\Src\stm32l0xx_hal.c
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-26 21:51:40.882
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Startup\startup_stm32l053r8tx.s
+
+!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2025-03-26 21:52:33.836
+!MESSAGE Project 'Projeto Calendario' is not open.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException(/Projeto Calendario)[372]: java.lang.Exception: Project 'Projeto Calendario' is not open.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:186)
+	at org.eclipse.core.internal.resources.Project.getDescription(Project.java:430)
+	at org.eclipse.cdt.managedbuilder.internal.dataprovider.ConfigurationDataProvider.cacheNaturesIdsUsedOnCache(ConfigurationDataProvider.java:383)
+	at org.eclipse.cdt.managedbuilder.internal.dataprovider.ConfigurationDataProvider.loadConfiguration(ConfigurationDataProvider.java:580)
+	at org.eclipse.cdt.internal.core.settings.model.CConfigurationDescriptionCache.loadData(CConfigurationDescriptionCache.java:139)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescription.loadDatas(CProjectDescription.java:199)
+	at org.eclipse.cdt.internal.core.settings.model.xml.XmlProjectDescriptionStorage.loadProjectDescription(XmlProjectDescriptionStorage.java:509)
+	at org.eclipse.cdt.internal.core.settings.model.xml.XmlProjectDescriptionStorage.getProjectDescription(XmlProjectDescriptionStorage.java:239)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescriptionInternal(CProjectDescriptionManager.java:426)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescription(CProjectDescriptionManager.java:408)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescription(CProjectDescriptionManager.java:402)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescription(CProjectDescriptionManager.java:395)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.isNewStyleProject(CProjectDescriptionManager.java:2464)
+	at org.eclipse.cdt.core.model.CoreModel.isNewStyleProject(CoreModel.java:1457)
+	at org.eclipse.cdt.ui.newui.ManageConfigSelector.getProjects(ManageConfigSelector.java:104)
+	at org.eclipse.cdt.internal.ui.workingsets.HasManagedCdtProjectSelection.hasManagedCdtProjectSelection(HasManagedCdtProjectSelection.java:43)
+	at org.eclipse.cdt.internal.ui.workingsets.HasManagedCdtProjectSelection.test(HasManagedCdtProjectSelection.java:33)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:65)
+	at org.eclipse.core.expressions.TestExpression.evaluate(TestExpression.java:107)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:79)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:109)
+	at org.eclipse.ui.internal.services.EvaluationReference.changed(EvaluationReference.java:103)
+	at org.eclipse.e4.core.internal.contexts.TrackableComputationExt.update(TrackableComputationExt.java:105)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.processScheduled(EclipseContext.java:358)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.set(EclipseContext.java:374)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.deactivate(EclipseContext.java:681)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerHideProcessor.lambda$1(MenuManagerHideProcessor.java:144)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4046)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3662)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:648)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:555)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+!SUBENTRY 1 org.eclipse.core.resources 4 372 2025-03-26 21:52:33.840
+!MESSAGE Project 'Projeto Calendario' is not open.
+!STACK 0
+java.lang.Exception: Project 'Projeto Calendario' is not open.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:186)
+	at org.eclipse.core.internal.resources.Project.getDescription(Project.java:430)
+	at org.eclipse.cdt.managedbuilder.internal.dataprovider.ConfigurationDataProvider.cacheNaturesIdsUsedOnCache(ConfigurationDataProvider.java:383)
+	at org.eclipse.cdt.managedbuilder.internal.dataprovider.ConfigurationDataProvider.loadConfiguration(ConfigurationDataProvider.java:580)
+	at org.eclipse.cdt.internal.core.settings.model.CConfigurationDescriptionCache.loadData(CConfigurationDescriptionCache.java:139)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescription.loadDatas(CProjectDescription.java:199)
+	at org.eclipse.cdt.internal.core.settings.model.xml.XmlProjectDescriptionStorage.loadProjectDescription(XmlProjectDescriptionStorage.java:509)
+	at org.eclipse.cdt.internal.core.settings.model.xml.XmlProjectDescriptionStorage.getProjectDescription(XmlProjectDescriptionStorage.java:239)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescriptionInternal(CProjectDescriptionManager.java:426)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescription(CProjectDescriptionManager.java:408)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescription(CProjectDescriptionManager.java:402)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescription(CProjectDescriptionManager.java:395)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.isNewStyleProject(CProjectDescriptionManager.java:2464)
+	at org.eclipse.cdt.core.model.CoreModel.isNewStyleProject(CoreModel.java:1457)
+	at org.eclipse.cdt.ui.newui.ManageConfigSelector.getProjects(ManageConfigSelector.java:104)
+	at org.eclipse.cdt.internal.ui.workingsets.HasManagedCdtProjectSelection.hasManagedCdtProjectSelection(HasManagedCdtProjectSelection.java:43)
+	at org.eclipse.cdt.internal.ui.workingsets.HasManagedCdtProjectSelection.test(HasManagedCdtProjectSelection.java:33)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:65)
+	at org.eclipse.core.expressions.TestExpression.evaluate(TestExpression.java:107)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:79)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:109)
+	at org.eclipse.ui.internal.services.EvaluationReference.changed(EvaluationReference.java:103)
+	at org.eclipse.e4.core.internal.contexts.TrackableComputationExt.update(TrackableComputationExt.java:105)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.processScheduled(EclipseContext.java:358)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.set(EclipseContext.java:374)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.deactivate(EclipseContext.java:681)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerHideProcessor.lambda$1(MenuManagerHideProcessor.java:144)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4046)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3662)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:648)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:555)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+
+!ENTRY org.eclipse.cdt.core 4 0 2025-03-26 21:52:33.850
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: attempt to set description for a project which does not exist or not open
+	at org.eclipse.cdt.internal.core.settings.model.xml.XmlProjectDescriptionStorage.setCurrentDescription(XmlProjectDescriptionStorage.java:382)
+	at org.eclipse.cdt.internal.core.settings.model.xml.XmlProjectDescriptionStorage.setLoaddedDescriptionOnLoad(XmlProjectDescriptionStorage.java:360)
+	at org.eclipse.cdt.internal.core.settings.model.xml.XmlProjectDescriptionStorage.getProjectDescription(XmlProjectDescriptionStorage.java:258)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescriptionInternal(CProjectDescriptionManager.java:426)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescription(CProjectDescriptionManager.java:408)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescription(CProjectDescriptionManager.java:402)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescription(CProjectDescriptionManager.java:395)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.isNewStyleProject(CProjectDescriptionManager.java:2464)
+	at org.eclipse.cdt.core.model.CoreModel.isNewStyleProject(CoreModel.java:1457)
+	at org.eclipse.cdt.ui.newui.ManageConfigSelector.getProjects(ManageConfigSelector.java:104)
+	at org.eclipse.cdt.internal.ui.workingsets.HasManagedCdtProjectSelection.hasManagedCdtProjectSelection(HasManagedCdtProjectSelection.java:43)
+	at org.eclipse.cdt.internal.ui.workingsets.HasManagedCdtProjectSelection.test(HasManagedCdtProjectSelection.java:33)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:65)
+	at org.eclipse.core.expressions.TestExpression.evaluate(TestExpression.java:107)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:79)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:109)
+	at org.eclipse.ui.internal.services.EvaluationReference.changed(EvaluationReference.java:103)
+	at org.eclipse.e4.core.internal.contexts.TrackableComputationExt.update(TrackableComputationExt.java:105)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.processScheduled(EclipseContext.java:358)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.set(EclipseContext.java:374)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.deactivate(EclipseContext.java:681)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerHideProcessor.lambda$1(MenuManagerHideProcessor.java:144)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4046)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3662)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:648)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:555)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+!SUBENTRY 1 org.eclipse.cdt.core 4 -1 2025-03-26 21:52:33.851
+!MESSAGE attempt to set description for a project which does not exist or not open
+!SESSION 2025-03-27 13:05:29.591 -----------------------------------------------
+eclipse.buildId=Version 1.17.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pt_BR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-03-27 13:05:48.783
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-03-27 13:05:48.788
+!MESSAGE Log4j2 initialized with config file C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-03-27 13:05:56.222
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 104 2025-03-27 13:47:38.157
+!MESSAGE Program file does not exist
+!STACK 0
+java.io.FileNotFoundException: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Contagem Dias\Debug\Projeto Contagem Dias.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:334)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 104 2025-03-27 13:47:38.159
+!MESSAGE C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Contagem Dias\Debug\Projeto Contagem Dias.elf not found
+!STACK 0
+java.io.FileNotFoundException: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Contagem Dias\Debug\Projeto Contagem Dias.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:334)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 104 2025-03-27 14:16:16.852
+!MESSAGE Program file does not exist
+!STACK 0
+java.io.FileNotFoundException: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Contagem Dias\Debug\Projeto Contagem Dias.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:334)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 104 2025-03-27 14:16:16.852
+!MESSAGE C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Contagem Dias\Debug\Projeto Contagem Dias.elf not found
+!STACK 0
+java.io.FileNotFoundException: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Contagem Dias\Debug\Projeto Contagem Dias.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:334)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-27 15:10:39.387
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Startup\startup_stm32l053r8tx.s
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-27 15:12:01.906
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Startup\startup_stm32l053r8tx.s
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-27 15:12:50.598
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Startup\startup_stm32l053r8tx.s
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-27 15:25:03.041
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Startup\startup_stm32l053r8tx.s
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-27 15:31:38.283
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Startup\startup_stm32l053r8tx.s
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-27 15:41:01.791
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Startup\startup_stm32l053r8tx.s
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-27 15:44:38.830
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Startup\startup_stm32l053r8tx.s
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-27 15:45:13.322
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Src\main.c
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-27 15:45:58.379
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Drivers\STM32L0xx_HAL_Driver\Src\stm32l0xx_hal_rtc.c
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-27 15:46:27.277
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Startup\startup_stm32l053r8tx.s
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-27 15:49:52.677
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Src\sysmem.c
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-27 16:03:18.897
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Drivers\STM32L0xx_HAL_Driver\Src\stm32l0xx_hal_gpio.c
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-27 16:05:14.465
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Startup\startup_stm32l053r8tx.s
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-27 16:05:18.171
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Src\main.c
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-27 16:09:41.205
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Startup\startup_stm32l053r8tx.s
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-27 16:09:44.920
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Src\main.c
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-27 16:11:09.477
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Startup\startup_stm32l053r8tx.s
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-27 16:13:29.152
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Src\sysmem.c
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-27 16:14:33.693
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Src\system_stm32l0xx.c
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 104 2025-03-27 16:20:37.115
+!MESSAGE Program file does not exist
+!STACK 0
+java.io.FileNotFoundException: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Contagem Dias\Debug\Projeto Contagem Dias.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 104 2025-03-27 16:20:37.115
+!MESSAGE C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Contagem Dias\Debug\Projeto Contagem Dias.elf not found
+!STACK 0
+java.io.FileNotFoundException: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Contagem Dias\Debug\Projeto Contagem Dias.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 104 2025-03-27 16:21:21.391
+!MESSAGE Program file does not exist
+!STACK 0
+java.io.FileNotFoundException: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Contagem Dias\Debug\Projeto Contagem Dias.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 104 2025-03-27 16:21:21.391
+!MESSAGE C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Contagem Dias\Debug\Projeto Contagem Dias.elf not found
+!STACK 0
+java.io.FileNotFoundException: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Contagem Dias\Debug\Projeto Contagem Dias.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-27 16:21:33.072
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Src\sysmem.c
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-27 16:21:37.130
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Src\main.c
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-27 16:22:58.002
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Startup\startup_stm32l053r8tx.s
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-27 16:23:23.407
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Src\system_stm32l0xx.c
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-27 16:24:27.146
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Startup\startup_stm32l053r8tx.s
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-27 16:26:17.661
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Startup\startup_stm32l053r8tx.s
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-27 16:27:36.199
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Startup\startup_stm32l053r8tx.s
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-27 16:31:38.275
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Src\sysmem.c
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-27 16:33:30.318
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Src\main.c
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-27 16:36:04.827
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Startup\startup_stm32l053r8tx.s
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 104 2025-03-27 16:40:23.236
+!MESSAGE Program file does not exist
+!STACK 0
+java.io.FileNotFoundException: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Contagem Dias\Debug\Projeto Contagem Dias.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 104 2025-03-27 16:40:23.236
+!MESSAGE C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Contagem Dias\Debug\Projeto Contagem Dias.elf not found
+!STACK 0
+java.io.FileNotFoundException: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Contagem Dias\Debug\Projeto Contagem Dias.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-27 16:52:08.493
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Src\stm32l0xx_it.c
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-27 16:53:42.883
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Startup\startup_stm32l053r8tx.s
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2025-03-27 16:55:43.067
+!MESSAGE Error in final launch sequence:
+
+Setup exceptions
+!STACK 1
+org.eclipse.core.runtime.CoreException: Setup exceptions
+	at org.eclipse.cdt.dsf.concurrent.Query.get(Query.java:112)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:252)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 com.st.stm32cube.ide.mcu.debug.launch 4 0 2025-03-27 16:55:43.068
+!MESSAGE Setup exceptions
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-27 16:55:50.847
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Startup\startup_stm32l053r8tx.s
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-27 16:58:41.542
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Startup\startup_stm32l053r8tx.s
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-27 17:03:23.206
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Src\system_stm32l0xx.c
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-27 17:03:56.035
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Src\system_stm32l0xx.c
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-27 17:06:37.472
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Drivers\STM32L0xx_HAL_Driver\Src\stm32l0xx_hal.c
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-27 17:07:16.344
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Startup\startup_stm32l053r8tx.s
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-27 17:07:20.264
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 57 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-27 17:07:20.268
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-27 17:07:20.272
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 57 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-27 17:07:20.275
+!MESSAGE Existing sessions are:
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-27 17:10:08.138
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Startup\startup_stm32l053r8tx.s
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-27 17:10:12.135
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 59 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-27 17:10:12.137
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-27 17:10:12.142
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 59 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-03-27 17:10:12.145
+!MESSAGE Existing sessions are:
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-27 19:07:54.770
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Src\sysmem.c
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-27 19:08:56.788
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Startup\startup_stm32l053r8tx.s
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-27 19:10:10.302
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Startup\startup_stm32l053r8tx.s
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-27 19:11:58.871
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Src\system_stm32l0xx.c
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-27 19:13:27.074
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Startup\startup_stm32l053r8tx.s
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 104 2025-03-27 19:21:51.735
+!MESSAGE Program file does not exist
+!STACK 0
+java.io.FileNotFoundException: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Contagem Dias\Debug\Projeto Contagem Dias.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:334)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 104 2025-03-27 19:21:51.735
+!MESSAGE C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Contagem Dias\Debug\Projeto Contagem Dias.elf not found
+!STACK 0
+java.io.FileNotFoundException: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Contagem Dias\Debug\Projeto Contagem Dias.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:334)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 104 2025-03-27 19:24:56.502
+!MESSAGE Program file does not exist
+!STACK 0
+java.io.FileNotFoundException: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Contagem Dias\Debug\Projeto Contagem Dias.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:334)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 104 2025-03-27 19:24:56.502
+!MESSAGE C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Contagem Dias\Debug\Projeto Contagem Dias.elf not found
+!STACK 0
+java.io.FileNotFoundException: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programação\Microcontroladores\Projetos\Projeto Contagem Dias\Debug\Projeto Contagem Dias.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:334)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2025-03-27 19:25:11.850
+!MESSAGE Unable to locate file: C:\Users\ALUNO OC\Desktop\Guto\Estudos\Programa\303\247\303\243o\Microcontroladores\Projetos\Projeto Contagem Dias\Core\Startup\startup_stm32l053r8tx.s

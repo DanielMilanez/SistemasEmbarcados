@@ -1,6 +1,6 @@
-seconds
-minutes
-hours
-day
-mouth
-year
+str_temp
+x
+ctr
+id_char
+atualTime
+atualDate
