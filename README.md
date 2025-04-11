@@ -1,2 +1,9 @@
-# Aprendendo C
-O objetivo deste repositório é ser um epicentro de todas as informações adiquiridas durante meus estudos da linguagem C e microcontroladores, enquanto participo da olimpiada do conhecimento, minhas pesquisas são feitas com base em um mapa de estudos proposto por meus instrutores. Atualizações serão dispostas com base em desafios que foram passados a mim.
+
+<div align = "center">
+<h2> Sistemas embarcados </h2>
+<img src="./Notes/images/capa/CapaRepositorio.jpg" alt="ImagemCapa.jpg" width="400" height="200">
+
+<div align = "left">
+Aqui, neste repositório está toda a coletania de informações que eu construi e consolidei ao longo de meus estudos a respeito de microcontroladores, este repositório DEVERÁ SEMPRE se manter oculto, para demais pessoas. Pois, aqui contêm códigos sensíveis, estrategia de estudos voltados para a olimpíada do conhecimento. Na qual eu faço parte.
+</div>
+</div>
