@@ -1,44 +1,27 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 int main(void) {
-    FILE *arq;
-    unsigned char *palloc;
-    unsigned long int num_bytes = 0, i = 0;
-    int chr;
+    char s[100],
+         *palloc;
 
-    arq = fopen("code.txt", "r");
+    printf("Enctre com a string > ");
+    gets(s);
+    palloc = (char *)malloc(strlen(s) + 1);
 
-    if (arq == NULL){
-        printf("Falha ao abrir o arquivo.\n");
-        exit(0);
+    if (palloc == NULL){
+        puts("Memoria insuficiente\n");
+    } else {
+        strcpy(palloc, s);
+        
+        putchar(0x0A);
+        printf(s);
+        putchar(0x0A);
+        printf(palloc);
+
+        free(palloc);
     }
-
-        printf("Arquivo aberto com sucesso!\n");
-
-        while ((chr = fgetc(arq))!= EOF) num_bytes++;
-
-        printf("Tamanho do arquivo %lu bytes\n", num_bytes);
-        rewind(arq);
-
-        palloc = (unsigned char *) malloc(num_bytes * sizeof(char));
-
-        if(palloc == NULL){
-            printf("Memoria insuficiente. \n");
-            exit(0);
-        }
-
-        while((chr = fgetc(arq))!= EOF){
-            if (i < num_bytes) palloc[i] = (unsigned char) chr;
-            ++i;
-        }
-
-        for (i = 0; i < num_bytes; ++i){
-            printf("%c", palloc[i]);
-        }
-    
-    fclose(arq);
-    free(palloc);
 
     return 0;
 }

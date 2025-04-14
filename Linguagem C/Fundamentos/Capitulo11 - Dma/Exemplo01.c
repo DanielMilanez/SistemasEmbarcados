@@ -1,27 +1,32 @@
+/*
+    Funções oriundas da stdlib.h
+    malloc  :: memory alocation (solicita ao OS separar um bloco de memoria do tamanho que quisermos, retornando um ponteiro)
+    free    :: libera a memória para o uso do computador.
+    calloc  :: aloca o número de bytes que estou especificando, inicializando todos os endereços em 0
+    realloc ::
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 
-int main(void) {
-    char s[100],
-         *palloc;
+int main(void)
+{
+    int *pointter = (int *)malloc(sizeof(int));
+    int *pointterWithCalloc = (int *)calloc(10, sizeof(int));
 
-    printf("Enctre com a string > ");
-    gets(s);
-    palloc = (char *)malloc(strlen(s) + 1);
+    printf("Inicializando a variavel com malloc: %d\n", *pointter);
+    printf("Inicializando a variavel com calloc: %d", *pointterWithCalloc);
 
-    if (palloc == NULL){
-        puts("Memoria insuficiente\n");
-    } else {
-        strcpy(palloc, s);
-        
-        putchar(0x0A);
-        printf(s);
-        putchar(0x0A);
-        printf(palloc);
+    printf("\nRealizando alteracoes nos valores\n");
+    pointterWithCalloc[1] = 10;
 
-        free(palloc);
+    for (int i = 0; i < 10; ++i)
+    {
+        printf("%2d -> %2i\n", i, pointter[i]);
     }
+
+    // Liberando a alocação da memória
+    free(pointter);
 
     return 0;
 }
