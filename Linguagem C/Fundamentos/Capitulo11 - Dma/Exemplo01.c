@@ -3,7 +3,7 @@
     malloc  :: memory alocation (solicita ao OS separar um bloco de memoria do tamanho que quisermos, retornando um ponteiro)
     free    :: libera a memória para o uso do computador.
     calloc  :: aloca o número de bytes que estou especificando, inicializando todos os endereços em 0
-    realloc ::
+    realloc :: A função realloc serve para alterar durante a execução do programa o tamanho do bloque que foi alocado.
 */
 
 #include <stdio.h>
