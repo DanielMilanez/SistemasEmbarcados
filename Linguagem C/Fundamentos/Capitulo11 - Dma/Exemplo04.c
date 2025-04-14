@@ -2,6 +2,7 @@
 #include <stdlib.h>
 
 // A função realloc serve para alterar durante a execução do programa o tamanho do bloque que foi alocado.
+// Lembrando que caso não seja possível estender o espaço já alocado na memória, outro será selecionado e o qu estava em uso anteriormente será liberado (free). 
 
 int main(void){
     int * pointter = (int *) calloc(2, sizeof(int));
