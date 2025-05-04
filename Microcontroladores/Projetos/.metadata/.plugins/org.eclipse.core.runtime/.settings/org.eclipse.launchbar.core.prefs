@@ -1,7 +1,7 @@
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
-configDescList=org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Projeto leitor joystick Debug
+configDescList=org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Projeto UART com PC Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Projeto lembrete para prova Debug
 eclipse.preferences.version=1
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:ADC\ Simples\ Debug/activeLaunchMode=debug
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:ADC\ Simples\ Debug/activeLaunchTarget=null\:---
@@ -26,6 +26,7 @@ org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Projeto\ LED\ RGB\ por\ PWM\ De
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Projeto\ Leitor\ de\ Frequencia\ Debug/activeLaunchMode=run
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Projeto\ Leitor\ de\ Frequencia\ Debug/activeLaunchTarget=null\:---
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Projeto\ Multplex\ Teclado\ Debug/activeLaunchMode=run
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Projeto\ Nivel\ Bolha\ ADC\ Debug/activeLaunchMode=run
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Projeto\ OnePulseMode\ Debug/activeLaunchMode=run
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Projeto\ OnePulseMode\ Debug/activeLaunchTarget=null\:---
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Projeto\ Servo\ Motor\ Debug/activeLaunchMode=run
@@ -33,14 +34,19 @@ org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Projeto\ Servo\ Motor\ Debug/ac
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Projeto\ ServoMotor\ Debug/activeLaunchMode=run
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Projeto\ ServoMotor\ Debug/activeLaunchTarget=null\:---
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Projeto\ Teclado\ Musical\ Debug/activeLaunchMode=run
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Projeto\ UART\ com\ PC\ Debug/activeLaunchMode=debug
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Projeto\ UART\ com\ PC\ Debug/activeLaunchTarget=null\:---
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Projeto\ controle\ FAN\ Debug/activeLaunchMode=run
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Projeto\ controle\ FAN\ Debug/activeLaunchTarget=null\:---
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Projeto\ inputcapture\ Debug/activeLaunchMode=debug
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Projeto\ leitor\ joystick\ Debug/activeLaunchMode=debug
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Projeto\ lembrete\ para\ prova\ Debug/activeLaunchMode=run
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Projeto\ matriz\ RGB\ Debug/activeLaunchMode=run
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Projeto\ matriz\ RGB\ Debug/activeLaunchTarget=null\:---
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Projeto\ matriz\ led\ bicolor\ Debug/activeLaunchMode=run
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Projeto\ matriz\ led\ bicolor\ Debug/activeLaunchTarget=null\:---
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Projeto\ navegar\ matriz\ 8x8\ Debug/activeLaunchMode=run
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Projeto\ navegar\ matriz\ 8x8\ Debug/activeLaunchTarget=null\:---
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Projeto\ outputcompare\ Debug/activeLaunchMode=run
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Projeto\ sensor\ de\ temperatura\ Debug/activeLaunchMode=debug
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Projeto_InterruptExterna\ Debug/activeLaunchMode=run
