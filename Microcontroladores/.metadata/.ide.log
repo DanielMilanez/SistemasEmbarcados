@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 2025-03-09 13:01:43,757 [INFO] Activator:176 - 
 
 
@@ -2711,3 +2712,6 @@ java.lang.NullPointerException: Cannot invoke "javax.swing.JTextField.getText()"
 2025-04-13 16:18:20,950 [INFO] UserAuth:486 - Internet connection configuration mode: 1
 2025-04-13 16:18:20,959 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 16:18:20.957 ERROR Failed to attach the window.
 2025-04-13 16:18:20,960 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 
+=======
+2025-05-02 00:44:11,739 [ERROR] ConfigurationRetriever:142 - IOException on connection: Connect timed out
+>>>>>>> fece579e31b4ce91e59392ecea5d90896bfe9a27

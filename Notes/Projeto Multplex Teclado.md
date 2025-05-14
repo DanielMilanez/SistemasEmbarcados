@@ -31,7 +31,10 @@ Nosso valor de verificação de botão precionado está configurado para pull-up
 // Matriz para teclado
 char tmap[4][3] =  {{'1', '2', '3'},
 					{'4', '5', '6'},
+<<<<<<< HEAD
 					{'7', '8', '9'},
+=======
+>>>>>>> fece579e31b4ce91e59392ecea5d90896bfe9a27
 					{'*', '0', '#'}};
 
 // Variável resposta

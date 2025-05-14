@@ -1,0 +1,170 @@
+2025-04-27 01:41:32,535 [INFO] Gpio:277 - dependency for GPIO []
+2025-04-27 01:55:28,308 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 624747752 Bytes (1073741824)
+2025-04-27 01:55:28,659 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 650769504 Bytes (1073741824)
+2025-04-27 01:55:31,103 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 691663968 Bytes (1073741824)
+2025-04-27 01:55:31,580 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: NVIC
+2025-04-27 01:55:31,581 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: USART
+2025-04-27 01:55:31,581 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: SYS
+2025-04-27 01:55:31,582 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: GPIO
+2025-04-27 01:55:31,582 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: RCC
+2025-04-27 01:55:31,584 [INFO] CodeGenerator:882 - code generatio: config db path: C:\ST\STM32CubeIDE_1.18.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.14.0.202502271554\\db\
+2025-04-27 01:55:31,791 [INFO] CodeEngine:263 - oldGeneratedFile, C:\Users\danie\OneDrive\Desktop\microcontroladores\Microcontroladores\Projetos\Projeto UART com PC\MXTmpFiles\license.tmp_save
+2025-04-27 01:55:32,297 [INFO] CodeEngine:287 - Generated code: C:\Users\danie\OneDrive\Desktop\microcontroladores\Microcontroladores\Projetos\Projeto UART com PC\MXTmpFiles\license.tmp
+2025-04-27 01:55:32,425 [INFO] CodeEngine:263 - oldGeneratedFile, C:\Users\danie\OneDrive\Desktop\microcontroladores\Microcontroladores\Projetos\Projeto UART com PC\MXTmpFiles\gpio.tmp_save
+2025-04-27 01:55:32,666 [INFO] CodeEngine:287 - Generated code: C:\Users\danie\OneDrive\Desktop\microcontroladores\Microcontroladores\Projetos\Projeto UART com PC\MXTmpFiles\gpio.tmp
+2025-04-27 01:55:32,927 [INFO] CodeEngine:263 - oldGeneratedFile, C:\Users\danie\OneDrive\Desktop\microcontroladores\Microcontroladores\Projetos\Projeto UART com PC\Core\Src\stm32l0xx_it.c_save
+2025-04-27 01:55:33,458 [INFO] CodeEngine:287 - Generated code: C:\Users\danie\OneDrive\Desktop\microcontroladores\Microcontroladores\Projetos\Projeto UART com PC\Core\Src\stm32l0xx_it.c
+2025-04-27 01:55:33,467 [INFO] CodeEngine:263 - oldGeneratedFile, C:\Users\danie\OneDrive\Desktop\microcontroladores\Microcontroladores\Projetos\Projeto UART com PC\Core\Inc\stm32l0xx_it.h_save
+2025-04-27 01:55:33,622 [INFO] CodeEngine:287 - Generated code: C:\Users\danie\OneDrive\Desktop\microcontroladores\Microcontroladores\Projetos\Projeto UART com PC\Core\Inc\stm32l0xx_it.h
+2025-04-27 01:55:33,650 [INFO] CodeEngine:263 - oldGeneratedFile, C:\Users\danie\OneDrive\Desktop\microcontroladores\Microcontroladores\Projetos\Projeto UART com PC\Core\Src\stm32l0xx_hal_msp.c_save
+2025-04-27 01:55:33,938 [INFO] CodeEngine:287 - Generated code: C:\Users\danie\OneDrive\Desktop\microcontroladores\Microcontroladores\Projetos\Projeto UART com PC\Core\Src\stm32l0xx_hal_msp.c
+2025-04-27 01:55:33,946 [INFO] CodeEngine:263 - oldGeneratedFile, C:\Users\danie\OneDrive\Desktop\microcontroladores\Microcontroladores\Projetos\Projeto UART com PC\MXTmpFiles\system.tmp_save
+2025-04-27 01:55:34,086 [INFO] CodeEngine:287 - Generated code: C:\Users\danie\OneDrive\Desktop\microcontroladores\Microcontroladores\Projetos\Projeto UART com PC\MXTmpFiles\system.tmp
+2025-04-27 01:55:34,104 [INFO] CodeEngine:319 - oldGeneratedFile, C:\Users\danie\OneDrive\Desktop\microcontroladores\Microcontroladores\Projetos\Projeto UART com PC\Core\Inc\stm32l0xx_hal_conf.h_save
+2025-04-27 01:55:34,262 [INFO] CodeEngine:343 - Generated code: C:\Users\danie\OneDrive\Desktop\microcontroladores\Microcontroladores\Projetos\Projeto UART com PC\Core\Inc\stm32l0xx_hal_conf.h
+2025-04-27 01:55:34,388 [INFO] ApiDbMcu:508 - Load IP Config File for USART1
+2025-04-27 01:55:34,404 [INFO] CodeEngine:263 - oldGeneratedFile, C:\Users\danie\OneDrive\Desktop\microcontroladores\Microcontroladores\Projetos\Projeto UART com PC\Core\Inc\main.h_save
+2025-04-27 01:55:34,632 [INFO] CodeEngine:287 - Generated code: C:\Users\danie\OneDrive\Desktop\microcontroladores\Microcontroladores\Projetos\Projeto UART com PC\Core\Inc\main.h
+2025-04-27 01:55:34,642 [INFO] CodeEngine:263 - oldGeneratedFile, C:\Users\danie\OneDrive\Desktop\microcontroladores\Microcontroladores\Projetos\Projeto UART com PC\Core\Src\main.c_save
+2025-04-27 01:55:34,882 [INFO] CodeEngine:287 - Generated code: C:\Users\danie\OneDrive\Desktop\microcontroladores\Microcontroladores\Projetos\Projeto UART com PC\Core\Src\main.c
+2025-04-27 01:55:35,632 [INFO] ProjectBuilder:3324 - Time for Copy HAL[1] : 439mS.
+2025-04-27 01:55:35,639 [INFO] ProjectBuilder:4912 - Project Generator version: 4.6.0-B36
+2025-04-27 01:55:35,803 [INFO] ConfigFileManager:1590 - The Die is : DIE417
+2025-04-27 01:55:38,793 [INFO] ProjectBuilder:5191 - Time for Generating toolchain IDE Files: 3152mS.
+2025-04-27 01:55:38,817 [INFO] ProjectBuilder:3181 - Time for Copy CMSIS : 1mS.
+2025-04-27 01:55:38,821 [INFO] ProjectBuilder:3181 - Time for Copy CMSIS : 0mS.
+2025-04-27 01:58:48,449 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2025-04-27 02:00:06,830 [INFO] Gpio:277 - dependency for GPIO [USART1]
+2025-04-27 02:00:28,926 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 701081872 Bytes (1073741824)
+2025-04-27 02:00:29,069 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 722537432 Bytes (1073741824)
+2025-04-27 02:00:31,364 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 785451992 Bytes (1073741824)
+2025-04-27 02:00:32,070 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: NVIC
+2025-04-27 02:00:32,071 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: USART
+2025-04-27 02:00:32,071 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: SYS
+2025-04-27 02:00:32,071 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: GPIO
+2025-04-27 02:00:32,071 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: RCC
+2025-04-27 02:00:32,073 [INFO] CodeGenerator:882 - code generatio: config db path: C:\ST\STM32CubeIDE_1.18.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.14.0.202502271554\\db\
+2025-04-27 02:00:32,205 [INFO] CodeEngine:263 - oldGeneratedFile, C:\Users\danie\OneDrive\Desktop\microcontroladores\Microcontroladores\Projetos\Projeto UART com PC\MXTmpFiles\license.tmp_save
+2025-04-27 02:00:32,456 [INFO] CodeEngine:287 - Generated code: C:\Users\danie\OneDrive\Desktop\microcontroladores\Microcontroladores\Projetos\Projeto UART com PC\MXTmpFiles\license.tmp
+2025-04-27 02:00:32,561 [INFO] CodeEngine:263 - oldGeneratedFile, C:\Users\danie\OneDrive\Desktop\microcontroladores\Microcontroladores\Projetos\Projeto UART com PC\MXTmpFiles\gpio.tmp_save
+2025-04-27 02:00:32,741 [INFO] CodeEngine:287 - Generated code: C:\Users\danie\OneDrive\Desktop\microcontroladores\Microcontroladores\Projetos\Projeto UART com PC\MXTmpFiles\gpio.tmp
+2025-04-27 02:00:32,968 [INFO] CodeEngine:263 - oldGeneratedFile, C:\Users\danie\OneDrive\Desktop\microcontroladores\Microcontroladores\Projetos\Projeto UART com PC\Core\Src\stm32l0xx_it.c_save
+2025-04-27 02:00:33,145 [INFO] CodeEngine:287 - Generated code: C:\Users\danie\OneDrive\Desktop\microcontroladores\Microcontroladores\Projetos\Projeto UART com PC\Core\Src\stm32l0xx_it.c
+2025-04-27 02:00:33,153 [INFO] CodeEngine:263 - oldGeneratedFile, C:\Users\danie\OneDrive\Desktop\microcontroladores\Microcontroladores\Projetos\Projeto UART com PC\Core\Inc\stm32l0xx_it.h_save
+2025-04-27 02:00:33,317 [INFO] CodeEngine:287 - Generated code: C:\Users\danie\OneDrive\Desktop\microcontroladores\Microcontroladores\Projetos\Projeto UART com PC\Core\Inc\stm32l0xx_it.h
+2025-04-27 02:00:33,336 [INFO] CodeEngine:263 - oldGeneratedFile, C:\Users\danie\OneDrive\Desktop\microcontroladores\Microcontroladores\Projetos\Projeto UART com PC\Core\Src\stm32l0xx_hal_msp.c_save
+2025-04-27 02:00:33,561 [INFO] CodeEngine:287 - Generated code: C:\Users\danie\OneDrive\Desktop\microcontroladores\Microcontroladores\Projetos\Projeto UART com PC\Core\Src\stm32l0xx_hal_msp.c
+2025-04-27 02:00:33,567 [INFO] CodeEngine:263 - oldGeneratedFile, C:\Users\danie\OneDrive\Desktop\microcontroladores\Microcontroladores\Projetos\Projeto UART com PC\MXTmpFiles\system.tmp_save
+2025-04-27 02:00:33,715 [INFO] CodeEngine:287 - Generated code: C:\Users\danie\OneDrive\Desktop\microcontroladores\Microcontroladores\Projetos\Projeto UART com PC\MXTmpFiles\system.tmp
+2025-04-27 02:00:33,731 [INFO] CodeEngine:319 - oldGeneratedFile, C:\Users\danie\OneDrive\Desktop\microcontroladores\Microcontroladores\Projetos\Projeto UART com PC\Core\Inc\stm32l0xx_hal_conf.h_save
+2025-04-27 02:00:33,892 [INFO] CodeEngine:343 - Generated code: C:\Users\danie\OneDrive\Desktop\microcontroladores\Microcontroladores\Projetos\Projeto UART com PC\Core\Inc\stm32l0xx_hal_conf.h
+2025-04-27 02:00:33,932 [INFO] CodeEngine:263 - oldGeneratedFile, C:\Users\danie\OneDrive\Desktop\microcontroladores\Microcontroladores\Projetos\Projeto UART com PC\Core\Inc\main.h_save
+2025-04-27 02:00:34,073 [INFO] CodeEngine:287 - Generated code: C:\Users\danie\OneDrive\Desktop\microcontroladores\Microcontroladores\Projetos\Projeto UART com PC\Core\Inc\main.h
+2025-04-27 02:00:34,082 [INFO] CodeEngine:263 - oldGeneratedFile, C:\Users\danie\OneDrive\Desktop\microcontroladores\Microcontroladores\Projetos\Projeto UART com PC\Core\Src\main.c_save
+2025-04-27 02:00:34,309 [INFO] CodeEngine:287 - Generated code: C:\Users\danie\OneDrive\Desktop\microcontroladores\Microcontroladores\Projetos\Projeto UART com PC\Core\Src\main.c
+2025-04-27 02:00:34,963 [INFO] ProjectBuilder:3324 - Time for Copy HAL[1] : 269mS.
+2025-04-27 02:00:34,998 [INFO] ProjectBuilder:4912 - Project Generator version: 4.6.0-B36
+2025-04-27 02:00:35,166 [INFO] ConfigFileManager:1590 - The Die is : DIE417
+2025-04-27 02:00:37,795 [INFO] ProjectBuilder:5191 - Time for Generating toolchain IDE Files: 2796mS.
+2025-04-27 02:00:37,796 [INFO] ProjectBuilder:3181 - Time for Copy CMSIS : 1mS.
+2025-04-27 02:00:37,800 [INFO] ProjectBuilder:3181 - Time for Copy CMSIS : 1mS.
+2025-04-27 02:04:25,337 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 684841200 Bytes (1073741824)
+2025-04-27 02:04:25,410 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 700513720 Bytes (1073741824)
+2025-04-27 02:04:26,627 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 747699640 Bytes (1073741824)
+2025-04-27 02:04:26,940 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: NVIC
+2025-04-27 02:04:26,940 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: USART
+2025-04-27 02:04:26,940 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: SYS
+2025-04-27 02:04:26,940 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: GPIO
+2025-04-27 02:04:26,941 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: RCC
+2025-04-27 02:04:26,942 [INFO] CodeGenerator:882 - code generatio: config db path: C:\ST\STM32CubeIDE_1.18.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.14.0.202502271554\\db\
+2025-04-27 02:04:27,054 [INFO] CodeEngine:263 - oldGeneratedFile, C:\Users\danie\OneDrive\Desktop\microcontroladores\Microcontroladores\Projetos\Projeto UART com PC\MXTmpFiles\license.tmp_save
+2025-04-27 02:04:27,143 [INFO] CodeEngine:287 - Generated code: C:\Users\danie\OneDrive\Desktop\microcontroladores\Microcontroladores\Projetos\Projeto UART com PC\MXTmpFiles\license.tmp
+2025-04-27 02:04:27,208 [INFO] CodeEngine:263 - oldGeneratedFile, C:\Users\danie\OneDrive\Desktop\microcontroladores\Microcontroladores\Projetos\Projeto UART com PC\MXTmpFiles\gpio.tmp_save
+2025-04-27 02:04:27,303 [INFO] CodeEngine:287 - Generated code: C:\Users\danie\OneDrive\Desktop\microcontroladores\Microcontroladores\Projetos\Projeto UART com PC\MXTmpFiles\gpio.tmp
+2025-04-27 02:04:27,456 [INFO] CodeEngine:263 - oldGeneratedFile, C:\Users\danie\OneDrive\Desktop\microcontroladores\Microcontroladores\Projetos\Projeto UART com PC\Core\Src\stm32l0xx_it.c_save
+2025-04-27 02:04:27,588 [INFO] CodeEngine:287 - Generated code: C:\Users\danie\OneDrive\Desktop\microcontroladores\Microcontroladores\Projetos\Projeto UART com PC\Core\Src\stm32l0xx_it.c
+2025-04-27 02:04:27,600 [INFO] CodeEngine:263 - oldGeneratedFile, C:\Users\danie\OneDrive\Desktop\microcontroladores\Microcontroladores\Projetos\Projeto UART com PC\Core\Inc\stm32l0xx_it.h_save
+2025-04-27 02:04:27,708 [INFO] CodeEngine:287 - Generated code: C:\Users\danie\OneDrive\Desktop\microcontroladores\Microcontroladores\Projetos\Projeto UART com PC\Core\Inc\stm32l0xx_it.h
+2025-04-27 02:04:27,731 [INFO] CodeEngine:263 - oldGeneratedFile, C:\Users\danie\OneDrive\Desktop\microcontroladores\Microcontroladores\Projetos\Projeto UART com PC\Core\Src\stm32l0xx_hal_msp.c_save
+2025-04-27 02:04:27,897 [INFO] CodeEngine:287 - Generated code: C:\Users\danie\OneDrive\Desktop\microcontroladores\Microcontroladores\Projetos\Projeto UART com PC\Core\Src\stm32l0xx_hal_msp.c
+2025-04-27 02:04:27,904 [INFO] CodeEngine:263 - oldGeneratedFile, C:\Users\danie\OneDrive\Desktop\microcontroladores\Microcontroladores\Projetos\Projeto UART com PC\MXTmpFiles\system.tmp_save
+2025-04-27 02:04:28,001 [INFO] CodeEngine:287 - Generated code: C:\Users\danie\OneDrive\Desktop\microcontroladores\Microcontroladores\Projetos\Projeto UART com PC\MXTmpFiles\system.tmp
+2025-04-27 02:04:28,018 [INFO] CodeEngine:319 - oldGeneratedFile, C:\Users\danie\OneDrive\Desktop\microcontroladores\Microcontroladores\Projetos\Projeto UART com PC\Core\Inc\stm32l0xx_hal_conf.h_save
+2025-04-27 02:04:28,135 [INFO] CodeEngine:343 - Generated code: C:\Users\danie\OneDrive\Desktop\microcontroladores\Microcontroladores\Projetos\Projeto UART com PC\Core\Inc\stm32l0xx_hal_conf.h
+2025-04-27 02:04:28,176 [INFO] CodeEngine:263 - oldGeneratedFile, C:\Users\danie\OneDrive\Desktop\microcontroladores\Microcontroladores\Projetos\Projeto UART com PC\Core\Inc\main.h_save
+2025-04-27 02:04:28,278 [INFO] CodeEngine:287 - Generated code: C:\Users\danie\OneDrive\Desktop\microcontroladores\Microcontroladores\Projetos\Projeto UART com PC\Core\Inc\main.h
+2025-04-27 02:04:28,293 [INFO] CodeEngine:263 - oldGeneratedFile, C:\Users\danie\OneDrive\Desktop\microcontroladores\Microcontroladores\Projetos\Projeto UART com PC\Core\Src\main.c_save
+2025-04-27 02:04:28,474 [INFO] CodeEngine:287 - Generated code: C:\Users\danie\OneDrive\Desktop\microcontroladores\Microcontroladores\Projetos\Projeto UART com PC\Core\Src\main.c
+2025-04-27 02:04:29,083 [INFO] ProjectBuilder:3324 - Time for Copy HAL[1] : 286mS.
+2025-04-27 02:04:29,089 [INFO] ProjectBuilder:4912 - Project Generator version: 4.6.0-B36
+2025-04-27 02:04:29,242 [INFO] ConfigFileManager:1590 - The Die is : DIE417
+2025-04-27 02:04:31,372 [INFO] ProjectBuilder:5191 - Time for Generating toolchain IDE Files: 2284mS.
+2025-04-27 02:04:31,374 [INFO] ProjectBuilder:3181 - Time for Copy CMSIS : 1mS.
+2025-04-27 02:04:31,384 [INFO] ProjectBuilder:3181 - Time for Copy CMSIS : 0mS.
+2025-04-27 02:11:56,657 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 799858416 Bytes (1073741824)
+2025-04-27 02:11:56,746 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 823449328 Bytes (1073741824)
+2025-04-27 02:11:57,729 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 883744496 Bytes (1073741824)
+2025-04-27 02:11:58,010 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: NVIC
+2025-04-27 02:11:58,010 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: USART
+2025-04-27 02:11:58,010 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: SYS
+2025-04-27 02:11:58,010 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: GPIO
+2025-04-27 02:11:58,011 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: RCC
+2025-04-27 02:11:58,012 [INFO] CodeGenerator:882 - code generatio: config db path: C:\ST\STM32CubeIDE_1.18.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.14.0.202502271554\\db\
+2025-04-27 02:11:58,151 [INFO] CodeEngine:263 - oldGeneratedFile, C:\Users\danie\OneDrive\Desktop\microcontroladores\Microcontroladores\Projetos\Projeto UART com PC\MXTmpFiles\license.tmp_save
+2025-04-27 02:11:58,384 [INFO] CodeEngine:287 - Generated code: C:\Users\danie\OneDrive\Desktop\microcontroladores\Microcontroladores\Projetos\Projeto UART com PC\MXTmpFiles\license.tmp
+2025-04-27 02:11:58,460 [INFO] CodeEngine:263 - oldGeneratedFile, C:\Users\danie\OneDrive\Desktop\microcontroladores\Microcontroladores\Projetos\Projeto UART com PC\MXTmpFiles\gpio.tmp_save
+2025-04-27 02:11:58,595 [INFO] CodeEngine:287 - Generated code: C:\Users\danie\OneDrive\Desktop\microcontroladores\Microcontroladores\Projetos\Projeto UART com PC\MXTmpFiles\gpio.tmp
+2025-04-27 02:11:58,763 [INFO] CodeEngine:263 - oldGeneratedFile, C:\Users\danie\OneDrive\Desktop\microcontroladores\Microcontroladores\Projetos\Projeto UART com PC\Core\Src\stm32l0xx_it.c_save
+2025-04-27 02:11:59,065 [INFO] CodeEngine:287 - Generated code: C:\Users\danie\OneDrive\Desktop\microcontroladores\Microcontroladores\Projetos\Projeto UART com PC\Core\Src\stm32l0xx_it.c
+2025-04-27 02:11:59,080 [INFO] CodeEngine:263 - oldGeneratedFile, C:\Users\danie\OneDrive\Desktop\microcontroladores\Microcontroladores\Projetos\Projeto UART com PC\Core\Inc\stm32l0xx_it.h_save
+2025-04-27 02:11:59,173 [INFO] CodeEngine:287 - Generated code: C:\Users\danie\OneDrive\Desktop\microcontroladores\Microcontroladores\Projetos\Projeto UART com PC\Core\Inc\stm32l0xx_it.h
+2025-04-27 02:11:59,189 [INFO] CodeEngine:263 - oldGeneratedFile, C:\Users\danie\OneDrive\Desktop\microcontroladores\Microcontroladores\Projetos\Projeto UART com PC\Core\Src\stm32l0xx_hal_msp.c_save
+2025-04-27 02:11:59,336 [INFO] CodeEngine:287 - Generated code: C:\Users\danie\OneDrive\Desktop\microcontroladores\Microcontroladores\Projetos\Projeto UART com PC\Core\Src\stm32l0xx_hal_msp.c
+2025-04-27 02:11:59,342 [INFO] CodeEngine:263 - oldGeneratedFile, C:\Users\danie\OneDrive\Desktop\microcontroladores\Microcontroladores\Projetos\Projeto UART com PC\MXTmpFiles\system.tmp_save
+2025-04-27 02:11:59,425 [INFO] CodeEngine:287 - Generated code: C:\Users\danie\OneDrive\Desktop\microcontroladores\Microcontroladores\Projetos\Projeto UART com PC\MXTmpFiles\system.tmp
+2025-04-27 02:11:59,441 [INFO] CodeEngine:319 - oldGeneratedFile, C:\Users\danie\OneDrive\Desktop\microcontroladores\Microcontroladores\Projetos\Projeto UART com PC\Core\Inc\stm32l0xx_hal_conf.h_save
+2025-04-27 02:11:59,536 [INFO] CodeEngine:343 - Generated code: C:\Users\danie\OneDrive\Desktop\microcontroladores\Microcontroladores\Projetos\Projeto UART com PC\Core\Inc\stm32l0xx_hal_conf.h
+2025-04-27 02:11:59,571 [INFO] CodeEngine:263 - oldGeneratedFile, C:\Users\danie\OneDrive\Desktop\microcontroladores\Microcontroladores\Projetos\Projeto UART com PC\Core\Inc\main.h_save
+2025-04-27 02:11:59,728 [INFO] CodeEngine:287 - Generated code: C:\Users\danie\OneDrive\Desktop\microcontroladores\Microcontroladores\Projetos\Projeto UART com PC\Core\Inc\main.h
+2025-04-27 02:11:59,737 [INFO] CodeEngine:263 - oldGeneratedFile, C:\Users\danie\OneDrive\Desktop\microcontroladores\Microcontroladores\Projetos\Projeto UART com PC\Core\Src\main.c_save
+2025-04-27 02:11:59,899 [INFO] CodeEngine:287 - Generated code: C:\Users\danie\OneDrive\Desktop\microcontroladores\Microcontroladores\Projetos\Projeto UART com PC\Core\Src\main.c
+2025-04-27 02:12:00,514 [INFO] ProjectBuilder:3324 - Time for Copy HAL[1] : 232mS.
+2025-04-27 02:12:00,519 [INFO] ProjectBuilder:4912 - Project Generator version: 4.6.0-B36
+2025-04-27 02:12:00,662 [INFO] ConfigFileManager:1590 - The Die is : DIE417
+2025-04-27 02:12:02,256 [INFO] ProjectBuilder:5191 - Time for Generating toolchain IDE Files: 1736mS.
+2025-04-27 02:12:02,256 [INFO] ProjectBuilder:3181 - Time for Copy CMSIS : 0mS.
+2025-04-27 02:12:02,260 [INFO] ProjectBuilder:3181 - Time for Copy CMSIS : 0mS.
+2025-04-27 11:05:34,631 [INFO] Gpio:277 - dependency for GPIO [USART1]
+2025-04-27 11:09:33,657 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 999663224 Bytes (1073741824)
+2025-04-27 11:09:33,865 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 625324112 Bytes (1073741824)
+2025-04-27 11:09:35,605 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 686141520 Bytes (1073741824)
+2025-04-27 11:09:36,280 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: NVIC
+2025-04-27 11:09:36,281 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: USART
+2025-04-27 11:09:36,281 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: SYS
+2025-04-27 11:09:36,285 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: GPIO
+2025-04-27 11:09:36,288 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: RCC
+2025-04-27 11:09:36,292 [INFO] CodeGenerator:882 - code generatio: config db path: C:\ST\STM32CubeIDE_1.18.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.14.0.202502271554\\db\
+2025-04-27 11:09:36,730 [INFO] CodeEngine:263 - oldGeneratedFile, C:\Users\danie\OneDrive\Desktop\microcontroladores\Microcontroladores\Projetos\Projeto UART com PC\MXTmpFiles\license.tmp_save
+2025-04-27 11:09:37,146 [INFO] CodeEngine:287 - Generated code: C:\Users\danie\OneDrive\Desktop\microcontroladores\Microcontroladores\Projetos\Projeto UART com PC\MXTmpFiles\license.tmp
+2025-04-27 11:09:37,262 [INFO] CodeEngine:263 - oldGeneratedFile, C:\Users\danie\OneDrive\Desktop\microcontroladores\Microcontroladores\Projetos\Projeto UART com PC\MXTmpFiles\gpio.tmp_save
+2025-04-27 11:09:37,499 [INFO] CodeEngine:287 - Generated code: C:\Users\danie\OneDrive\Desktop\microcontroladores\Microcontroladores\Projetos\Projeto UART com PC\MXTmpFiles\gpio.tmp
+2025-04-27 11:09:37,742 [INFO] CodeEngine:263 - oldGeneratedFile, C:\Users\danie\OneDrive\Desktop\microcontroladores\Microcontroladores\Projetos\Projeto UART com PC\Core\Src\stm32l0xx_it.c_save
+2025-04-27 11:09:38,259 [INFO] CodeEngine:287 - Generated code: C:\Users\danie\OneDrive\Desktop\microcontroladores\Microcontroladores\Projetos\Projeto UART com PC\Core\Src\stm32l0xx_it.c
+2025-04-27 11:09:38,269 [INFO] CodeEngine:263 - oldGeneratedFile, C:\Users\danie\OneDrive\Desktop\microcontroladores\Microcontroladores\Projetos\Projeto UART com PC\Core\Inc\stm32l0xx_it.h_save
+2025-04-27 11:09:38,428 [INFO] CodeEngine:287 - Generated code: C:\Users\danie\OneDrive\Desktop\microcontroladores\Microcontroladores\Projetos\Projeto UART com PC\Core\Inc\stm32l0xx_it.h
+2025-04-27 11:09:38,450 [INFO] CodeEngine:263 - oldGeneratedFile, C:\Users\danie\OneDrive\Desktop\microcontroladores\Microcontroladores\Projetos\Projeto UART com PC\Core\Src\stm32l0xx_hal_msp.c_save
+2025-04-27 11:09:38,767 [INFO] CodeEngine:287 - Generated code: C:\Users\danie\OneDrive\Desktop\microcontroladores\Microcontroladores\Projetos\Projeto UART com PC\Core\Src\stm32l0xx_hal_msp.c
+2025-04-27 11:09:38,779 [INFO] CodeEngine:263 - oldGeneratedFile, C:\Users\danie\OneDrive\Desktop\microcontroladores\Microcontroladores\Projetos\Projeto UART com PC\MXTmpFiles\system.tmp_save
+2025-04-27 11:09:38,929 [INFO] CodeEngine:287 - Generated code: C:\Users\danie\OneDrive\Desktop\microcontroladores\Microcontroladores\Projetos\Projeto UART com PC\MXTmpFiles\system.tmp
+2025-04-27 11:09:38,947 [INFO] CodeEngine:319 - oldGeneratedFile, C:\Users\danie\OneDrive\Desktop\microcontroladores\Microcontroladores\Projetos\Projeto UART com PC\Core\Inc\stm32l0xx_hal_conf.h_save
+2025-04-27 11:09:39,110 [INFO] CodeEngine:343 - Generated code: C:\Users\danie\OneDrive\Desktop\microcontroladores\Microcontroladores\Projetos\Projeto UART com PC\Core\Inc\stm32l0xx_hal_conf.h
+2025-04-27 11:09:39,167 [INFO] CodeEngine:263 - oldGeneratedFile, C:\Users\danie\OneDrive\Desktop\microcontroladores\Microcontroladores\Projetos\Projeto UART com PC\Core\Inc\main.h_save
+2025-04-27 11:09:39,400 [INFO] CodeEngine:287 - Generated code: C:\Users\danie\OneDrive\Desktop\microcontroladores\Microcontroladores\Projetos\Projeto UART com PC\Core\Inc\main.h
+2025-04-27 11:09:39,415 [INFO] CodeEngine:263 - oldGeneratedFile, C:\Users\danie\OneDrive\Desktop\microcontroladores\Microcontroladores\Projetos\Projeto UART com PC\Core\Src\main.c_save
+2025-04-27 11:09:39,677 [INFO] CodeEngine:287 - Generated code: C:\Users\danie\OneDrive\Desktop\microcontroladores\Microcontroladores\Projetos\Projeto UART com PC\Core\Src\main.c
+2025-04-27 11:09:40,499 [INFO] ProjectBuilder:3324 - Time for Copy HAL[1] : 372mS.
+2025-04-27 11:09:40,518 [INFO] ProjectBuilder:4912 - Project Generator version: 4.6.0-B36
+2025-04-27 11:09:40,707 [INFO] ConfigFileManager:1590 - The Die is : DIE417
+2025-04-27 11:09:43,373 [INFO] ProjectBuilder:5191 - Time for Generating toolchain IDE Files: 2854mS.
+2025-04-27 11:09:43,374 [INFO] ProjectBuilder:3181 - Time for Copy CMSIS : 1mS.
+2025-04-27 11:09:43,378 [INFO] ProjectBuilder:3181 - Time for Copy CMSIS : 0mS.
