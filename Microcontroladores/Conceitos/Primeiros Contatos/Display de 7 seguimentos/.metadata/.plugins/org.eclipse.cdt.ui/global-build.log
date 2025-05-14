@@ -1,0 +1,49 @@
+19:45:18 **** Incremental Build of configuration Debug for project teste nucleo ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "teste nucleo.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Microcontroladores\PrimeirosContatos\Display de 7 seguimentos\teste nucleo\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="teste nucleo.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: teste nucleo.elf
+ 
+arm-none-eabi-size   teste\ nucleo.elf 
+arm-none-eabi-objdump -h -S  teste\ nucleo.elf  > "teste nucleo.list"
+   text	   data	    bss	    dec	    hex	filename
+   7776	     20	   1644	   9440	   24e0	teste nucleo.elf
+Finished building: default.size.stdout
+ 
+Finished building: teste nucleo.list
+ 
+19:45:22 **** Incremental Build of configuration Debug for project teste nucleo ****
+make -j12 all 
+arm-none-eabi-size   teste\ nucleo.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7776	     20	   1644	   9440	   24e0	teste nucleo.elf
+Finished building: default.size.stdout
+ 
+19:45:35 **** Incremental Build of configuration Debug for project teste nucleo ****
+make -j12 all 
+arm-none-eabi-size   teste\ nucleo.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7776	     20	   1644	   9440	   24e0	teste nucleo.elf
+Finished building: default.size.stdout
+ 
+19:45:46 **** Incremental Build of configuration Debug for project teste nucleo ****
+make -j12 all 
+arm-none-eabi-size   teste\ nucleo.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7776	     20	   1644	   9440	   24e0	teste nucleo.elf
+Finished building: default.size.stdout
+ 
+19:47:04 **** Incremental Build of configuration Debug for project teste nucleo ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "teste nucleo.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\Guto\Estudos\Microcontroladores\PrimeirosContatos\Display de 7 seguimentos\teste nucleo\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="teste nucleo.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: teste nucleo.elf
+ 
+arm-none-eabi-size   teste\ nucleo.elf 
+arm-none-eabi-objdump -h -S  teste\ nucleo.elf  > "teste nucleo.list"
+   text	   data	    bss	    dec	    hex	filename
+   7772	     20	   1644	   9436	   24dc	teste nucleo.elf
+Finished building: default.size.stdout
+ 
+Finished building: teste nucleo.list
+ 

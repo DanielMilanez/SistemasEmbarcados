@@ -1,0 +1,18 @@
+12:28:50 **** Incremental Build of configuration Debug for project Contador Matricial ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Contador Matricial.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\danie\OneDrive\Desktop\Microcontroladores\Microcontroladores\Projeto Contador Matricial\Contador Matricial\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Contador Matricial.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+C:/ST/STM32CubeIDE_1.18.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/bin/ld.exe: warning: Contador Matricial.elf has a LOAD segment with RWX permissions
+Finished building target: Contador Matricial.elf
+ 
+arm-none-eabi-size  Contador\ Matricial.elf 
+arm-none-eabi-objdump -h -S Contador\ Matricial.elf  > "Contador Matricial.list"
+   text	   data	    bss	    dec	    hex	filename
+   9468	    108	   1644	  11220	   2bd4	Contador Matricial.elf
+Finished building: default.size.stdout
+ 
+Finished building: Contador Matricial.list
+ 
+
+12:28:51 Build Finished. 0 errors, 1 warnings. (took 1s.148ms)
+

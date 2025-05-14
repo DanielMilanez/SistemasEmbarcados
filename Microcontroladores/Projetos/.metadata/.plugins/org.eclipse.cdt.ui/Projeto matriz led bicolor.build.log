@@ -1,0 +1,10 @@
+19:01:56 **** Incremental Build of configuration Debug for project Projeto matriz led bicolor ****
+make -j12 all 
+arm-none-eabi-size  Projeto\ matriz\ led\ bicolor.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10420	     16	   1640	  12076	   2f2c	Projeto matriz led bicolor.elf
+Finished building: default.size.stdout
+ 
+
+19:01:56 Build Finished. 0 errors, 0 warnings. (took 300ms)
+

@@ -1,0 +1,10 @@
+../Core/Src/main.c:95:5:main	3
+../Core/Src/main.c:158:6:SystemClock_Config	4
+../Core/Src/main.c:213:13:MX_RTC_Init	4
+../Core/Src/main.c:277:13:MX_GPIO_Init	1
+../Core/Src/main.c:323:6:Info_manager	2
+../Core/Src/main.c:359:6:Message	2
+../Core/Src/main.c:365:6:Start_lcd	1
+../Core/Src/main.c:379:6:Show_date	1
+../Core/Src/main.c:401:6:Verify_date	9
+../Core/Src/main.c:425:6:Error_Handler	1

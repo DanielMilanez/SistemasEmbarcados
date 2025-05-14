@@ -1,0 +1,9 @@
+../Core/Src/main.c:86:5:main	24	static
+../Core/Src/main.c:151:6:SystemClock_Config	96	static
+../Core/Src/main.c:195:13:MX_TIM6_Init	16	static
+../Core/Src/main.c:233:13:MX_GPIO_Init	48	static
+../Core/Src/main.c:296:6:Seletor_Column	16	static
+../Core/Src/main.c:316:6:Seletor_Line	16	static
+../Core/Src/main.c:336:6:Draw_disp	24	static
+../Core/Src/main.c:347:6:Animations	16	static
+../Core/Src/main.c:595:6:Error_Handler	8	static,ignoring_inline_asm

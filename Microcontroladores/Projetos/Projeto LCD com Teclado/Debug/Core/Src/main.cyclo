@@ -1,0 +1,13 @@
+../Core/Src/main.c:112:5:main	1
+../Core/Src/main.c:161:6:SystemClock_Config	3
+../Core/Src/main.c:205:13:MX_TIM6_Init	3
+../Core/Src/main.c:243:13:MX_GPIO_Init	1
+../Core/Src/main.c:314:6:HAL_TIM_PeriodElapsedCallback	1
+../Core/Src/main.c:319:6:Start_LCD	1
+../Core/Src/main.c:331:6:Keyboard_check	5
+../Core/Src/main.c:360:6:Line_verify	6
+../Core/Src/main.c:388:6:Process_Password	10
+../Core/Src/main.c:428:6:Controler_LCD	2
+../Core/Src/main.c:468:6:Mensage_LCD	2
+../Core/Src/main.c:475:6:Menu_system	11
+../Core/Src/main.c:553:6:Error_Handler	1

@@ -1,0 +1,10 @@
+17:41:24 **** Incremental Build of configuration Debug for project Projeto LCD 16x2 ****
+make -j12 all 
+arm-none-eabi-size  Projeto\ LCD\ 16x2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11464	    156	   2004	  13624	   3538	Projeto LCD 16x2.elf
+Finished building: default.size.stdout
+ 
+
+17:41:24 Build Finished. 0 errors, 0 warnings. (took 304ms)
+
