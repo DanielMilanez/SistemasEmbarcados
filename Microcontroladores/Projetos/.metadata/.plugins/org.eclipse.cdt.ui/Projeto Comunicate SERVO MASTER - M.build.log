@@ -1,0 +1,10 @@
+14:29:57 **** Incremental Build of configuration Debug for project Projeto Comunicate SERVO MASTER - M ****
+make -j12 all 
+arm-none-eabi-size  Projeto\ Comunicate\ SERVO\ MASTER\ -\ M.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12716	     12	   1708	  14436	   3864	Projeto Comunicate SERVO MASTER - M.elf
+Finished building: default.size.stdout
+ 
+
+14:29:57 Build Finished. 0 errors, 0 warnings. (took 307ms)
+

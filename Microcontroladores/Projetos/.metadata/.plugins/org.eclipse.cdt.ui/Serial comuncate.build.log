@@ -1,0 +1,10 @@
+21:23:30 **** Incremental Build of configuration Debug for project Serial comuncate ****
+make -j12 all 
+arm-none-eabi-size  Serial\ comuncate.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11048	    124	   2044	  13216	   33a0	Serial comuncate.elf
+Finished building: default.size.stdout
+ 
+
+21:23:30 Build Finished. 0 errors, 0 warnings. (took 332ms)
+

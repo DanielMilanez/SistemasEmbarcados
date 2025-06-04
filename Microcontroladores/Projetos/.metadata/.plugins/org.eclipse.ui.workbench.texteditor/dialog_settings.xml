@@ -6,6 +6,8 @@
 		<item value="HAL_GPIO_WritePin"/>
 	</list>
 	<list key="searchhistory">
+		<item value="DHT11_Data_pin"/>
+		<item value="DHT11_Data_GPIO_PORT"/>
 		<item value="logon"/>
 		<item value="password"/>
 		<item value="flag = 0;"/>

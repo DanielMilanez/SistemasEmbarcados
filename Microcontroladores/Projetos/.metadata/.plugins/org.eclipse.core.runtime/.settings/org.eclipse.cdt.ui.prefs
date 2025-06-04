@@ -1,15 +1,4 @@
-<<<<<<< HEAD
 eclipse.preferences.version=1
-scalability.detect=false
 spelling_locale_initialized=true
-spelling_user_dictionary_encoding=
 useAnnotationsPrefPage=true
 useQuickDiffPrefPage=true
-=======
-eclipse.preferences.version=1
-scalability.detect=false
-spelling_locale_initialized=true
-spelling_user_dictionary_encoding=
-useAnnotationsPrefPage=true
-useQuickDiffPrefPage=true
->>>>>>> fece579e31b4ce91e59392ecea5d90896bfe9a27
