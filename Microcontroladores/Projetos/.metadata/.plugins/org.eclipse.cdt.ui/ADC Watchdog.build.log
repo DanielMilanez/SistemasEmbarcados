@@ -1,0 +1,17 @@
+19:18:16 **** Incremental Build of configuration Debug for project ADC Watchdog ****
+make -j24 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "ADC Watchdog.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\Eletronica\STM32CubeIDE\workspace_1.19.0\ADC Watchdog\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ADC Watchdog.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: ADC Watchdog.elf
+ 
+arm-none-eabi-size  ADC\ Watchdog.elf 
+arm-none-eabi-objdump -h -S ADC\ Watchdog.elf  > "ADC Watchdog.list"
+   text	   data	    bss	    dec	    hex	filename
+   9480	     12	   1740	  11232	   2be0	ADC Watchdog.elf
+Finished building: default.size.stdout
+ 
+Finished building: ADC Watchdog.list
+ 
+
+19:18:17 Build Finished. 0 errors, 0 warnings. (took 484ms)
+

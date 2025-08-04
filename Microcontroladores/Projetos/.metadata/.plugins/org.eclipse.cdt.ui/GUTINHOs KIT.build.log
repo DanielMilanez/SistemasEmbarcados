@@ -1,0 +1,10 @@
+18:03:57 **** Incremental Build of configuration Debug for project GUTINHOs KIT ****
+make -j24 all 
+arm-none-eabi-size  GUTINHOs\ KIT.elf 
+   text	   data	    bss	    dec	    hex	filename
+   6424	     12	   1572	   8008	   1f48	GUTINHOs KIT.elf
+Finished building: default.size.stdout
+ 
+
+18:03:57 Build Finished. 0 errors, 0 warnings. (took 143ms)
+

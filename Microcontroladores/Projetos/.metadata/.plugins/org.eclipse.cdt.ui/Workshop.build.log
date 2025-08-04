@@ -1,0 +1,10 @@
+14:33:17 **** Incremental Build of configuration Debug for project Workshop ****
+make -j24 all 
+arm-none-eabi-size  Workshop.elf 
+   text	   data	    bss	    dec	    hex	filename
+   9096	     12	   1740	  10848	   2a60	Workshop.elf
+Finished building: default.size.stdout
+ 
+
+14:33:17 Build Finished. 0 errors, 0 warnings. (took 126ms)
+
