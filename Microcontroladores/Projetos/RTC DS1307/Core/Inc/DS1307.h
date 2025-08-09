@@ -1,0 +1,55 @@
+// ----------------------------------------------------------- //
+#define DEC_TO_BCD 0
+#define BCD_TO_DEC 1
+#define DS1307_ADDRS 0x68
+#define DS1307_COMUNICATE_DELAY 1000
+// ----------------------------------------------------------- //
+typedef struct{
+	unsigned R_W: 1;
+	uint8_t ADDRS_FRAME;
+	uint8_t DATA_FRAME;
+}BIT;
+
+typedef struct{
+	uint8_t seconds;
+	uint8_t minutes;
+	uint8_t hours;
+	uint8_t day;
+	uint8_t date;
+	uint8_t month;
+	uint8_t year;
+}RTC_DS1307;
+// ----------------------------------------------------------- //
+void DS1307_SET_TIME(RTC_DS1307 time);
+void DS1307_GET_TIME(RTC_DS1307 *time);
+void DS1307_STARTUP(I2C_HandleTypeDef *hi2c);
+int  DS1307_DATA_CONV(uint8_t MODE, int VAL_TO_CONV);
+void DS1307_CONFIG_ADDRS(uint8_t FRST_FR, unsigned R_W);
+// ----------------------------------------------------------- //
+extern BIT data;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<item key="hasShownOverlayPopupBefore" value="true"/>
-	<item key="replaceBarOpen" value="false"/>
+	<item key="replaceBarOpen" value="true"/>
 	<list key="searchhistory">
+		<item value="MX_GPIO_Init"/>
+		<item value="_ds1307_ui2c"/>
 		<item value="RTC_WeekDay_Definitions"/>
 		<item value="HAL_TIM_IC_CaptureCallback"/>
+	</list>
+	<list key="replacehistory">
+		<item value="DS1307_I2C"/>
 	</list>
 	<section name="org.eclipse.ui.texteditor.GotoLineAction$GotoLineDialog_dialogBounds">
 		<item key="DIALOG_X_ORIGIN" value="724"/>
