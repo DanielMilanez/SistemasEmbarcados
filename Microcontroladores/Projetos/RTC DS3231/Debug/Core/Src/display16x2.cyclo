@@ -1,0 +1,4 @@
+../Core/Src/display16x2.c:12:6:LcdStart	1
+../Core/Src/display16x2.c:21:9:WordSize	2
+../Core/Src/display16x2.c:27:6:ControlLcd	1
+../Core/Src/display16x2.c:61:6:SendMessage	36

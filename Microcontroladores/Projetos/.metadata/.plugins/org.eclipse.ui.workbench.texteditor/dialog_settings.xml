@@ -2,17 +2,16 @@
 <section name="Workbench">
 	<item key="hasShownOverlayPopupBefore" value="true"/>
 	<item key="replaceBarOpen" value="true"/>
-	<list key="searchhistory">
-		<item value="MX_GPIO_Init"/>
-		<item value="_ds1307_ui2c"/>
-		<item value="RTC_WeekDay_Definitions"/>
-		<item value="HAL_TIM_IC_CaptureCallback"/>
-	</list>
 	<list key="replacehistory">
-		<item value="DS1307_I2C"/>
+		<item value="Converter"/>
+		<item value="DS3231_Converter"/>
+		<item value="DS3231_SetDate"/>
+		<item value="DS3231_SetTime"/>
 	</list>
-	<section name="org.eclipse.ui.texteditor.GotoLineAction$GotoLineDialog_dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="724"/>
-		<item key="DIALOG_Y_ORIGIN" value="396"/>
-	</section>
+	<list key="searchhistory">
+		<item value="DS3231_Converter"/>
+		<item value="Converter"/>
+		<item value="SetDate"/>
+		<item value="SetTime"/>
+	</list>
 </section>

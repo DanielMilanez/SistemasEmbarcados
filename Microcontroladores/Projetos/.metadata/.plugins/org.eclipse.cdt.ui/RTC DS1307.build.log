@@ -1,18 +1,17 @@
-21:56:45 **** Incremental Build of configuration Debug for project RTC DS1307 ****
-make -j24 all 
+17:11:53 **** Incremental Build of configuration Debug for project RTC DS1307 ****
+make -j12 all 
 arm-none-eabi-gcc "../Core/Src/DS1307.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/DS1307.d" -MT"Core/Src/DS1307.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/DS1307.o"
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "RTC DS1307.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\Eletronica\STM32CubeIDE\workspace_1.19.0\RTC DS1307\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="RTC DS1307.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+arm-none-eabi-gcc -o "RTC DS1307.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ALUNO OC\Desktop\microcontroladores\Microcontroladores\Projetos\RTC DS1307\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="RTC DS1307.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 Finished building target: RTC DS1307.elf
  
 arm-none-eabi-size  RTC\ DS1307.elf 
 arm-none-eabi-objdump -h -S RTC\ DS1307.elf  > "RTC DS1307.list"
    text	   data	    bss	    dec	    hex	filename
-  11512	     12	   1668	  13192	   3388	RTC DS1307.elf
+   9672	     12	   1668	  11352	   2c58	RTC DS1307.elf
 Finished building: default.size.stdout
  
 Finished building: RTC DS1307.list
  
 
-21:56:46 Build Finished. 0 errors, 0 warnings. (took 328ms)
+17:11:54 Build Finished. 0 errors, 0 warnings. (took 873ms)
 

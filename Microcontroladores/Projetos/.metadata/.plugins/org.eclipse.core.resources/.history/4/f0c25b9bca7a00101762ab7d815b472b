@@ -1,0 +1,31 @@
+/*
+ * display16x2.c
+ *
+ *  Created on: Aug 16, 2025
+ *      Author: ALUNO OC
+ */
+
+#include "display16x2.h"
+
+void LcdStart(void){
+	ControlLcd(0x33);
+	ControlLcd(0x32);
+	ControlLcd(0x28);
+	ControlLcd(0x0C);
+	ControlLcd(0x06);
+	ControlLcd(0x01);
+}
+
+uint8_t WordSize(char *message){
+	int i;
+
+	for(int i = 0; message[i] != '\0'; ++i);
+
+	return i + 1; // considerando indice inicial
+}
+
+void ControlLcd(uint8_t data, uint8_t state){
+	HAL_GPIO_WritePin(GPIOx, GPIO_Pin, PinState)
+}
+
+void SendMessage(uint8_t x, uint8_t y, char *message);
