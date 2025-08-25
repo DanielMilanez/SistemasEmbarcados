@@ -1,0 +1,30 @@
+Os displays do CI são mapeados em grids, cada display (de um total de oito) possui um grid próprio. Para que eu consiga me comunicar com o CI eu preciso colocar o pino STB em nível lógico 0 e desta forma realizar os procedimentos. É necessário uma inicialização para este CI. O primeiro byte transmitido após a borda de descida do pino STB é considerado uma instrução.
+
+As combinações dos bits 7 e 6 se promovem para distintas instruções:
+
+B7 = 0 B5 = 1 | Definindo comando para envio de dados
+B7 = 1 B6 = 0 | Definindo comando para o controle do display
+B7 = 1 B6 = 1 | Definindo o comando de endereço
+
+OBS.: Caso haja uma borda de subida durante a transmissão de dados. O comando atual se torna inválido, e o CI não irá considerá-los, mas os comandos passados anteriormente se mantém ativos.
+
+As formas que se sucedem são ramificações das configurações dos bits 7 e 6
+
+1° ---> B7 = 0 B6 = 1 | Comando para envio de dados
+
+MSB__________________LSB|
+B7 B6 B5 B4 B3 B2 B1 B0 |
+0  1   0 0   x  x  0 0  | Modo de escrita de informação em um registro do display
+0  1   0 0   x  x  1 0  | Modo de leitura de informação dos botões
+0  1   0 0   x  0  x x  | Configurando modo de incremento do endereço para auto incremento
+0  1   0 0   x  1  x x  | Configurando modo de incremento do endereço para endereço fixo
+0  1   0 0   0  x  x x  | Configurando para modo de teste Modo normal de utilização
+0  1   0 0   1  x  x x  | Configurando para modo de teste
+
+OBS.: O B1 e o B0 não podem ser definidos como 01 ou 11
+
+Existem no total 16 endereços caso o endereço seja superior ao limite 0x0F a informação transmitida será ignorada ate que um endereço válido seja informado ao ser ligado o endereço padrão é 0x00
+
+
+
+
