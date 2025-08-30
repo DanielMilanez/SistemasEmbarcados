@@ -1,0 +1,10 @@
+21:36:20 **** Incremental Build of configuration Debug for project Low Power Mode ****
+make -j24 all 
+arm-none-eabi-size  Low\ Power\ Mode.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7704	     12	   1636	   9352	   2488	Low Power Mode.elf
+Finished building: default.size.stdout
+ 
+
+21:36:21 Build Finished. 0 errors, 0 warnings. (took 124ms)
+

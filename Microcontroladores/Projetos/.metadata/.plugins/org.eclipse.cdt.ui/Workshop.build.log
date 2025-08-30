@@ -1,10 +1,19 @@
-14:33:17 **** Incremental Build of configuration Debug for project Workshop ****
+14:42:05 **** Incremental Build of configuration Debug for project Workshop ****
 make -j24 all 
+arm-none-eabi-gcc -o "Workshop.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\Eletronica\STM32CubeIDE\workspace_1.19.0\Workshop\STM32L052K8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Workshop.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Workshop.elf
+ 
 arm-none-eabi-size  Workshop.elf 
+arm-none-eabi-objdump -h -S Workshop.elf  > "Workshop.list"
    text	   data	    bss	    dec	    hex	filename
-   9096	     12	   1740	  10848	   2a60	Workshop.elf
+  11064	     12	   1700	  12776	   31e8	Workshop.elf
+arm-none-eabi-objcopy  -O ihex Workshop.elf  "Workshop.hex"
 Finished building: default.size.stdout
  
+Finished building: Workshop.list
+ 
+Finished building: Workshop.hex
+ 
 
-14:33:17 Build Finished. 0 errors, 0 warnings. (took 126ms)
+14:42:06 Build Finished. 0 errors, 0 warnings. (took 330ms)
 

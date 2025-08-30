@@ -2,16 +2,38 @@
 <section name="Workbench">
 	<item key="hasShownOverlayPopupBefore" value="true"/>
 	<item key="replaceBarOpen" value="true"/>
-	<list key="replacehistory">
-		<item value="Converter"/>
-		<item value="DS3231_Converter"/>
-		<item value="DS3231_SetDate"/>
-		<item value="DS3231_SetTime"/>
-	</list>
 	<list key="searchhistory">
-		<item value="DS3231_Converter"/>
-		<item value="Converter"/>
-		<item value="SetDate"/>
-		<item value="SetTime"/>
+		<item value="MPU6080"/>
+		<item value="result"/>
+		<item value="GyroZValue"/>
+		<item value="GyroYValue"/>
+		<item value="GyroXValue"/>
+		<item value="AccZValue"/>
+		<item value="AccYValue"/>
+		<item value="AccXValue"/>
+		<item value="MPU6050_ADDR"/>
+		<item value="LED_VERIFY_Pin"/>
+		<item value="LED_VERIFY_GPIO_PORT"/>
+		<item value="MX_GPIO_Init"/>
+		<item value="_ds1307_ui2c"/>
+		<item value="RTC_WeekDay_Definitions"/>
+		<item value="HAL_TIM_IC_CaptureCallback"/>
 	</list>
+	<list key="replacehistory">
+		<item value="MPU6050"/>
+		<item value="MPU6080_val"/>
+		<item value="GyroZ"/>
+		<item value="GyroY"/>
+		<item value="GyroX"/>
+		<item value="AccZ"/>
+		<item value="AccY"/>
+		<item value="AccX"/>
+		<item value="GRN_LED_Pin"/>
+		<item value="GRN_LED_GPIO_Port"/>
+		<item value="DS1307_I2C"/>
+	</list>
+	<section name="org.eclipse.ui.texteditor.GotoLineAction$GotoLineDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="724"/>
+		<item key="DIALOG_Y_ORIGIN" value="396"/>
+	</section>
 </section>

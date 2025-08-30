@@ -1,0 +1,21 @@
+#ifndef INC_MCU6050_H_
+#define INC_MCU6050_H_
+
+#include "main.h"
+#define MCU6050_ADDR (0x68 << 1)
+
+// Registers
+#define REG_CONFIG			0x1A
+
+#define REG_CONFIG_GYRO 	0x1B
+#define REG_CONFIG_ACC  	0x1C
+
+#define REG_PWR_CTRL		0x6B
+
+#define REG_ACC_DATA_X		0x3D
+#define REG_ACC_DATA_Y		0x3F
+#define REG_ACC_DATA_Z		0x3B
+
+HAL_StatusTypeDef MCU6050_StartUp(I2C_HandleTypeDef *hi2c);
+
+#endif /* INC_MCU6050_H_ */

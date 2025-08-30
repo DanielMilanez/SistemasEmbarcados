@@ -1,0 +1,2 @@
+../Core/Src/MCU6050.c:7:16:MPU6050_StartUp	4
+../Core/Src/MCU6050.c:31:16:MPU6050_ReadValues	1
