@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename resource &apos;Projeto Calendario com RTC Externo/Core/Src/Display16x2.c&apos; to &apos;display16x2.c&apos;" description="Rename resource &apos;Display16x2.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Core/Src/Display16x2.c" name="display16x2.c" stamp="1755281304115" updateReferences="true"/>
-</session>
