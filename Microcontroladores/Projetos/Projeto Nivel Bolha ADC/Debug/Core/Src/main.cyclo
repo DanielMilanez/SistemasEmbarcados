@@ -1,9 +1,0 @@
-../Core/Src/main.c:83:5:main	1
-../Core/Src/main.c:127:6:SystemClock_Config	3
-../Core/Src/main.c:168:13:MX_ADC_Init	4
-../Core/Src/main.c:232:13:MX_GPIO_Init	1
-../Core/Src/main.c:288:6:infoManager	4
-../Core/Src/main.c:323:5:valueCarrier	10
-../Core/Src/main.c:356:6:readJoystick	3
-../Core/Src/main.c:366:6:rangeJoystickReader	14
-../Core/Src/main.c:395:6:Error_Handler	1
