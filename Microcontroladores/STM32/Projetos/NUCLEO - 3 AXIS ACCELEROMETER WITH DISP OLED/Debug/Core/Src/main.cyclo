@@ -1,0 +1,17 @@
+../Core/Src/main.c:161:19:DS3231_StartUp	1
+../Core/Src/main.c:167:5:Converter	5
+../Core/Src/main.c:178:6:DS3231_SetTime	1
+../Core/Src/main.c:194:6:DS3231_SetDate	1
+../Core/Src/main.c:210:6:DS3231_GetValues	1
+../Core/Src/main.c:226:6:ENCODER_Interpreter	4
+../Core/Src/main.c:236:6:Keyboard_check	6
+../Core/Src/main.c:265:6:NoiseSensor	1
+../Core/Src/main.c:272:6:NoiseInterpreter	21
+../Core/Src/main.c:470:6:SendMotor	1
+../Core/Src/main.c:501:5:main	24
+../Core/Src/main.c:729:6:SystemClock_Config	4
+../Core/Src/main.c:777:13:MX_ADC_Init	3
+../Core/Src/main.c:833:13:MX_I2C1_Init	4
+../Core/Src/main.c:881:13:MX_TIM2_Init	3
+../Core/Src/main.c:930:13:MX_GPIO_Init	1
+../Core/Src/main.c:1000:6:Error_Handler	1

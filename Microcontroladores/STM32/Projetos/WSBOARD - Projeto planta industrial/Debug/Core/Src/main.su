@@ -1,0 +1,15 @@
+../Core/Src/main.c:93:6:SERVO_Control	16	static
+../Core/Src/main.c:109:6:LIGHT_StartUp	8	static
+../Core/Src/main.c:115:6:TFT_SendCommand	88	static
+../Core/Src/main.c:121:6:LIGHT_VerifyColor	8	static
+../Core/Src/main.c:151:6:AddFrequencySample	16	static
+../Core/Src/main.c:156:7:GetFrequencyAverage	16	static
+../Core/Src/main.c:162:6:SERVO_Interpreter	8	static
+../Core/Src/main.c:188:6:HAL_TIM_IC_CaptureCallback	16	static
+../Core/Src/main.c:227:5:main	8	static
+../Core/Src/main.c:308:6:SystemClock_Config	128	static
+../Core/Src/main.c:356:13:MX_TIM2_Init	32	static
+../Core/Src/main.c:413:13:MX_TIM22_Init	32	static
+../Core/Src/main.c:461:13:MX_USART1_UART_Init	8	static
+../Core/Src/main.c:496:13:MX_GPIO_Init	48	static
+../Core/Src/main.c:544:6:Error_Handler	8	static,ignoring_inline_asm
