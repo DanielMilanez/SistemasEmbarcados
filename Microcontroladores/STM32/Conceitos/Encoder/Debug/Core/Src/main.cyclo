@@ -1,0 +1,16 @@
+../Core/Src/main.c:93:6:HAL_TIM_PeriodElapsedCallback	4
+../Core/Src/main.c:123:5:main	1
+../Core/Src/main.c:186:6:SystemClock_Config	3
+../Core/Src/main.c:227:13:MX_ADC_Init	3
+../Core/Src/main.c:283:13:MX_TIM2_Init	8
+../Core/Src/main.c:350:13:MX_TIM6_Init	3
+../Core/Src/main.c:388:13:MX_TIM22_Init	3
+../Core/Src/main.c:437:13:MX_GPIO_Init	1
+../Core/Src/main.c:492:6:MENU_CONTROL	22
+../Core/Src/main.c:596:6:DRAW_CHAR_LCD	1
+../Core/Src/main.c:601:6:ENCODER_READER	5
+../Core/Src/main.c:619:6:STARTUP_LCD	1
+../Core/Src/main.c:627:6:SEND_MESSAGE	2
+../Core/Src/main.c:634:6:MANAGER_LCD	1
+../Core/Src/main.c:667:6:KEYBOARD_CHECK	6
+../Core/Src/main.c:695:6:Error_Handler	1

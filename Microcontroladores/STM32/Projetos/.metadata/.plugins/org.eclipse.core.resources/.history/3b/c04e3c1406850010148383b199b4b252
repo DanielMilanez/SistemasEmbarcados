@@ -1,0 +1,52 @@
+#include "MCU6050.h"
+
+MPU6050_VALUES result;
+extern I2C_HandleTypeDef hi2c1;
+
+
+MPU6050_STATUS MPU6050_StartUp(void){
+	HAL_StatusTypeDef status;
+	uint8_t data_to_send;
+
+
+	HAL_Delay(10);
+	data_to_send = 0x00; // Send FS_SELL to config the gyro full scale range 4G
+	status = HAL_I2C_Mem_Write(&hi2c1, MPU6050_ADDR, REG_CONFIG_GYRO, 1, &data_to_send, 1, HAL_MAX_DELAY);
+	if(status != HAL_OK) return CANT_ACESS_REG_GYRO;
+	HAL_Delay(10);
+
+	data_to_send = 0x00; // Send FS_SELL to config the acc full scale range 4G
+	status = HAL_I2C_Mem_Write(&hi2c1, MPU6050_ADDR, REG_CONFIG_ACC, 1, &data_to_send, 1, HAL_MAX_DELAY);
+	if(status != HAL_OK) return CANT_ACESS_REG_ACC;
+	HAL_Delay(10);
+
+	data_to_send = 0x00; // Out of sleep mode and able temperature sensor
+	status = HAL_I2C_Mem_Write(&hi2c1, MPU6050_ADDR, REG_PWR_CTRL, 1, &data_to_send, 1, HAL_MAX_DELAY);
+	if(status != HAL_OK) return CANT_ACESS_REG_PWR;
+	HAL_Delay(10);
+
+	return STATUS_OK;
+}
+
+MPU6050_VALUES MPU6050_ReadValues(void){
+	uint8_t readDataAcc[6];
+	uint8_t readDataGyro[6];
+	uint8_t readDataTemp[2];
+
+	HAL_I2C_Mem_Read(&hi2c1, MPU6050_ADDR + 1, REG_ACC_DATA, 1, readDataAcc, 6, HAL_MAX_DELAY);
+
+	result.AccXValue = (int16_t)((readDataAcc[0] << 8) + readDataAcc[1]) / 360;
+	result.AccYValue = (int16_t)((readDataAcc[2] << 8) + readDataAcc[3]) / 360;
+	result.AccZValue = (int16_t)((readDataAcc[4] << 8) + readDataAcc[5]) / 360;
+
+	HAL_I2C_Mem_Read(&hi2c1, MPU6050_ADDR + 1, REG_GYRO_DATA, 1, readDataGyro, 6, HAL_MAX_DELAY);
+	result.GyroXValue = (int16_t)((readDataGyro[0] << 8) + readDataGyro[1]) / 360;
+	result.GyroYValue = (int16_t)((readDataGyro[2] << 8) + readDataGyro[3]) / 360;
+	result.GyroZValue = (int16_t)((readDataGyro[4] << 8) + readDataGyro[5]) / 360;
+
+	HAL_I2C_Mem_Read(&hi2c1, MPU6050_ADDR + 1, REG_TEMP_DATA, 1, readDataTemp, 2, HAL_MAX_DELAY);
+
+	result.Temperature = ((float)((readDataTemp[0] << 8) + readDataTemp[1])) / 348 + 36.53;
+
+	return result;
+}

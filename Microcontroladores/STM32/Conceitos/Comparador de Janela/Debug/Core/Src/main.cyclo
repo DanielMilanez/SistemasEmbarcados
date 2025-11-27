@@ -1,0 +1,10 @@
+../Core/Src/main.c:71:5:main	2
+../Core/Src/main.c:129:6:SystemClock_Config	3
+../Core/Src/main.c:170:13:MX_TIM2_Init	4
+../Core/Src/main.c:215:13:MX_GPIO_Init	1
+../Core/Src/main.c:241:6:DHT11_START	1
+../Core/Src/main.c:250:6:DELAY_MICRO	2
+../Core/Src/main.c:254:9:DHT11_READ_RESPONSE	5
+../Core/Src/main.c:266:9:DHT11_CHECK_RESPONSE	3
+../Core/Src/main.c:279:6:DHT11_ALTERN_PIN	3
+../Core/Src/main.c:304:6:Error_Handler	1

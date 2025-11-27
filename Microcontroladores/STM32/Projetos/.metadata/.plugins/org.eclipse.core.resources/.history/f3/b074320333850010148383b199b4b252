@@ -1,0 +1,531 @@
+/* USER CODE BEGIN Header */
+/**
+  ******************************************************************************
+  * @file           : main.c
+  * @brief          : Main program body
+  ******************************************************************************
+  * @attention
+  *
+  * Copyright (c) 2025 STMicroelectronics.
+  * All rights reserved.
+  *
+  * This software is licensed under terms that can be found in the LICENSE file
+  * in the root directory of this software component.
+  * If no LICENSE file comes with this software, it is provided AS-IS.
+  *
+  ******************************************************************************
+  */
+/* USER CODE END Header */
+/* Includes ------------------------------------------------------------------*/
+#include "main.h"
+
+/* Private includes ----------------------------------------------------------*/
+/* USER CODE BEGIN Includes */
+typedef struct{
+	// Columns
+	unsigned P0: 1,
+			 P1: 1,
+			 P2: 1,
+			 P3: 1,
+			 P4: 1,
+			 P5: 1,
+			 P6: 1,
+			 P7: 1;
+
+	// Lines
+	unsigned P8: 1,
+			 P9: 1,
+			 P10: 1,
+			 P11: 1,
+			 P12: 1,
+			 P13: 1,
+			 P14: 1,
+			 P15: 1;
+}MATRIX_BitPort;
+
+typedef enum{
+	STOPED,
+	UP,
+	DOWN,
+	LEFT,
+	RIGHT
+}MPU6050_State;
+
+typedef struct{
+	int16_t GyroX,
+			GyroY,
+			GyroZ;
+
+	int16_t AccX,
+			AccY,
+			AccZ;
+
+	float temperature;
+}MPU6050_Values;
+/* USER CODE END Includes */
+
+/* Private typedef -----------------------------------------------------------*/
+/* USER CODE BEGIN PTD */
+
+/* USER CODE END PTD */
+
+/* Private define ------------------------------------------------------------*/
+/* USER CODE BEGIN PD */
+#define MPU6050_ADDR (0x68 << 1)
+#define MPU6050_GYRO_ADDR 0x1B
+#define MPU6050_ACC_ADDR 0x1C
+#define MPU6050_PWR_CTRL 0x6B
+
+#define MPU6050_ACC_READ 0x3B
+#define MPU6050_TEMP_READ 0x41
+#define MPU6050_GYRO_READ 0x43
+/* USER CODE END PD */
+
+/* Private macro -------------------------------------------------------------*/
+/* USER CODE BEGIN PM */
+
+/* USER CODE END PM */
+
+/* Private variables ---------------------------------------------------------*/
+I2C_HandleTypeDef hi2c1;
+
+/* USER CODE BEGIN PV */
+MATRIX_BitPort Pinout;
+MPU6050_State mode = STOPED;
+uint8_t pointX = 1, pointY = 1;
+
+MPU6050_Values MPU6050_val;
+
+HAL_StatusTypeDef verify;
+
+uint8_t table[2][8] = {{0, 0, 0, 0, 0, 0, 0},  // Columns
+					   {0, 0, 0, 0, 0, 0, 0}}; // Lines
+
+/* USER CODE END PV */
+
+/* Private function prototypes -----------------------------------------------*/
+void SystemClock_Config(void);
+static void MX_GPIO_Init(void);
+static void MX_I2C1_Init(void);
+/* USER CODE BEGIN PFP */
+void MATRIX_Control(void);
+void MATRIX_Interpreter(uint8_t line, uint8_t colum);
+
+int MPU6050_StartUp(void);
+void MPU6050_GetValues(void);
+
+void StateMachine(void);
+/* USER CODE END PFP */
+
+/* Private user code ---------------------------------------------------------*/
+/* USER CODE BEGIN 0 */
+
+/* USER CODE END 0 */
+
+/**
+  * @brief  The application entry point.
+  * @retval int
+  */
+int main(void)
+{
+
+  /* USER CODE BEGIN 1 */
+
+  /* USER CODE END 1 */
+
+  /* MCU Configuration--------------------------------------------------------*/
+
+  /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
+  HAL_Init();
+
+  /* USER CODE BEGIN Init */
+
+  /* USER CODE END Init */
+
+  /* Configure the system clock */
+  SystemClock_Config();
+
+  /* USER CODE BEGIN SysInit */
+
+  /* USER CODE END SysInit */
+
+  /* Initialize all configured peripherals */
+  MX_GPIO_Init();
+  MX_I2C1_Init();
+  /* USER CODE BEGIN 2 */
+  MATRIX_Interpreter(4, 4);
+  verify = HAL_I2C_IsDeviceReady(&hi2c1, MPU6050_ADDR, 3, HAL_MAX_DELAY);
+  if(verify == HAL_OK) MPU6050_StartUp();
+
+  /* USER CODE END 2 */
+
+  /* Infinite loop */
+  /* USER CODE BEGIN WHILE */
+  while (1) {
+	  MATRIX_Interpreter(pointX, pointY);
+	  MPU6050_GetValues();
+	  StateMachine();
+	  HAL_Delay(100);
+
+    /* USER CODE END WHILE */
+
+    /* USER CODE BEGIN 3 */
+  }
+  /* USER CODE END 3 */
+}
+
+/**
+  * @brief System Clock Configuration
+  * @retval None
+  */
+void SystemClock_Config(void)
+{
+  RCC_OscInitTypeDef RCC_OscInitStruct = {0};
+  RCC_ClkInitTypeDef RCC_ClkInitStruct = {0};
+  RCC_PeriphCLKInitTypeDef PeriphClkInit = {0};
+
+  /** Configure the main internal regulator output voltage
+  */
+  __HAL_PWR_VOLTAGESCALING_CONFIG(PWR_REGULATOR_VOLTAGE_SCALE1);
+
+  /** Initializes the RCC Oscillators according to the specified parameters
+  * in the RCC_OscInitTypeDef structure.
+  */
+  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSI;
+  RCC_OscInitStruct.HSIState = RCC_HSI_ON;
+  RCC_OscInitStruct.HSICalibrationValue = RCC_HSICALIBRATION_DEFAULT;
+  RCC_OscInitStruct.PLL.PLLState = RCC_PLL_NONE;
+  if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
+  {
+    Error_Handler();
+  }
+
+  /** Initializes the CPU, AHB and APB buses clocks
+  */
+  RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK|RCC_CLOCKTYPE_SYSCLK
+                              |RCC_CLOCKTYPE_PCLK1|RCC_CLOCKTYPE_PCLK2;
+  RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_HSI;
+  RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV2;
+  RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV1;
+  RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV1;
+
+  if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_0) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  PeriphClkInit.PeriphClockSelection = RCC_PERIPHCLK_I2C1;
+  PeriphClkInit.I2c1ClockSelection = RCC_I2C1CLKSOURCE_PCLK1;
+  if (HAL_RCCEx_PeriphCLKConfig(&PeriphClkInit) != HAL_OK)
+  {
+    Error_Handler();
+  }
+}
+
+/**
+  * @brief I2C1 Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_I2C1_Init(void)
+{
+
+  /* USER CODE BEGIN I2C1_Init 0 */
+
+  /* USER CODE END I2C1_Init 0 */
+
+  /* USER CODE BEGIN I2C1_Init 1 */
+
+  /* USER CODE END I2C1_Init 1 */
+  hi2c1.Instance = I2C1;
+  hi2c1.Init.Timing = 0x00201D2B;
+  hi2c1.Init.OwnAddress1 = 0;
+  hi2c1.Init.AddressingMode = I2C_ADDRESSINGMODE_7BIT;
+  hi2c1.Init.DualAddressMode = I2C_DUALADDRESS_DISABLE;
+  hi2c1.Init.OwnAddress2 = 0;
+  hi2c1.Init.OwnAddress2Masks = I2C_OA2_NOMASK;
+  hi2c1.Init.GeneralCallMode = I2C_GENERALCALL_DISABLE;
+  hi2c1.Init.NoStretchMode = I2C_NOSTRETCH_DISABLE;
+  if (HAL_I2C_Init(&hi2c1) != HAL_OK)
+  {
+    Error_Handler();
+  }
+
+  /** Configure Analogue filter
+  */
+  if (HAL_I2CEx_ConfigAnalogFilter(&hi2c1, I2C_ANALOGFILTER_ENABLE) != HAL_OK)
+  {
+    Error_Handler();
+  }
+
+  /** Configure Digital filter
+  */
+  if (HAL_I2CEx_ConfigDigitalFilter(&hi2c1, 0) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN I2C1_Init 2 */
+
+  /* USER CODE END I2C1_Init 2 */
+
+}
+
+/**
+  * @brief GPIO Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_GPIO_Init(void)
+{
+  GPIO_InitTypeDef GPIO_InitStruct = {0};
+  /* USER CODE BEGIN MX_GPIO_Init_1 */
+
+  /* USER CODE END MX_GPIO_Init_1 */
+
+  /* GPIO Ports Clock Enable */
+  __HAL_RCC_GPIOA_CLK_ENABLE();
+  __HAL_RCC_GPIOC_CLK_ENABLE();
+  __HAL_RCC_GPIOB_CLK_ENABLE();
+
+  /*Configure GPIO pin Output Level */
+  HAL_GPIO_WritePin(GPIOA, LINE_5_Pin|LINE_6_Pin|LINE_7_Pin|COL_8_Pin
+                          |COL_7_Pin|LINE_4_Pin, GPIO_PIN_RESET);
+
+  /*Configure GPIO pin Output Level */
+  HAL_GPIO_WritePin(GPIOC, LINE_3_Pin|LINE_2_Pin|COL_6_Pin|LINE_1_Pin
+                          |LINE_8_Pin, GPIO_PIN_RESET);
+
+  /*Configure GPIO pin Output Level */
+  HAL_GPIO_WritePin(GPIOB, COL_1_Pin|COL_4_Pin|COL_2_Pin|COL_3_Pin
+                          |COL_5_Pin, GPIO_PIN_RESET);
+
+  /*Configure GPIO pins : LINE_5_Pin LINE_6_Pin LINE_7_Pin COL_8_Pin
+                           COL_7_Pin LINE_4_Pin */
+  GPIO_InitStruct.Pin = LINE_5_Pin|LINE_6_Pin|LINE_7_Pin|COL_8_Pin
+                          |COL_7_Pin|LINE_4_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+
+  /*Configure GPIO pins : LINE_3_Pin LINE_2_Pin COL_6_Pin LINE_1_Pin
+                           LINE_8_Pin */
+  GPIO_InitStruct.Pin = LINE_3_Pin|LINE_2_Pin|COL_6_Pin|LINE_1_Pin
+                          |LINE_8_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
+
+  /*Configure GPIO pins : COL_1_Pin COL_4_Pin COL_2_Pin COL_3_Pin
+                           COL_5_Pin */
+  GPIO_InitStruct.Pin = COL_1_Pin|COL_4_Pin|COL_2_Pin|COL_3_Pin
+                          |COL_5_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
+
+  /* USER CODE BEGIN MX_GPIO_Init_2 */
+
+  /* USER CODE END MX_GPIO_Init_2 */
+}
+
+/* USER CODE BEGIN 4 */
+void MATRIX_Interpreter(uint8_t line, uint8_t colum){
+	switch(colum){
+		case 3: colum = 0x04; break;
+		case 4: colum = 0x08; break;
+		case 5: colum = 0x10; break;
+		case 6: colum = 0x20; break;
+		case 7: colum = 0x40; break;
+		case 8: colum = 0x80; break;
+	}
+
+	switch(line){
+		case 3: line = 0x04; break;
+		case 4: line = 0x08; break;
+		case 5: line = 0x10; break;
+		case 6: line = 0x20; break;
+		case 7: line = 0x40; break;
+		case 8: line = 0x80; break;
+	}
+
+	table[0][0] = (colum >> 0) & 1;
+	table[0][1] = (colum >> 1) & 1;
+	table[0][2] = (colum >> 2) & 1;
+	table[0][3] = (colum >> 3) & 1;
+	table[0][4] = (colum >> 4) & 1;
+	table[0][5] = (colum >> 5) & 1;
+	table[0][6] = (colum >> 6) & 1;
+	table[0][7] = (colum >> 7) & 1;
+
+	table[1][0] = (line >> 0) & 1;
+	table[1][1] = (line >> 1) & 1;
+	table[1][2] = (line >> 2) & 1;
+	table[1][3] = (line >> 3) & 1;
+	table[1][4] = (line >> 4) & 1;
+	table[1][5] = (line >> 5) & 1;
+	table[1][6] = (line >> 6) & 1;
+	table[1][7] = (line >> 7) & 1;
+
+	MATRIX_Control();
+}
+void MATRIX_Control(void){
+	for(int i = 0; i <= 8; ++i){
+		if(table[0][i] == 1){
+			table[0][i + 1] = 1;
+			break;
+		}
+	}
+
+	for(int i = 0; i <= 8; ++i){
+		if(table[1][i] == 1){
+			table[1][i + 1] = 1;
+			break;
+		}
+	}
+
+	Pinout.P0  = !(table[0][0]);
+	Pinout.P1  = !(table[0][1]);
+	Pinout.P2  = !(table[0][2]);
+	Pinout.P3  = !(table[0][3]);
+	Pinout.P4  = !(table[0][4]);
+	Pinout.P5  = !(table[0][5]);
+	Pinout.P6  = !(table[0][6]);
+	Pinout.P7  = !(table[0][7]);
+
+	Pinout.P8  = table[1][0];
+	Pinout.P9  = table[1][1];
+	Pinout.P10 = table[1][2];
+	Pinout.P11 = table[1][3];
+	Pinout.P12 = table[1][4];
+	Pinout.P13 = table[1][5];
+	Pinout.P14 = table[1][6];
+	Pinout.P15 = table[1][7];
+
+
+	HAL_GPIO_WritePin(LINE_1_GPIO_Port, LINE_1_Pin, Pinout.P0);
+	HAL_GPIO_WritePin(LINE_2_GPIO_Port, LINE_2_Pin, Pinout.P1);
+	HAL_GPIO_WritePin(LINE_3_GPIO_Port, LINE_3_Pin, Pinout.P2);
+	HAL_GPIO_WritePin(LINE_4_GPIO_Port, LINE_4_Pin, Pinout.P3);
+	HAL_GPIO_WritePin(LINE_5_GPIO_Port, LINE_5_Pin, Pinout.P4);
+	HAL_GPIO_WritePin(LINE_6_GPIO_Port, LINE_6_Pin, Pinout.P5);
+	HAL_GPIO_WritePin(LINE_7_GPIO_Port, LINE_7_Pin, Pinout.P6);
+	HAL_GPIO_WritePin(LINE_8_GPIO_Port, LINE_8_Pin, Pinout.P7);
+
+	HAL_GPIO_WritePin(COL_1_GPIO_Port, COL_1_Pin, Pinout.P8);
+	HAL_GPIO_WritePin(COL_2_GPIO_Port, COL_2_Pin, Pinout.P9);
+	HAL_GPIO_WritePin(COL_3_GPIO_Port, COL_3_Pin, Pinout.P10);
+	HAL_GPIO_WritePin(COL_4_GPIO_Port, COL_4_Pin, Pinout.P11);
+	HAL_GPIO_WritePin(COL_5_GPIO_Port, COL_5_Pin, Pinout.P12);
+	HAL_GPIO_WritePin(COL_6_GPIO_Port, COL_6_Pin, Pinout.P13);
+	HAL_GPIO_WritePin(COL_7_GPIO_Port, COL_7_Pin, Pinout.P14);
+	HAL_GPIO_WritePin(COL_8_GPIO_Port, COL_8_Pin, Pinout.P15);
+
+}
+
+int MPU6050_StartUp(void){
+	uint8_t data_to_send = 0x00;
+
+	verify = HAL_I2C_Mem_Write(&hi2c1, MPU6050_ADDR, MPU6050_GYRO_ADDR, 1, &data_to_send, 1, HAL_MAX_DELAY);
+	if(verify != HAL_OK) return -1;
+
+	verify = HAL_I2C_Mem_Write(&hi2c1, MPU6050_ADDR, MPU6050_ACC_ADDR, 1, &data_to_send, 1, HAL_MAX_DELAY);
+	if(verify != HAL_OK) return -2;
+
+	data_to_send = 0x00;
+
+	verify = HAL_I2C_Mem_Write(&hi2c1, MPU6050_ADDR, MPU6050_PWR_CTRL, 1, &data_to_send, 1, HAL_MAX_DELAY);
+	if(verify != HAL_OK) return -3;
+
+	return 1;
+}
+void MPU6050_GetValues(void){
+	uint8_t readDataAcc[6];
+	uint8_t readDataGyro[6];
+	uint8_t readDataTemp[2];
+
+	HAL_I2C_Mem_Read(&hi2c1, MPU6050_ADDR + 1, MPU6050_ACC_READ, 1, readDataAcc, 6, HAL_MAX_DELAY);
+
+	MPU6050_val.AccX = (int16_t)((readDataAcc[0] << 8) + readDataAcc[1]) / 360;
+	MPU6050_val.AccY = (int16_t)((readDataAcc[2] << 8) + readDataAcc[3]) / 360;
+	MPU6050_val.AccZ = (int16_t)((readDataAcc[4] << 8) + readDataAcc[5]) / 360;
+
+	HAL_I2C_Mem_Read(&hi2c1, MPU6050_ADDR + 1, MPU6050_GYRO_READ, 1, readDataGyro, 6, HAL_MAX_DELAY);
+	MPU6050_val.GyroX = (int16_t)((readDataGyro[0] << 8) + readDataGyro[1]) / 360;
+	MPU6050_val.GyroY = (int16_t)((readDataGyro[2] << 8) + readDataGyro[3]) / 360;
+	MPU6050_val.GyroZ = (int16_t)((readDataGyro[4] << 8) + readDataGyro[5]) / 360;
+
+	HAL_I2C_Mem_Read(&hi2c1, MPU6050_ADDR + 1, MPU6050_TEMP_READ, 1, readDataTemp, 2, HAL_MAX_DELAY);
+
+	MPU6050_val.temperature = (((float)((readDataTemp[0] << 8) + readDataTemp[1])) / 340 + 36.53) / 8.0;
+}
+
+void StateMachine(void){
+
+	if(MPU6050_val.AccX > 10) mode = UP;
+	else if (MPU6050_val.AccX < -10) mode = DOWN;
+	else if (MPU6050_val.AccY < -10) mode = RIGHT;
+	else if(MPU6050_val.AccY > 10) mode = LEFT;
+	else mode = STOPED;
+
+	switch(mode){
+//		case UP: 	if(pointY <= 6) pointX++; break;
+//		case DOWN:  if(pointY >= 2) pointX--; break;
+//		case LEFT:  if(pointX >= 2) pointY++; break;
+//		case RIGHT: if(pointX <= 6) pointY--; break;
+		case UP:
+			pointX++;
+			if(pointX >= 8) pointX = 7;
+			break;
+
+		case DOWN:
+			pointX--;
+			if(pointX <= 0) pointX = 7;
+			break;
+
+		case LEFT:
+			pointY++;
+			if(pointY >= 8) pointY = 7;
+			break;
+
+
+		case STOPED:
+			pointY = 4;
+			pointX = 4;
+			break;
+	}
+}
+
+/* USER CODE END 4 */
+
+/**
+  * @brief  This function is executed in case of error occurrence.
+  * @retval None
+  */
+void Error_Handler(void)
+{
+  /* USER CODE BEGIN Error_Handler_Debug */
+  /* User can add his own implementation to report the HAL error return state */
+  __disable_irq();
+  while (1)
+  {
+  }
+  /* USER CODE END Error_Handler_Debug */
+}
+#ifdef USE_FULL_ASSERT
+/**
+  * @brief  Reports the name of the source file and the source line number
+  *         where the assert_param error has occurred.
+  * @param  file: pointer to the source file name
+  * @param  line: assert_param error line source number
+  * @retval None
+  */
+void assert_failed(uint8_t *file, uint32_t line)
+{
+  /* USER CODE BEGIN 6 */
+  /* User can add his own implementation to report the file name and line number,
+     ex: printf("Wrong parameters value: file %s on line %d\r\n", file, line) */
+  /* USER CODE END 6 */
+}
+#endif /* USE_FULL_ASSERT */

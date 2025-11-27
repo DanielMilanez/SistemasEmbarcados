@@ -1,0 +1,4 @@
+../Core/Src/display16x2.c:14:6:ControlLcd	16	static
+../Core/Src/display16x2.c:49:6:SendMessage	24	static
+../Core/Src/display16x2.c:95:6:StartLcd	8	static
+../Core/Src/display16x2.c:104:5:WordSize	24	static

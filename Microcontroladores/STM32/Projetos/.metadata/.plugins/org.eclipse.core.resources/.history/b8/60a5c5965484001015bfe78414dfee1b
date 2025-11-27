@@ -1,0 +1,26 @@
+#include "MCU6050.h"
+
+extern I2C_HandleTypeDef hi2c1;
+
+
+MPU180_STATUS MCU6050_StartUp(void){
+	HAL_StatusTypeDef status;
+	uint8_t data_to_send;
+
+	status = HAL_I2C_IsDeviceReady(&hi2c1, MCU6050_ADDR, 3, HAL_MAX_DELAY);
+	if(status != HAL_OK) return 0x01;
+
+	data_to_send = 0x08; // Send FS_SELL to config the gyro full scale range 4G
+	status = HAL_I2C_Mem_Write(&hi2c1, MCU6050_ADDR, REG_CONFIG_GYRO, 1, &data_to_send, 1, HAL_MAX_DELAY);
+	if(status != HAL_OK) return 0x02;
+
+	data_to_send = 0x08; // Send FS_SELL to config the acc full scale range 4G
+	status = HAL_I2C_Mem_Write(&hi2c1, MCU6050_ADDR, REG_CONFIG_ACC, 1, &data_to_send, 1, HAL_MAX_DELAY);
+	if(status != HAL_OK) return 0x03;
+
+	data_to_send = 0x00; // Out of sleep mode and able temperature sensor
+	status = HAL_I2C_Mem_Write(&hi2c1, MCU6050_ADDR, REG_PWR_CTRL << 3, 1, &data_to_send, 1, HAL_MAX_DELAY);
+	if(status != HAL_OK) return 0x04;
+
+	return 1;
+}
